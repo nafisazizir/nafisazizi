@@ -5,66 +5,66 @@ import "./ActivitiesStyle.css";
 const Activities = () => {
   const aiesec = (
     <>
-      <div class="flex">
-        <h5 class="text-white-primary hover-resume">
+      <div className="flex">
+        <h5 className="text-white-primary hover-resume">
           AIESEC IN UNIVERSITY OF INDONESIA
         </h5>
       </div>
-      <div class="flex flex-wrap justify-between">
-        <p class="resume-sub">Project Dev Intern, Business Dev Dept.</p>
-        <p class="resume-year">Oct 2022 - Dec 2022</p>
+      <div className="flex flex-wrap justify-between">
+        <p className="resume-sub">Project Dev Intern, Business Dev Dept.</p>
+        <p className="resume-year">Oct 2022 - Dec 2022</p>
       </div>
     </>
   );
 
   const bem = (
     <>
-      <div class="flex">
-        <h5 class="text-white-primary hover-resume">
+      <div className="flex">
+        <h5 className="text-white-primary hover-resume">
           BEM (STUDENT UNION) FASILKOM UI
         </h5>
       </div>
-      <div class="flex flex-wrap justify-between">
-        <p class="resume-sub">Public Relation</p>
-        <p class="resume-year">Mar 2022 - Dec 2022</p>
+      <div className="flex flex-wrap justify-between">
+        <p className="resume-sub">Public Relation</p>
+        <p className="resume-year">Mar 2022 - Dec 2022</p>
       </div>
     </>
   );
 
   const oh = (
     <>
-      <div class="flex">
-        <h5 class="text-white-primary hover-resume">OPEN HOUSE FASILKOM UI</h5>
+      <div className="flex">
+        <h5 className="text-white-primary hover-resume">OPEN HOUSE FASILKOM UI</h5>
       </div>
-      <div class="flex flex-wrap justify-between">
-        <p class="resume-sub">Vice Project Officer</p>
-        <p class="resume-year">Mar 2022 - Dec 2022</p>
+      <div className="flex flex-wrap justify-between">
+        <p className="resume-sub">Vice Project Officer</p>
+        <p className="resume-year">Mar 2022 - Dec 2022</p>
       </div>
     </>
   );
 
   const compfest = (
     <>
-      <div class="flex">
-        <h5 class="text-white-primary hover-resume">
+      <div className="flex">
+        <h5 className="text-white-primary hover-resume">
           DATA SCIENCE ACADEMY - COMPFEST 14
         </h5>
       </div>
-      <div class="flex flex-wrap justify-between">
-        <p class="resume-sub">Data Science Academy Staff</p>
-        <p class="resume-year">Apr 2022 - Nov 2022</p>
+      <div className="flex flex-wrap justify-between">
+        <p className="resume-sub">Data Science Academy Staff</p>
+        <p className="resume-year">Apr 2022 - Nov 2022</p>
       </div>
     </>
   );
 
   return (
     <>
-      <div class="flex justify-start items-center pt-16 pb-8">
+      <div className="flex justify-start items-center pt-16 pb-8">
         <h3>Activities</h3>
       </div>
 
       <Collapsible trigger={aiesec} transitionTime={300} easing="ease-in-out">
-        <ul class="ml-4 text-white-primary">
+        <ul className="ml-4 text-white-primary">
           <li>
             <p>
               Analyze, and give recommendation/suggestion about the AIESEC in UI
@@ -82,10 +82,10 @@ const Activities = () => {
         </ul>
       </Collapsible>
 
-      <div class="line-horizontal" />
+      <div className="line-horizontal" />
 
       <Collapsible trigger={bem} transitionTime={300} easing="ease-in-out">
-        <ul class="ml-4 text-white-primary">
+        <ul className="ml-4 text-white-primary">
           <li>
             <p>
               Conducting one of the Public Relation Bureau namely, Open House
@@ -101,10 +101,10 @@ const Activities = () => {
         </ul>
       </Collapsible>
 
-      <div class="line-horizontal" />
+      <div className="line-horizontal" />
 
       <Collapsible trigger={oh} transitionTime={300} easing="ease-in-out">
-        <ul class="ml-4 text-white-primary">
+        <ul className="ml-4 text-white-primary">
           <li>
             <p>
               Open House Fasilkom UI is an annual event held by BEM Fasilkom UI
@@ -123,10 +123,10 @@ const Activities = () => {
         </ul>
       </Collapsible>
 
-      <div class="line-horizontal" />
+      <div className="line-horizontal" />
 
       <Collapsible trigger={compfest} transitionTime={300} easing="ease-in-out">
-        <ul class="ml-4 text-white-primary">
+        <ul className="ml-4 text-white-primary">
           <li>
             <p>
             Created pre-module for the Data Science Academy, ToR for the speakers

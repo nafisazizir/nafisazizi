@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
     <div className="footer">
-      <div class="footer-container flex justify-between items-center">
+      <div className="footer-container flex justify-between items-center">
         <h4 className="text-gradient">Nafis.</h4>
         <div className="flex flex-row items-center text-white-primary">
           <a

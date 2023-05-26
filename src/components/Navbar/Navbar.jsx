@@ -3,22 +3,19 @@ import "./NavbarStyle.css";
 
 const Navbar = () => {
   return (
-    <nav class="py-8">
+    <nav>
       <ul className="nav-menu">
         <li>
-          <Link to="/">Home</Link>
+          <a href="/#home">Home</a>
         </li>
         <li>
-          <Link to="/">Experiences</Link>
+          <a href="/#experiences">Experiences</a>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <a href="/#projects">Projects</a>
         </li>
         <li>
-          <Link to="/">Skillsets</Link>
-        </li>
-        <li>
-          <Link to="/">About</Link>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </nav>

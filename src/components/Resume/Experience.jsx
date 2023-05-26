@@ -5,26 +5,26 @@ import "./ExperienceStyle.css";
 const Experience = () => {
   const ta = (
     <>
-      <div class="flex">
-        <h5 class="text-white-primary hover-resume">UNIVERSITY OF INDONESIA</h5>
+      <div className="flex">
+        <h5 className="text-white-primary hover-resume">UNIVERSITY OF INDONESIA</h5>
       </div>
-      <div class="flex flex-wrap justify-between">
-        <p class="resume-sub">
+      <div className="flex flex-wrap justify-between">
+        <p className="resume-sub">
           Teaching Assistant Foundations of Programming 1
         </p>
-        <p class="resume-year">Aug 2022 - Jan 2023</p>
+        <p className="resume-year">Aug 2022 - Jan 2023</p>
       </div>
     </>
   );
 
   return (
     <>
-      <div class="flex justify-start items-center pt-16 pb-8">
+      <div className="flex justify-start items-center pt-16 pb-8">
         <h3>Experience</h3>
       </div>
 
       <Collapsible trigger={ta} transitionTime={300} easing="ease-in-out">
-        <ul class="ml-4 text-white-primary">
+        <ul className="ml-4 text-white-primary">
           <li>
             <p>
               Tutoring 8-9 students in introduction to programming in Python

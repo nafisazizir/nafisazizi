@@ -6,8 +6,8 @@ import Activities from "./Activities";
 
 const Resume = () => {
   return (
-    <div class="resume">
-      <div class="resume-container">
+    <div className="resume" id="experiences">
+      <div className="resume-container">
         <Education />
         <Experience />
         <Activities />

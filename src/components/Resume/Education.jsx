@@ -5,38 +5,38 @@ import "./EducationStyle.css";
 const Education = () => {
   const ui = (
     <>
-      <div class="flex">
-        <h5 class="text-white-primary hover-resume">UNIVERSITY OF INDONESIA</h5>
+      <div className="flex">
+        <h5 className="text-white-primary hover-resume">UNIVERSITY OF INDONESIA</h5>
       </div>
-      <div class="flex flex-wrap justify-between">
-        <p class="resume-sub">Computer Science, Bachelor Degree</p>
-        <p class="resume-year">Aug 2021 - Jun 2025</p>
+      <div className="flex flex-wrap justify-between">
+        <p className="resume-sub">Computer Science, Bachelor Degree</p>
+        <p className="resume-year">Aug 2021 - Jun 2025</p>
       </div>
     </>
   );
 
   const nus = (
     <>
-      <div class="flex">
-        <h5 class="text-white-primary hover-resume">
+      <div className="flex">
+        <h5 className="text-white-primary hover-resume">
           NATIONAL UNIVERSITY OF SINGAPORE
         </h5>
       </div>
-      <div class="flex flex-wrap justify-between">
-        <p class="resume-sub">Computer Science, Exchange Semester</p>
-        <p class="resume-year">Jan 2023 - May 2023</p>
+      <div className="flex flex-wrap justify-between">
+        <p className="resume-sub">Computer Science, Exchange Semester</p>
+        <p className="resume-year">Jan 2023 - May 2023</p>
       </div>
     </>
   );
 
   return (
     <>
-      <div class="flex justify-start items-center pt-16 pb-8">
+      <div className="flex justify-start items-center pt-16 pb-8">
         <h3>Education</h3>
       </div>
 
       <Collapsible trigger={ui} transitionTime={300} easing="ease-in-out">
-        <ul class="ml-4 text-white-primary">
+        <ul className="ml-4 text-white-primary">
           <li>
             <p>Bachelor of Computer Science / Sarjana Ilmu Komputer (S.Kom)</p>
           </li>
@@ -49,10 +49,10 @@ const Education = () => {
         </ul>
       </Collapsible>
 
-      <div class="line-horizontal" />
+      <div className="line-horizontal" />
 
       <Collapsible trigger={nus} transitionTime={300} easing="ease-in-out">
-        <ul class="ml-4 text-white-primary">
+        <ul className="ml-4 text-white-primary">
           <li>
             <p>Exchange students under ASEAN University Network Program</p>
           </li>

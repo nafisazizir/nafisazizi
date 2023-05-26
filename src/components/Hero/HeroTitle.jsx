@@ -10,12 +10,12 @@ const HeroTitle = () => {
 
   return (
     <>
-      <div className="flex flex-col place-content-center h-96">
-        <div class="flex justify-center items-center">
-          <p class="hero-title-gradient">Hello, I’m Nafis!</p>
+      <div className="flex flex-col place-content-center h-96" id="home">
+        <div className="flex justify-center items-center">
+          <p className="hero-title-gradient">Hello, I’m Nafis!</p>
         </div>
 
-        <div class="flex justify-center items-center min-h-max">
+        <div className="flex justify-center items-center min-h-max">
           <Typed
             className="hero-title-white"
             strings={desc}
