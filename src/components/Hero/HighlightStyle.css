@@ -1,0 +1,65 @@
+.h4 {
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  /* identical to box height, or 60px */
+
+  /* Gradient */
+
+  background: linear-gradient(
+    90deg,
+    #b16cea 14.06%,
+    #ff5e69 44.79%,
+    #ff8a56 71.87%,
+    #ffa84b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: -3px 0px;
+}
+
+.p {
+  width: 256px;
+
+  /* Para 18 px */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  text-align: center;
+
+  /* White Primary */
+
+  color: #f0f2f5;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+@media (max-width: 768px) {
+  .h4 {
+    font-size: 38.5px;
+  }
+
+  .p {
+    width: 153px;
+    font-size: 14.5px;
+    line-height: 24px;
+  }
+}

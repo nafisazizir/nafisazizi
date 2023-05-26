@@ -1,0 +1,14 @@
+.hero-subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 164% */
+
+  text-align: center;
+
+  /* White Primary */
+
+  color: #f0f2f5;
+}

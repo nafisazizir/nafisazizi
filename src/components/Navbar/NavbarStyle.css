@@ -1,0 +1,51 @@
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 49px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-menu li {
+  margin: 0px;
+  padding: 0px;
+
+  /* Para 16 px */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* White Primary */
+  list-style-type: none;
+  color: #f0f2f5;
+}
+
+@media (max-width: 760px) {
+  .nav-menu {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-menu li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 280px) {
+  .nav-menu {
+    gap: 10px;
+  }
+
+  .nav-menu li {
+    font-size: 10px;
+  }
+}

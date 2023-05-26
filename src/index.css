@@ -1,13 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #161513;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h3 {
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+
+  background: linear-gradient(
+    90deg,
+    #b16cea 14.06%,
+    #ff5e69 44.79%,
+    #ff8a56 71.87%,
+    #ffa84b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h4 {
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+}
+
+h5 {
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+p {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 16px;
+}
+
+.line-horizontal {
+  border: 0.5px solid #838384;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.black-primary {
+  background: #161513;
+}
+
+.black-secondary {
+  background: #25252d;
+}
+
+.white-primary {
+  background: #f0f2f5;
+}
+
+.white-secondary {
+  background: #ffffff;
+}
+
+.text-gradient {
+  background: linear-gradient(
+    90deg,
+    #b16cea 14.06%,
+    #ff5e69 44.79%,
+    #ff8a56 71.87%,
+    #ffa84b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-black-primary {
+  color: #161513;
+}
+
+.text-black-secondary {
+  color: #1c1c22;
+}
+
+.text-white-primary {
+  color: #f0f2f5;
+}
+
+.text-white-secondary {
+  color: #ffffff;
+}
+
+.text-gray-primary {
+  color: #b9bbbc;
+}
+
+.text-gray-secondary {
+  color: #838384;
+}
+
+.resume-sub {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 16px;
+  color: #b9bbbc;
+  /* line-height: 110%; */
+}
+
+.resume-year {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 16px;
+  color: #838384;
+  /* line-height: 110%; */
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  .resume-sub {
+    font-size: 14px;
+  }
+
+  .resume-year {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.Collapsible {
+  padding: 30px 0px;
+}
+
+.hover-resume:hover {
+  background: linear-gradient(
+    90deg,
+    #b16cea 14.06%,
+    #ff5e69 44.79%,
+    #ff8a56 71.87%,
+    #ffa84b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 480px) {
+  .Collapsible {
+    padding: 15px 0px;
+  }
 }

@@ -1,0 +1,39 @@
+.footer {
+  margin: 64px 0px;
+}
+
+.footer-container {
+  margin: 0px 240px 0px;
+}
+
+.icon {
+  margin-left: 16px;
+  font-size: 20px;
+}
+
+.icon:hover {
+  color: #838384;
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    margin: 0px 100px 0px;
+  }
+
+  .icon {
+    margin-left: 12px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    margin: 0px 80px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    margin: 0px 40px 0px;
+  }
+}
