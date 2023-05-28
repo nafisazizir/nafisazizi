@@ -42,7 +42,7 @@ const ProjectsHome = () => {
           </ul>
         </div>
 
-        <img src={acb_ise} alt="acb_isbe"></img>
+        <img className="project-home-img" src={acb_ise} alt="acb_isbe"></img>
       </div>
 
       <div className="line-horizontal" />
@@ -67,7 +67,7 @@ const ProjectsHome = () => {
           </ul>
         </div>
 
-        <img src={sirest} alt="sirest"></img>
+        <img className="project-home-img" src={sirest} alt="sirest"></img>
       </div>
 
       <div className="line-horizontal" />
@@ -101,7 +101,7 @@ const ProjectsHome = () => {
           </ul>
         </div>
 
-        <img src={starcraft} alt="starcraft"></img>
+        <img className="project-home-img" src={starcraft} alt="starcraft"></img>
       </div>
 
       <div className="line-horizontal" />
@@ -126,7 +126,7 @@ const ProjectsHome = () => {
           </ul>
         </div>
 
-        <img src={climate_change} alt="climate_change"></img>
+        <img className="project-home-img" src={climate_change} alt="climate_change"></img>
       </div>
 
       <div className="line-horizontal" />
