@@ -1,9 +1,9 @@
 .footer {
-  margin: 64px 0px;
+  margin: 64px 240px 0px;
 }
 
 .footer-container {
-  margin: 0px 240px 0px;
+  margin: 64px 0px;
 }
 
 .icon {
@@ -16,8 +16,12 @@
 }
 
 @media (max-width: 1024px) {
+  .footer {
+    margin: 64px 100px 0px;
+  }
+
   .footer-container {
-    margin: 0px 100px 0px;
+    margin: 64px 0px;
   }
 
   .icon {
@@ -27,13 +31,21 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    margin: 64px 80px 0px;
+  }
+
   .footer-container {
-    margin: 0px 80px 0px;
+    margin: 64px 0px;
   }
 }
 
 @media (max-width: 480px) {
+  .footer {
+    margin: 64px 40px 0px;
+  }
+
   .footer-container {
-    margin: 0px 40px 0px;
+    margin: 64px 0px;
   }
 }
