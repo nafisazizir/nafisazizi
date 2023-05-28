@@ -18,8 +18,8 @@
   font-size: 20px;
 }
 
-.icon-bio:hover {
-  color: #838384;
+.icon-bio-container:hover {
+  background-color: #838384;
 }
 
 @media (max-width: 768px) {
