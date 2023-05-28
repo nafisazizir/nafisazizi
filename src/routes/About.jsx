@@ -24,7 +24,7 @@ const About = () => {
       <div className="about">
         <Bio />
         <div className="flex justify-start items-center pt-8">
-          <h3>About Me</h3>
+          <h3 className="text-gradient">About Me</h3>
         </div>
         {paragraphs.map((paragraph, index) => (
           <Markdown

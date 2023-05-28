@@ -20,7 +20,7 @@ const Experience = () => {
   return (
     <>
       <div className="flex justify-start items-center pt-16 pb-8">
-        <h3>Experience</h3>
+        <h3 className="text-gradient">Experience</h3>
       </div>
 
       <Collapsible trigger={ta} transitionTime={300} easing="ease-in-out">

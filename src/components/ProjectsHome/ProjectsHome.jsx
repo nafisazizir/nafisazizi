@@ -9,7 +9,7 @@ const ProjectsHome = () => {
   return (
     <div className="projects-home pt-16" id="projects">
       <div className="flex justify-start items-center pb-8">
-        <h3>Selected Projects</h3>
+        <h3 className="text-gradient">Selected Projects</h3>
       </div>
 
       <div className="line-horizontal" />

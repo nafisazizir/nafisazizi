@@ -32,7 +32,7 @@ const Education = () => {
   return (
     <>
       <div className="flex justify-start items-center pt-16 pb-8">
-        <h3>Education</h3>
+        <h3 className="text-gradient">Education</h3>
       </div>
 
       <Collapsible trigger={ui} transitionTime={300} easing="ease-in-out">

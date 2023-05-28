@@ -15,17 +15,6 @@ h3 {
   font-weight: 700;
   font-size: 48px;
   line-height: 125%;
-
-  background: linear-gradient(
-    90deg,
-    #b16cea 14.06%,
-    #ff5e69 44.79%,
-    #ff8a56 71.87%,
-    #ffa84b 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 h4 {
@@ -170,6 +159,10 @@ p {
 }
 
 @media (max-width: 480px) {
+  h3 {
+    font-size: 32px;
+  }
+
   .Collapsible {
     padding: 15px 0px;
   }

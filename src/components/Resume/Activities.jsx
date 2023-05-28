@@ -60,7 +60,7 @@ const Activities = () => {
   return (
     <>
       <div className="flex justify-start items-center pt-16 pb-8">
-        <h3>Activities</h3>
+        <h3 className="text-gradient">Activities</h3>
       </div>
 
       <Collapsible trigger={aiesec} transitionTime={300} easing="ease-in-out">
