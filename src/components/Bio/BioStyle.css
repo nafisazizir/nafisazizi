@@ -1,0 +1,32 @@
+.bio-photo {
+  margin: 0px;
+  border-radius: 50%;
+}
+
+.icon-bio-container {
+  background-color: #f0f2f5;
+  border-radius: 50%;
+}
+
+.icon-bio {
+  margin: 5px;
+  font-size: 20px;
+}
+
+.icon-bio:hover {
+  color: #838384;
+}
+
+@media (max-width: 768px) {
+  .icon-bio {
+    margin: 5px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-bio {
+    margin: 0px;
+    font-size: 0px;
+  }
+}

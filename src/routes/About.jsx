@@ -3,6 +3,7 @@ import remarkGfm from "remark-gfm";
 import "./AboutStyle.css";
 import Markdown from "react-markdown";
 import Navbar from "../components/Navbar/Navbar";
+import Bio from "../components/Bio/Bio";
 import AboutMd from "../content/about/index.md";
 import Footer from "../components/Footer/Footer";
 
@@ -21,6 +22,7 @@ const About = () => {
     <>
       <Navbar />
       <div className="about">
+        <Bio />
         <div className="flex justify-start items-center pt-8">
           <h3>About Me</h3>
         </div>
