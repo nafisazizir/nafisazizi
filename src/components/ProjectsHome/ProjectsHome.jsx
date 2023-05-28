@@ -128,8 +128,6 @@ const ProjectsHome = () => {
 
         <img className="project-home-img" src={climate_change} alt="climate_change"></img>
       </div>
-
-      <div className="line-horizontal" />
     </div>
   );
 };
