@@ -8,13 +8,10 @@ import ProjectsHome from "../components/ProjectsHome/ProjectsHome";
 import EatSleepCode from "../components/Decorations/EatSleepCode";
 import Footer from "../components/Footer/Footer";
 import "./HomeStyle.css";
-import SmoothScroll from "./SmoothScroll";
 
 const Home = () => {
   return (
     <>
-      {/* <SmoothScroll /> */}
-
       <Navbar />
       <HeroTitle />
 
