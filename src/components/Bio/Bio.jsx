@@ -8,9 +8,12 @@ import { MdEmail } from "react-icons/md";
 const Bio = () => {
   return (
     <>
-      <div className="flex flex-row items-center justify-between gap-8">
-        <img className="bio-photo" src={PhotoMe}></img>
+      <div className="bio-container">
         <div className="flex flex-col gap-2">
+          <div className="photo-name flex flex-row items-center">
+            <img className="bio-photo" src={PhotoMe}></img>
+            <h3 className="text-white"> Nafis Azizi Riza</h3>
+          </div>
           <p className="text-white-primary">
             Crafted, designed, and coded with passion by Nafis Azizi Riza,
             completing Computer Science 💻🏫 undergraduate at the Universitas
