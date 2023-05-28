@@ -1,9 +1,41 @@
-import React from 'react'
+import { useState, useEffect } from "react";
+import remarkGfm from "remark-gfm";
+import "./AboutStyle.css";
+import Markdown from "react-markdown";
+import Navbar from "../components/Navbar/Navbar";
+import AboutMd from "../content/about/index.md";
+import Footer from "../components/Footer/Footer";
 
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+  const [aboutText, setAboutText] = useState("");
 
-export default About
+  useEffect(() => {
+    fetch(AboutMd)
+      .then((res) => res.text())
+      .then((text) => setAboutText(text));
+  });
+
+  const paragraphs = aboutText.split(/\n\s*\n/);
+
+  return (
+    <>
+      <Navbar />
+      <div className="about">
+        <div className="flex justify-start items-center pt-8">
+          <h3>About Me</h3>
+        </div>
+        {paragraphs.map((paragraph, index) => (
+          <Markdown
+            key={index}
+            className="markdown text-white-primary"
+            children={paragraph}
+            remarkPlugins={[remarkGfm]}
+          ></Markdown>
+        ))}
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default About;
