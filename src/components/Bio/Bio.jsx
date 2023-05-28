@@ -10,7 +10,7 @@ const Bio = () => {
     <>
       <div className="bio-container">
         <div className="flex flex-col gap-2">
-          <div className="photo-name flex flex-row items-center">
+          <div className="photo-name flex flex-wrap items-center">
             <img className="bio-photo" src={PhotoMe}></img>
             <h3 className="text-white"> Nafis Azizi Riza</h3>
           </div>
