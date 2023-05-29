@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar/Navbar";
 import HeroTitle from "../components/Hero/HeroTitle";
 import Highlight from "../components/Hero/Highlight";
 import HeroButtonPrimary from "../components/Hero/HeroButtonPrimary";
@@ -12,7 +11,6 @@ import "./HomeStyle.css";
 const Home = () => {
   return (
     <>
-      <Navbar />
       <HeroTitle />
 
       <div className="px-1 lg:px-48 md:px-20 sm:px-16 flex flex-wrap justify-center items-center">
