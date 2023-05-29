@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nafisazizi/static/css/main.68bd2ba1.css",
-    "main.js": "/nafisazizi/static/js/main.635bb739.js",
+    "main.css": "/nafisazizi/static/css/main.0dbe1485.css",
+    "main.js": "/nafisazizi/static/js/main.3ea8b2ed.js",
     "static/js/787.ed073ef4.chunk.js": "/nafisazizi/static/js/787.ed073ef4.chunk.js",
     "static/media/photo_me_squre.png": "/nafisazizi/static/media/photo_me_squre.7ee250ae47199e2d5b94.png",
     "static/media/sirest.png": "/nafisazizi/static/media/sirest.9be410f45a99f9adff08.png",
@@ -11,12 +11,12 @@
     "static/media/climate_change.png": "/nafisazizi/static/media/climate_change.a6aa4e4a3b73dffd57cc.png",
     "static/media/index.md": "/nafisazizi/static/media/index.c40cb1356bcd58b467c1.md",
     "index.html": "/nafisazizi/index.html",
-    "main.68bd2ba1.css.map": "/nafisazizi/static/css/main.68bd2ba1.css.map",
-    "main.635bb739.js.map": "/nafisazizi/static/js/main.635bb739.js.map",
+    "main.0dbe1485.css.map": "/nafisazizi/static/css/main.0dbe1485.css.map",
+    "main.3ea8b2ed.js.map": "/nafisazizi/static/js/main.3ea8b2ed.js.map",
     "787.ed073ef4.chunk.js.map": "/nafisazizi/static/js/787.ed073ef4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68bd2ba1.css",
-    "static/js/main.635bb739.js"
+    "static/css/main.0dbe1485.css",
+    "static/js/main.3ea8b2ed.js"
   ]
 }
