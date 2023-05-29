@@ -26,6 +26,7 @@ const About = () => {
         </div>
         {paragraphs.map((paragraph, index) => (
           <Markdown
+            linkTarget="_blank"
             key={index}
             className="markdown text-white-primary"
             children={paragraph}
