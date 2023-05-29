@@ -1,0 +1,87 @@
+{
+    "name" : "Nafis Azizi Riza",
+    "email" : "nafisredzone@gmail.com",
+    "phone" : "(+62) 81336825409",
+    "github" : "github.com/nafisazizir",
+    "linkedin" : "linkedin.com/in/nafisazizi/",
+
+    "education" : [
+        {
+            "id" : "ui",
+            "institution" : "Universitas Indonesia",
+            "degree" : "Computer Science, Bachelor degree",
+            "location" : "Depok, Indonesia",
+            "startDate" : "Aug 2021",
+            "endDate" : "Jun 2025",
+            "highlights" : [
+                "Bachelor of Computer Science / Sarjana Ilmu Komputer (S.Kom)",
+                "Relevant Coursework: Data Structure & Algorithm, Platform Based Development, Database, Operating System, Computer Organization"
+            ]
+        },
+        {
+            "id" : "nus",
+            "institution" : "National University of Singapore",
+            "degree" : "Computer Science, Exchange Semester",
+            "location" : "Singapore",
+            "startDate" : "Jan 2023",
+            "endDate" : "May 2023",
+            "highlights" : [
+                "Exchange students under ASEAN University Network Program",
+                "Coursework: Design and Analysis of Algorithm, Interaction Design, Computer Network, Software Engineering & OOP, Programming Methodology II"
+            ]
+        }
+    ],
+
+    "experiences" : [
+        {
+            "id" : "ui-ddp",
+            "organization" : "Universitas Indonesia",
+            "title" : "Teaching Assistant",
+            "location" : "Depok, Indonesia",
+            "startDate" : "Aug 2022",
+            "endDate" : "Jan 2023",
+            "highlights" : [
+                "Tutoring 8-9 students in introduction to programming in Python",
+                "Create and assessed labs and programming assignments",
+                "Conduct weekly lab meetings with approximately 30 students"
+            ]
+        }
+    ],
+
+    "projects" : [
+        {
+            "id" : "acb-isbe",
+            "name" : "ACB-ISBE, Conference Proceeding App, Web & Mobile App Version",
+            "highlights" : [
+                "Designed and developed a conference proceeding mobile & web app, app for conference participants to see their submitted papers, conference information, chairs, schedule, events, and speakers.",
+                "Utilized Python Django (web app), and Flutter (mobile app) to develop the applications and handling the database",
+                "Implemented search feature and display all the submitted paper data"
+            ]
+        },
+        {
+            "id" : "sirest",
+            "name" : "SIREST, Fullstack Web App for Restaurant Order and Delivery",
+            "highlights" : [
+                "Designed and implemented the database schema using PostgreSQL for different roles: restaurant, customer, driver",
+                "Build and deployed the websites."
+            ]
+        },
+        {
+            "id" : "starcraft",
+            "name" : "Prediction Starcraft II Matches, Generate ML Model to Predict Matchup of Each Games",
+            "highlights" : [
+                "Exploratory Data Analysis of Starcraft II dataset, analyzing such as characteristic of each race, win rate, resource statistics, and etc.",
+                "Build a predictive machine learning model to predict matchup of Starcraft II’s matches",
+                "Stack used : Python, Pandas, Seaborn, NumPy, Matplotlib, Scikit-learn, Catboost."
+            ]
+        },
+        {
+            "id" : "climate-change",
+            "name" : "Climate Change Analysis, Data Analysis (EDA) Dashboard About Climate Change in Indonesia",
+            "highlights" : [
+                "Exploratory Data Analysis of climate change dataset in Indonesia, analyzing such as precipitation, temperature over the years, correlation to other factors, etc.",
+                "Stack used : Python, Pandas, Seaborn, NumPy, Matplotlib."
+            ]
+        }
+    ]
+}

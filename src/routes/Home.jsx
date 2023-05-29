@@ -25,8 +25,8 @@ const Home = () => {
       </div>
 
       <div className="pt-12 pb-20 mx-8 flex flex-wrap justify-center items-center">
-        <HeroButtonPrimary text="GET IN TOUCH" />
-        <HeroButtonSecondary text="VIEW ALL WORKS" />
+        <HeroButtonPrimary to="/about" text="GET IN TOUCH" />
+        <HeroButtonSecondary to="/#projects" text="VIEW ALL WORKS" />
       </div>
 
       {/* <EatSleepCode /> */}

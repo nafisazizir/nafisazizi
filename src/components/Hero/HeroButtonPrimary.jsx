@@ -1,10 +1,13 @@
 import "./HeroButtonPrimaryStyle.css";
+import { HashLink } from "react-router-hash-link";
 
 const HeroButtonPrimary = (props) => {
   return (
     <>
       <div className="px-2 py-1">
-        <button>{props.text}</button>
+        <HashLink to={props.to} smooth>
+          <button>{props.text}</button>
+        </HashLink>
       </div>
     </>
   );
