@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nafisazizi/static/css/main.68bd2ba1.css",
+    "main.js": "/nafisazizi/static/js/main.a09cb09d.js",
+    "static/media/photo_me_squre.png": "/nafisazizi/static/media/photo_me_squre.7ee250ae47199e2d5b94.png",
+    "static/media/sirest.png": "/nafisazizi/static/media/sirest.9be410f45a99f9adff08.png",
+    "static/media/acb_isbe.png": "/nafisazizi/static/media/acb_isbe.219ce9fc04832bb9eb92.png",
+    "static/media/star.png": "/nafisazizi/static/media/star.68c0c5b8cfce5446f67e.png",
+    "static/media/starcraft.png": "/nafisazizi/static/media/starcraft.ec376a6c6de8a5f7b79b.png",
+    "static/media/climate_change.png": "/nafisazizi/static/media/climate_change.a6aa4e4a3b73dffd57cc.png",
+    "static/media/index.md": "/nafisazizi/static/media/index.c40cb1356bcd58b467c1.md",
+    "index.html": "/nafisazizi/index.html",
+    "main.68bd2ba1.css.map": "/nafisazizi/static/css/main.68bd2ba1.css.map",
+    "main.a09cb09d.js.map": "/nafisazizi/static/js/main.a09cb09d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68bd2ba1.css",
+    "static/js/main.a09cb09d.js"
+  ]
+}
