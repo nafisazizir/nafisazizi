@@ -48,6 +48,13 @@ const config: GatsbyConfig = {
         path: `${__dirname}/src/data/about/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blogs`,
+        path: `${__dirname}/src/data/blogs/`,
+      },
+    },
   ],
 };
 

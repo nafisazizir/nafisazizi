@@ -21,6 +21,12 @@ exports.createPages = async ({ graphql, actions }) => {
         component: path.resolve("./src/templates/projectDetails.tsx"),
         context: { slug: node.frontmatter.slug },
       });
+    } else if (node.frontmatter.type === "blog") {
+      actions.createPage({
+        path: "/blogs/" + node.frontmatter.slug,
+        component: path.resolve("./src/templates/blogDetails.tsx"),
+        context: { slug: node.frontmatter.slug },
+      });
     }
   });
 };
