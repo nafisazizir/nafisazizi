@@ -2,15 +2,17 @@ import React from "react";
 import BlogLayout from "../components/BlogLayout/BlogLayout";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
+import BlogHeader from "../components/BlogHeader/BlogHeader";
 
 const ProjectDetails = ({ data }: { data: any }) => {
   const { html } = data.markdownRemark;
-  const { title } = data.markdownRemark.frontmatter;
+  const { title, date } = data.markdownRemark.frontmatter;
   const featuredImage = data.markdownRemark.frontmatter.featuredImage;
 
   return (
     <BlogLayout>
       <h1>{title}</h1>
+      <BlogHeader date={date} />
 
       <Img
         fluid={featuredImage.childImageSharp.fluid}

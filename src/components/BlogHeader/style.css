@@ -1,0 +1,49 @@
+.blog-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+}
+
+.blog-header .profile-pic {
+  width: 50px;
+  height: 50px;
+  background-color: var(--background-info);
+  border-radius: 50px;
+}
+
+.blog-header .info {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.blog-header .info a {
+  position: relative;
+  color: var(--typography-primary);
+}
+
+.blog-header .info a:hover {
+  position: relative;
+}
+
+.blog-header .info a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--typography-primary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.blog-header .info a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
