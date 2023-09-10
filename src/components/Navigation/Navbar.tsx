@@ -43,13 +43,28 @@ const Navbar = () => {
           <Link className="navlink" to="/" activeClassName="active">
             Home
           </Link>
-          <Link className="navlink" to="/projects" activeClassName="active">
+          <Link
+            className="navlink"
+            to="/projects"
+            activeClassName="active"
+            partiallyActive
+          >
             Projects
           </Link>
-          <Link className="navlink" to="/blogs" activeClassName="active">
+          <Link
+            className="navlink"
+            to="/blogs"
+            activeClassName="active"
+            partiallyActive
+          >
             Blog
           </Link>
-          <Link className="navlink" to="/about" activeClassName="active">
+          <Link
+            className="navlink"
+            to="/about"
+            activeClassName="active"
+            partiallyActive
+          >
             About
           </Link>
         </div>
@@ -122,6 +137,7 @@ const Navbar = () => {
             to="/projects"
             onClick={handleLinkClick}
             activeClassName="active"
+            partiallyActive
           >
             Projects
           </Link>
@@ -132,6 +148,7 @@ const Navbar = () => {
             to="/blogs"
             onClick={handleLinkClick}
             activeClassName="active"
+            partiallyActive
           >
             Blog
           </Link>
@@ -142,6 +159,7 @@ const Navbar = () => {
             to="/about"
             onClick={handleLinkClick}
             activeClassName="active"
+            partiallyActive
           >
             About
           </Link>
