@@ -26,6 +26,7 @@ const Footer = () => {
                 style={{
                   width: "32px",
                   height: "32px",
+                  color: "var(--typography-primary)",
                 }}
               />
             }
@@ -37,6 +38,7 @@ const Footer = () => {
                 style={{
                   width: "18px",
                   height: "18px",
+                  color: "var(--typography-primary)",
                 }}
               />
             }
@@ -48,6 +50,7 @@ const Footer = () => {
                 style={{
                   width: "22px",
                   height: "22px",
+                  color: "var(--typography-primary)",
                 }}
               />
             }
