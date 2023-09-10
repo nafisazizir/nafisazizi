@@ -1,18 +1,12 @@
 import React from "react";
-import "./style.css";
-import ButtonPillLarge from "../../components/Button/Pill/ButtonPillLarge";
+import Layout from "../../components/Layout/Layout";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { useStaticQuery, graphql } from "gatsby";
 
-const Works = () => {
+const Projects = () => {
   const projectsResponse = useStaticQuery(graphql`
     query ProjectHighlights {
-      allMarkdownRemark(
-        filter: {
-          frontmatter: { slug: { in: ["matkulgue", "peopl", "seanema"] } }
-        }
-        sort: { frontmatter: { date: DESC } }
-      ) {
+      allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
         nodes {
           frontmatter {
             date
@@ -34,7 +28,7 @@ const Works = () => {
   const projects = projectsResponse.allMarkdownRemark.nodes;
 
   return (
-    <div className="works-container">
+    <Layout>
       <div
         style={{
           display: "flex",
@@ -48,7 +42,7 @@ const Works = () => {
           className="display-medium"
           style={{ color: "var(--primary-default)" }}
         >
-          Previous Works
+          Previous Projects
         </div>
         <div className="paragraph-xlarge">
           learn more about my innovative and impactful projects
@@ -65,14 +59,8 @@ const Works = () => {
           />
         ))}
       </div>
-
-      <ButtonPillLarge
-        variant="primary"
-        text="See all my works"
-        onClick={() => console.log("")}
-      />
-    </div>
+    </Layout>
   );
 };
 
-export default Works;
+export default Projects;
