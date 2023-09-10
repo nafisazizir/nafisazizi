@@ -40,16 +40,16 @@ const Navbar = () => {
         </Link>
 
         <div className="nav-menu">
-          <Link className="navlink" to="/">
+          <Link className="navlink" to="/" activeClassName="active">
             Home
           </Link>
-          <Link className="navlink" to="/projects">
+          <Link className="navlink" to="/projects" activeClassName="active">
             Projects
           </Link>
-          <Link className="navlink" to="/blogs">
+          <Link className="navlink" to="/blogs" activeClassName="active">
             Blog
           </Link>
-          <Link className="navlink" to="/about">
+          <Link className="navlink" to="/about" activeClassName="active">
             About
           </Link>
         </div>
@@ -107,22 +107,42 @@ const Navbar = () => {
 
       <ul className={nav ? "nav-mobile-active" : "nav-mobile-inactive"}>
         <li>
-          <Link className="navlink" to="/" onClick={handleLinkClick}>
+          <Link
+            className="navlink"
+            to="/"
+            onClick={handleLinkClick}
+            activeClassName="active"
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link className="navlink" to="/projects onClick={handleLinkClick}">
+          <Link
+            className="navlink"
+            to="/projects"
+            onClick={handleLinkClick}
+            activeClassName="active"
+          >
             Projects
           </Link>
         </li>
         <li>
-          <Link className="navlink" to="/blogs" onClick={handleLinkClick}>
+          <Link
+            className="navlink"
+            to="/blogs"
+            onClick={handleLinkClick}
+            activeClassName="active"
+          >
             Blog
           </Link>
         </li>
         <li>
-          <Link className="navlink" to="/about" onClick={handleLinkClick}>
+          <Link
+            className="navlink"
+            to="/about"
+            onClick={handleLinkClick}
+            activeClassName="active"
+          >
             About
           </Link>
         </li>
