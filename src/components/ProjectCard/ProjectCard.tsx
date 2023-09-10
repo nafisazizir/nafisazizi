@@ -7,6 +7,7 @@ interface ProjectCardProps {
   description: string;
   slug: string;
   image: any;
+  date: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -14,7 +15,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   slug,
   image,
+  date,
 }) => {
+  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   return (
     <>
       <div className="project-card-container">
@@ -23,6 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="label-large">{title}</div>
           <div className="paragraph-medium details-wrapper">{description}</div>
         </div>
+        <div className="paragraph-small">{formattedDate}</div>
       </div>
     </>
   );
