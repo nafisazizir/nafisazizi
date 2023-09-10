@@ -9,6 +9,7 @@ interface ProjectCardProps {
   slug: string;
   image: any;
   date: string;
+  type: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -17,6 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   slug,
   image,
   date,
+  type,
 }) => {
   const formattedDate = new Date(date).toLocaleDateString("en-US", {
     year: "numeric",
@@ -28,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <>
       <div
         className="project-card-container"
-        onClick={() => navigate("/projects/" + slug)}
+        onClick={() => navigate("/" + type + "/" + slug)}
       >
         <Img fluid={image.childImageSharp.fluid} className="featured-img" />
         <div className="details">

@@ -59,6 +59,7 @@ const Projects = () => {
             slug={project.frontmatter.slug}
             image={project.frontmatter.featuredImage}
             date={project.frontmatter.date}
+            type="projects"
           />
         ))}
       </div>
