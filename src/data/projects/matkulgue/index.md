@@ -8,8 +8,6 @@ tags: ["react", "node", "express", "mongodb"]
 slug: "matkulgue"
 ---
 
-#
-
 # This is Heading 1
 
 Recently, the [QS World University Rankings 2024](https://www.topuniversities.com/university-rankings/world-university-rankings/2024) have just been released and NUS was ranked **8th** in the world! Making it’s remarkable achievements by being the only institution from Asia that sits comfortable in the top 10 😱.

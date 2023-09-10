@@ -1,7 +1,7 @@
 .blog-layout {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   max-width: 680px;
   width: 100%;

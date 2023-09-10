@@ -34,8 +34,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="details">
           <div className="label-large">{title}</div>
           <div className="paragraph-medium details-wrapper">{description}</div>
+          <div className="paragraph-small">{formattedDate}</div>
         </div>
-        <div className="paragraph-small">{formattedDate}</div>
       </div>
     </>
   );

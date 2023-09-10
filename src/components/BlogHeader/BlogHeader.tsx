@@ -10,7 +10,7 @@ interface BlogHeaderProps {
 
 const BlogHeader: React.FC<BlogHeaderProps> = ({ date }) => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query BlogHeader {
       imageSharp(fluid: { src: {}, originalName: { eq: "profile.jpeg" } }) {
         fluid {
           ...GatsbyImageSharpFluid
