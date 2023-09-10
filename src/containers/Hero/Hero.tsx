@@ -4,6 +4,7 @@ import Typed from "react-typed";
 import styled from "styled-components";
 import ButtonPillLarge from "../../components/Button/Pill/ButtonPillLarge";
 import VerticalLine from "../../assets/icons/vertical-line.svg";
+import { navigate } from "gatsby";
 
 const Hero = () => {
   const desc = [
@@ -93,16 +94,12 @@ const Hero = () => {
         <ButtonPillLarge
           text="MY RESUME (.PDF)"
           variant="primary"
-          onClick={() => {
-            console.log("");
-          }}
+          onClick={() => window.open("https://resume.nafisazizi.com/")}
         />
         <ButtonPillLarge
           text="GET IN TOUCH"
           variant="tertiary"
-          onClick={() => {
-            console.log("");
-          }}
+          onClick={() => navigate("/about")}
         />
       </ButtonContainer>
 

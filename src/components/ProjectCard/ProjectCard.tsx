@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Img from "gatsby-image";
+import { navigate } from "gatsby";
 
 interface ProjectCardProps {
   title: string;
@@ -25,7 +26,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <>
-      <div className="project-card-container">
+      <div
+        className="project-card-container"
+        onClick={() => navigate("/projects/" + slug)}
+      >
         <Img fluid={image.childImageSharp.fluid} className="featured-img" />
         <div className="details">
           <div className="label-large">{title}</div>

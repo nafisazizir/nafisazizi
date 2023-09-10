@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import ButtonPillLarge from "../../components/Button/Pill/ButtonPillLarge";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, navigate } from "gatsby";
 
 const Works = () => {
   const projectsResponse = useStaticQuery(graphql`
@@ -70,7 +70,7 @@ const Works = () => {
       <ButtonPillLarge
         variant="primary"
         text="See all my works"
-        onClick={() => console.log("")}
+        onClick={() => navigate("/projects")}
       />
     </div>
   );

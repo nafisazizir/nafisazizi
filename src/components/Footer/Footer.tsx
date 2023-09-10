@@ -30,7 +30,9 @@ const Footer = () => {
                 }}
               />
             }
-            onClick={() => console.log("")}
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/nafisazizi/")
+            }
           />
           <ButtonCircleSmall
             children={
@@ -42,7 +44,7 @@ const Footer = () => {
                 }}
               />
             }
-            onClick={() => console.log("")}
+            onClick={() => window.open("https://github.com/nafisazizir")}
           />
           <ButtonCircleSmall
             children={
@@ -54,7 +56,9 @@ const Footer = () => {
                 }}
               />
             }
-            onClick={() => console.log("")}
+            onClick={() =>
+              (window.location.href = "mailto:nafisredzone@gmail.com")
+            }
           />
         </div>
       </div>
