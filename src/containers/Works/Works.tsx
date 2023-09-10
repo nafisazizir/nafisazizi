@@ -2,8 +2,39 @@ import React from "react";
 import "./style.css";
 import ButtonPillLarge from "../../components/Button/Pill/ButtonPillLarge";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import { useStaticQuery, graphql } from "gatsby";
 
 const Works = () => {
+  const projectsResponse = useStaticQuery(graphql`
+    query ProjectHighlights {
+      allMarkdownRemark(
+        filter: {
+          frontmatter: { slug: { in: ["matkulgue", "peopl", "seanema"] } }
+        }
+        sort: { frontmatter: { date: DESC } }
+      ) {
+        nodes {
+          frontmatter {
+            date
+            description
+            title
+            slug
+            featuredImage {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+  const projects = projectsResponse.allMarkdownRemark.nodes;
+
+  console.log(projects);
+
   return (
     <div className="works-container">
       <div
@@ -26,7 +57,16 @@ const Works = () => {
         </div>
       </div>
 
-      <ProjectCard />
+      <div className="project-highlights-container">
+        {projects.map((project: any) => (
+          <ProjectCard
+            title={project.frontmatter.title}
+            description={project.frontmatter.description}
+            slug={project.frontmatter.slug}
+            image={project.frontmatter.featuredImage}
+          />
+        ))}
+      </div>
 
       <ButtonPillLarge
         variant="primary"

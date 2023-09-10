@@ -2,8 +2,9 @@
   display: flex;
   width: 300px;
   padding: 16px;
+  align-self: stretch;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 16px;
   cursor: pointer;
@@ -17,17 +18,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   gap: 16px;
 }
 
-.project-card-container .cover {
-  display: flex;
+.project-card-container .featured-img {
   width: 100%;
-  padding-top: 56%;
-
   border-radius: 12px;
-  background: var(--background-info);
 }
 
 .project-card-container:hover {
@@ -53,7 +49,7 @@
     align-items: center;
   }
 
-  .project-card-container .cover {
+  .project-card-container .featured-img {
     order: 2;
     border-radius: 6px;
   }

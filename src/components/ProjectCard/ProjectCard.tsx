@@ -1,22 +1,30 @@
 import React from "react";
 import "./style.css";
+import Img from "gatsby-image";
 
-const ProjectCard = () => {
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  slug: string;
+  image: any;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  title,
+  description,
+  slug,
+  image,
+}) => {
   return (
-    <div className="project-card-container">
-      <div className="cover" />
-      <div className="details">
-        <div className="label-large">
-          ACB-ISBE, Conference Proceeding App, Web & Mobile App Version
-        </div>
-        <div className="paragraph-medium details-wrapper">
-          Built a MERN stack web application enabling 200+ users across 7
-          countries to access a personalized course catalog and timetabling
-          tool. Successfully scraped 14K+ courses from the university’s official
-          websites, and populating database.
+    <>
+      <div className="project-card-container">
+        <Img fluid={image.childImageSharp.fluid} className="featured-img" />
+        <div className="details">
+          <div className="label-large">{title}</div>
+          <div className="paragraph-medium details-wrapper">{description}</div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
