@@ -1,0 +1,24 @@
+.blog-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 680px;
+  width: 100%;
+  margin: auto;
+  padding: 72px 0px;
+  gap: 52px;
+}
+
+@media (max-width: 1240px) {
+  .blog-layout {
+    padding: 72px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-layout {
+    padding: 56px 16px;
+    gap: 42px;
+  }
+}

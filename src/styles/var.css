@@ -11,6 +11,8 @@
   --typography-link-hover: #2982e2;
   --typography-link-active: #2573c9;
   --typography-info: #2573c9;
+  --typography-error: #db1436;
+  --typography-code: #e2445e;
 
   --border-default: #dddddd;
   --border-hover: #bcbcbc;
@@ -21,6 +23,7 @@
   --background-1: #fdfdfd;
   --background-2: rgba(253, 253, 253, 0.3);
   --background-3: #fafafa;
+  --background-4: #eeeeee;
   --background-info: #e0eefe;
 }
 
@@ -37,6 +40,8 @@
   --typography-link-hover: #2982e2;
   --typography-link-active: #2573c9;
   --typography-info: #2573c9;
+  --typography-error: #db1436;
+  --typography-code: #e2445e;
 
   --border-default: #3c3c3c;
   --border-hover: #808080;
@@ -47,5 +52,6 @@
   --background-1: #252627;
   --background-2: rgba(37, 38, 39, 0.3);
   --background-3: #2c2c2c;
+  --background-4: #343536;
   --background-info: #e0eefe;
 }

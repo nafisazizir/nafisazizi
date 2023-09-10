@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 const Projects = () => {
   const projectsResponse = useStaticQuery(graphql`
-    query ProjectHighlights {
+    query ProjectsList {
       allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
         nodes {
           frontmatter {

@@ -29,11 +29,11 @@
   margin: auto;
 }
 
-li {
+.navbar li {
   list-style-type: none;
 }
 
-ul {
+.navbar ul {
   margin: 0px;
   padding: 0px;
 }
