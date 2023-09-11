@@ -13,11 +13,11 @@ interface BlogLayoutProps {
 
 const BlogLayout: React.FC<BlogLayoutProps> = ({ children }) => {
   return (
-    <div className="layout-template">
+    <>
       <Navbar />
       <div className="blog-layout">{children}</div>
       <Footer />
-    </div>
+    </>
   );
 };
 
