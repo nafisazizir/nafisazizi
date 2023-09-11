@@ -89,7 +89,8 @@
   padding: 18px;
   background-color: var(--background-4);
   border-radius: 4px;
-  text-wrap: wrap;
+  /* text-wrap: wrap; */
+  white-space: pre-wrap;
 }
 
 .blog-content ul {

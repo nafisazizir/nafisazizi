@@ -24,14 +24,7 @@ const about = () => {
   const { html } = data.markdownRemark;
   return (
     <BlogLayout>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          gap: "24px",
-          alignItems: "center",
-        }}
-      >
+      <div className="about-profile-title">
         <div className="about-profile-pic">
           <Img
             fluid={
