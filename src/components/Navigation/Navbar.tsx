@@ -57,7 +57,7 @@ const Navbar = () => {
             activeClassName="active"
             partiallyActive
           >
-            Blog
+            Blogs
           </Link>
           <Link
             className="navlink"
@@ -150,7 +150,7 @@ const Navbar = () => {
             activeClassName="active"
             partiallyActive
           >
-            Blog
+            Blogs
           </Link>
         </li>
         <li>
