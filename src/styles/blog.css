@@ -102,9 +102,40 @@
   font-size: 18px;
 }
 
+.blog-content figcaption {
+  margin-top: 6px;
+  color: var(--typography-secondary);
+
+  /* Paragraph */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.blog-content blockquote {
+  all: unset;
+
+  border-left: 3px solid var(--typography-primary);
+  padding: 6px 12px;
+}
+
+.blog-content blockquote p {
+  color: var(--typography-primary);
+
+  /* ParagraphQuote */
+  font-family: PT Serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  font-style: italic;
+}
+
 @media (max-width: 720px) {
   .blog-content {
-    gap: 14px;
+    gap: 20px;
   }
 
   .blog-content h1 {
@@ -130,5 +161,15 @@
 
   .blog-content li {
     font-size: 16px;
+  }
+
+  .blog-content figcaption {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .blog-content blockquote p {
+    font-size: 18px;
+    line-height: 22px;
   }
 }

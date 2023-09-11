@@ -14,6 +14,21 @@ const config: GatsbyConfig = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              linkImagesToOriginal: true,
+              showCaptions: ["title", "alt"],
+              wrapperStyle: `margin: 0 auto; text-align: center; width:100%;`,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: ["G-3XPVG4V8N2"],
