@@ -89,6 +89,7 @@
   padding: 18px;
   background-color: var(--background-4);
   border-radius: 4px;
+  text-wrap: wrap;
 }
 
 .blog-content ul {
@@ -98,4 +99,35 @@
 .blog-content li {
   color: var(--typography-secondary);
   font-size: 18px;
+}
+
+@media (max-width: 720px) {
+  .blog-content {
+    gap: 14px;
+  }
+
+  .blog-content h1 {
+    font-size: 24px;
+  }
+
+  .blog-content h2 {
+    font-size: 20px;
+  }
+
+  .blog-content h3 {
+    font-size: 18px;
+  }
+
+  .blog-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .blog-content code {
+    font-size: 14px;
+  }
+
+  .blog-content li {
+    font-size: 16px;
+  }
 }
