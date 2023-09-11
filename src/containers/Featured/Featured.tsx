@@ -10,6 +10,7 @@ import Featured6 from "../../assets/images/featured-6.jpeg";
 import Featured7 from "../../assets/images/featured-7.jpeg";
 import ButtonPillMedium from "../../components/Button/Pill/ButtonPillMedium";
 import Carousel from "../../components/Carousel/Carousel";
+import { navigate } from "gatsby";
 
 const Featured = () => {
   const Title = styled.div`
@@ -62,7 +63,7 @@ const Featured = () => {
           <ButtonPillMedium
             text="Read full story"
             variant="tertiary"
-            onClick={() => console.log("")}
+            onClick={() => navigate("/blogs/nus-exchange")}
           />
         </div>
         <Carousel data={slides} />
