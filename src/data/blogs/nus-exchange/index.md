@@ -1,6 +1,6 @@
 ---
 title: "Creating Lifelong Memories: Bonds and Adventures of a Lifetime at NUS"
-date: "2023-07-21"
+date: "2023-07-05"
 description: "Embarking on thrilling adventures across diverse landscapes, from conquering mountain peaks on a motorbike to exploring pristine island beaches, our shared travel experiences forged unforgettable bonds."
 type: "blog"
 featuredImage: "./nus-exchange.png"

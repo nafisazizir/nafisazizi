@@ -1,6 +1,6 @@
 ---
 title: "Peopl. Ultimate Online Discussion Forum For Youth Empowerment"
-date: "2023-06-21"
+date: "2023-07-23"
 description: "Anonymous dialogues, personalized connections, and skill growth. Filling the void for Indonesian youth seeking a safe space for meaningful interactions and personal development. This project won 1st Place in Garuda Hacks 4.0."
 type: "project"
 featuredImage: "./peopl.png"

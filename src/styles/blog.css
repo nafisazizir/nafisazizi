@@ -94,12 +94,20 @@
 }
 
 .blog-content ul {
+  margin: 0px;
   padding-left: 30px;
 }
 
 .blog-content li {
   color: var(--typography-secondary);
   font-size: 18px;
+
+  /* Paragraph */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
 }
 
 .blog-content figcaption {
