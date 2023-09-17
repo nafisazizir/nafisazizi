@@ -67,7 +67,7 @@ a {
 .nav-mobile-active {
   position: absolute;
   left: 0;
-  top: 64px;
+  top: 48px;
   width: 100%;
   padding: 8px 0px;
   z-index: 98;
@@ -84,7 +84,7 @@ a {
 .nav-mobile-inactive {
   position: absolute;
   left: 0;
-  top: -100%;
+  top: -200%;
   width: 100%;
   padding: 8px 0px;
   z-index: 98;
