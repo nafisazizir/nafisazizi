@@ -13,6 +13,7 @@ const config: GatsbyConfig = {
     "gatsby-transformer-remark",
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -68,6 +69,13 @@ const config: GatsbyConfig = {
       options: {
         name: `blogs`,
         path: `${__dirname}/src/data/blogs/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Nafis Azizi Riza",
+        icon: "src/assets/icons/logo.svg",
       },
     },
   ],

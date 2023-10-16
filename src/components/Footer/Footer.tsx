@@ -63,9 +63,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="paragraph-small">
-        © 2023 Nafis Azizi Riza. All Rights Reserved.
-      </div>
+      <div className="paragraph-small">© 2023 Nafis Azizi Riza.</div>
     </div>
   );
 };
