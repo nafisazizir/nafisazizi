@@ -8,7 +8,11 @@ import ButtonCircleXSmall from "../Button/Circle/ButtonCircleXSmall";
 import { Link } from "gatsby";
 
 const Navbar = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState(
+    typeof window !== "undefined"
+      ? localStorage.getItem("theme") || "light"
+      : ""
+  );
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
