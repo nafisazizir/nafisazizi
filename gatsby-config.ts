@@ -79,6 +79,7 @@ const config: GatsbyConfig = {
       },
     },
   ],
+  pathPrefix: "/nafisazizi",
 };
 
 export default config;
