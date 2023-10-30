@@ -1,5 +1,5 @@
 # nafisazizi.com 🚀
-A mixed place where I get to showcase my projects, experiences, and everything I've been up to! Consider it my own little playground of creativity and innovation. Built with React, CSS, and Tailwind.
+A mixed place where I get to showcase my projects, experiences, and everything I've been up to! Consider it my own little playground of creativity and innovation. Built with Gatsby.
 
 # Getting Started
 To get started with the project, follow these steps:
@@ -14,7 +14,7 @@ npm install
 ```
 3. **Start the website** You can start the website by running the following command:
 ```
-npm run start
+npm run develop
 ```
 
 # Contributing

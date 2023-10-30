@@ -1,0 +1,48 @@
+.about-profile-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 24px;
+}
+
+.about-profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: var(--background-info);
+}
+
+.subtitle {
+  padding: 18px;
+  border-radius: 6px;
+  background-color: var(--background-info);
+
+  color: var(--typography-info);
+
+  /* Paragraph */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+@media (max-width: 720px) {
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-profile-title {
+    flex-direction: column;
+    gap: 12px;
+    align-self: center;
+  }
+
+  .about-profile-title h1 {
+    text-align: center;
+  }
+}
