@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
-import Typed from "react-typed";
+import Typist from "react-typist";
 import styled from "styled-components";
 import ButtonPillLarge from "../../components/Button/Pill/ButtonPillLarge";
 import VerticalLine from "../../assets/icons/vertical-line.svg";
 import { navigate } from "gatsby";
 
 const Hero = () => {
+  const [index, setIndex] = useState(0);
+
   const desc = [
     "a junior CS UI student",
     "an aspiring software engineer",
     "adventurer, explorer!",
   ];
+
+  const onComplete = () => {
+    if (index + 1 === desc.length) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
+  };
 
   const HeroSubtitle = styled.div`
     width: 720px;
@@ -73,13 +83,15 @@ const Hero = () => {
         </div>
         <div className="hero-terminal">
           <div className="hero-terminal-text">{">>"}</div>
-          <Typed
+          <Typist
             className="hero-terminal-text"
-            strings={desc}
-            typeSpeed={80}
-            backSpeed={70}
-            loop
-          />
+            onTypingDone={onComplete}
+            stdTypingDelay={20}
+            key={index}
+          >
+            {desc[index]}
+            <Typist.Backspace count={desc[index].length} delay={1000} />
+          </Typist>
         </div>
       </div>
 
