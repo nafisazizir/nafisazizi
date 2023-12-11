@@ -1,16 +1,21 @@
 import React from "react";
 import "./FeaturedStyle.css";
 import styled from "styled-components";
-import Featured1 from "../../assets/images/featured-1.jpeg";
-import Featured2 from "../../assets/images/featured-2.jpeg";
-import Featured3 from "../../assets/images/featured-3.jpeg";
-import Featured4 from "../../assets/images/featured-4.jpeg";
-import Featured5 from "../../assets/images/featured-5.jpeg";
-import Featured6 from "../../assets/images/featured-6.jpeg";
-import Featured7 from "../../assets/images/featured-7.jpeg";
 import ButtonPillMedium from "../../components/Button/Pill/ButtonPillMedium";
 import Carousel from "../../components/Carousel/Carousel";
-import { navigate } from "gatsby";
+import { graphql, navigate, useStaticQuery } from "gatsby";
+import Img, { FluidObject } from "gatsby-image";
+
+interface ImageQuery {
+  allImageSharp: {
+    edges: {
+      node: {
+        id: string;
+        fluid: FluidObject;
+      };
+    }[];
+  };
+}
 
 const Featured = () => {
   const Title = styled.div`
@@ -21,16 +26,55 @@ const Featured = () => {
       width: 80%;
     }
   `;
-
-  const slides = [
-    { src: Featured1, alt: "Say cheese 📸 to the jaw-dropping canyon!" },
-    { src: Featured2, alt: "Catch some great waves 🤙🏻 - Lombok" },
-    { src: Featured3, alt: "Conquering Ha Giang Loop on a motorbike 🏍️" },
-    { src: Featured4, alt: "The famous Koh Phi Phi 🤿" },
-    { src: Featured5, alt: "Stunning sunrise hike 🥾 - Krabi" },
-    { src: Featured6, alt: "After lots of stairs 🏞️ - Ninh Binh" },
-    { src: Featured7, alt: "Cruise trip 🛳️ - Ha Long Bay" },
+  const featuredImages: ImageQuery = useStaticQuery(graphql`
+    query FeaturedImages {
+      allImageSharp(
+        filter: {
+          fluid: {
+            originalName: {
+              in: [
+                "featured-1.jpeg"
+                "featured-2.jpeg"
+                "featured-3.jpeg"
+                "featured-4.jpeg"
+                "featured-5.jpeg"
+                "featured-6.jpeg"
+                "featured-7.jpeg"
+              ]
+            }
+          }
+        }
+      ) {
+        edges {
+          node {
+            id
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  `);
+  const imagesAlt = [
+    "Say cheese 📸 to the jaw-dropping canyon!",
+    "Catch some great waves 🤙🏻 - Lombok",
+    "Conquering Ha Giang Loop on a motorbike 🏍️",
+    "The famous Koh Phi Phi 🤿",
+    "Stunning sunrise hike 🥾 - Krabi",
+    "After lots of stairs 🏞️ - Ninh Binh",
+    "Cruise trip 🛳️ - Ha Long Bay",
   ];
+
+  const slides = featuredImages.allImageSharp.edges.map(
+    (
+      { node }: { node: ImageQuery["allImageSharp"]["edges"][0]["node"] },
+      index: number
+    ) => ({
+      src: node.fluid,
+      alt: imagesAlt[index],
+    })
+  );
 
   return (
     <div className="featured">

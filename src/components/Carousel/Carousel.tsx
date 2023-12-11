@@ -3,6 +3,7 @@ import "./CarouselStyle.css";
 import ButtonCircleXSmall from "../Button/Circle/ButtonCircleXSmall";
 import ArrowLeft from "../../assets/icons/arrow-left.svg";
 import ArrowRight from "../../assets/icons/arrow-right.svg";
+import Img from "gatsby-image";
 
 interface CarouselProps {
   data: any;
@@ -23,8 +24,8 @@ const Carousel: React.FC<CarouselProps> = ({ data }) => {
       <div className="slide-container">
         {data.map((item: any, index: any) => {
           return (
-            <img
-              src={item.src}
+            <Img
+              fluid={item.src}
               alt={item.alt}
               key={index}
               className={slide === index ? "slide" : "slide-hidden"}
