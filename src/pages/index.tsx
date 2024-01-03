@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout/Layout";
+import Layout from "../app-components/Layout/Layout";
 import Hero from "../containers/Hero/Hero";
 import Featured from "../containers/Featured/Featured";
 import MarqueeSlider from "../containers/MarqueeSlider/MarqueeSlider";

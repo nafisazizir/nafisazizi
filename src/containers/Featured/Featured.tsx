@@ -1,8 +1,8 @@
 import React from "react";
 import "./FeaturedStyle.css";
 import styled from "styled-components";
-import ButtonPillMedium from "../../components/Button/Pill/ButtonPillMedium";
-import Carousel from "../../components/Carousel/Carousel";
+import ButtonPillMedium from "../../app-components/Button/Pill/ButtonPillMedium";
+import Carousel from "../../app-components/Carousel/Carousel";
 import { graphql, navigate, useStaticQuery } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
 

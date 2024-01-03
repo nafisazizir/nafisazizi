@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
-import ButtonPillLarge from "../../components/Button/Pill/ButtonPillLarge";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import ButtonPillLarge from "../../app-components/Button/Pill/ButtonPillLarge";
+import ProjectCard from "../../app-components/ProjectCard/ProjectCard";
 import { useStaticQuery, graphql, navigate } from "gatsby";
 
 const Works = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import BlogLayout from "../components/BlogLayout/BlogLayout";
+import BlogLayout from "../app-components/BlogLayout/BlogLayout";
 import { graphql, useStaticQuery } from "gatsby";
 import "./AboutStyle.css";
 import Img from "gatsby-image";

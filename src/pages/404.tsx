@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import Layout from "../components/Layout/Layout";
+import Layout from "../app-components/Layout/Layout";
 import "../styles/index.css";
 import "../styles/var.css";
 import "../styles/typography.css";
