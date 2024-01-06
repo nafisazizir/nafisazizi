@@ -1,0 +1,9 @@
+.button.md {
+  display: inline-flex;
+  padding: var(--spacing-5, 10px) var(--spacing-8, 16px);
+  align-items: center;
+  gap: var(--spacing-4, 8px);
+
+  border-radius: var(--rounded-lg, 8px);
+  background: bg-blue-500;
+}
