@@ -104,6 +104,11 @@
   --success-800: #196925;
   --success-900: #13501c;
 
+  --focus-primary: 0px 0px 0px 3px rgba(36, 119, 255, 0.4);
+  --focus-error: 0px 0px 0px 3px rgba(227, 59, 50, 0.4);
+  --focus-warning: 0px 0px 0px 3px rgba(238, 162, 63, 0.4);
+  --focus-success: 0px 0px 0px 3px rgba(46, 191, 67, 0.4);
+
   --spacing-0: 0px;
   --spacing-1: 2px;
   --spacing-2: 4px;
@@ -138,6 +143,9 @@
   --spacing-72: 288px;
   --spacing-80: 320px;
   --spacing-96: 384px;
+
+  --transition-duration-1: 150ms;
+  --transition-duration-2: 200ms;
 }
 
 [data-theme="dark"] {
