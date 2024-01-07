@@ -18,6 +18,7 @@ type ButtonProps = {
   icon?: React.ReactNode;
   leftIcon?: boolean;
   rightIcon?: boolean;
+  onClick: () => void;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -29,6 +30,7 @@ const Button: React.FC<ButtonProps> = ({
   icon,
   leftIcon = false,
   rightIcon = true,
+  onClick,
 }) => {
   const classNames = [
     "button",
@@ -42,7 +44,11 @@ const Button: React.FC<ButtonProps> = ({
   console.log(classNames);
 
   return (
-    <button className={classNames} disabled={state === "disabled"}>
+    <button
+      className={classNames}
+      onClick={onClick}
+      disabled={state === "disabled"}
+    >
       {leftIcon && icon && <span className="icon">{icon}</span>}
       {content && <span className="content">{content}</span>}
       {rightIcon && icon && <span className="icon">{icon}</span>}
