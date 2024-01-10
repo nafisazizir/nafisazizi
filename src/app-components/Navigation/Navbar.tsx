@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "./style.css";
-import Logo from "../../assets/icons/logo.svg";
-import Night from "../../assets/icons/night.svg";
-import Outline from "../../assets/icons/outline.svg";
+import NavigationItem from "../../component/NavigationItem/NavigationItem";
+import Button from "../../component/Button/Button";
 import XMark from "../../assets/icons/x-mark.svg";
-import ButtonCircleXSmall from "../Button/Circle/ButtonCircleXSmall";
-import { Link } from "gatsby";
+import Sun from "../../assets/icons/sun.svg";
+import Moon from "../../assets/icons/moon.svg";
+import Bars3 from "../../assets/icons/bars-3.svg";
 
 const Navbar = () => {
   const [theme, setTheme] = useState(
@@ -37,139 +36,48 @@ const Navbar = () => {
   };
 
   return (
-    <div className="nav-container">
-      <div className="navbar">
-        <Link to="/">
-          <Logo className="nav-logo" />
-        </Link>
+    <>
+      <div className="relative flex h-[72px] px-12 py-8 z-[99] justify-between items-center bg-white-900 border-b border-neutral-200">
+        <NavigationItem to="/" type="workspace" />
 
-        <div className="nav-menu">
-          <Link className="navlink" to="/" activeClassName="active">
-            Home
-          </Link>
-          <Link
-            className="navlink"
-            to="/projects"
-            activeClassName="active"
-            partiallyActive
-          >
-            Projects
-          </Link>
-          <Link
-            className="navlink"
-            to="/blogs"
-            activeClassName="active"
-            partiallyActive
-          >
-            Blogs
-          </Link>
-          <Link
-            className="navlink"
-            to="/about"
-            activeClassName="active"
-            partiallyActive
-          >
-            About
-          </Link>
+        <div className="hidden gap-8 sm:flex">
+          <NavigationItem to="/" type="item" content="Home" />
+          <NavigationItem to="/projects" type="item" content="Projects" />
+          <NavigationItem to="/blogs" type="item" content="Blogs" />
+          <NavigationItem to="/cv" type="item" content="CV" />
+          <NavigationItem to="/about" type="item" content="About" />
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            gap: "12px",
-            alignItems: "center",
-          }}
-        >
-          <ButtonCircleXSmall
-            children={
-              <Night
-                style={{
-                  width: "16px",
-                  height: "16px",
-                  color: "var(--typography-primary)",
-                }}
-              />
-            }
+        <div className="flex gap-6">
+          <Button
+            icon={theme === "light" ? <Sun /> : <Moon />}
+            type="secondary"
+            size="sm"
             onClick={switchTheme}
           />
-
-          <div onClick={handleNav} className="block hamburger">
-            {nav ? (
-              <ButtonCircleXSmall
-                children={
-                  <XMark
-                    style={{
-                      width: "18px",
-                      height: "18px",
-                    }}
-                  />
-                }
-                onClick={handleNav}
-              />
-            ) : (
-              <ButtonCircleXSmall
-                children={
-                  <Outline
-                    style={{
-                      width: "16px",
-                      height: "16px",
-                    }}
-                  />
-                }
-                onClick={handleNav}
-              />
-            )}
+          <div onClick={handleNav} className="flex sm:hidden">
+            <Button
+              icon={nav ? <XMark /> : <Bars3 />}
+              type="secondary"
+              size="sm"
+              onClick={handleNav}
+            />
           </div>
         </div>
       </div>
-
-      <ul className={nav ? "nav-mobile-active" : "nav-mobile-inactive"}>
-        <li>
-          <Link
-            className="navlink"
-            to="/"
-            onClick={handleLinkClick}
-            activeClassName="active"
-          >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="navlink"
-            to="/projects"
-            onClick={handleLinkClick}
-            activeClassName="active"
-            partiallyActive
-          >
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="navlink"
-            to="/blogs"
-            onClick={handleLinkClick}
-            activeClassName="active"
-            partiallyActive
-          >
-            Blogs
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="navlink"
-            to="/about"
-            onClick={handleLinkClick}
-            activeClassName="active"
-            partiallyActive
-          >
-            About
-          </Link>
-        </li>
-      </ul>
-    </div>
+      <div
+        className={`absolute left-0 ${
+          nav ? "top-[72px]" : "top-[-100%]"
+        } flex flex-col px-12 py-8 gap-2 w-full z-0 justify-center bg-white-900 border-b border-neutral-200 transition-all ease-in-out duration-500`}
+        onClick={handleLinkClick}
+      >
+        <NavigationItem to="/" type="item" content="Home" />
+        <NavigationItem to="/projects" type="item" content="Projects" />
+        <NavigationItem to="/blogs" type="item" content="Blogs" />
+        <NavigationItem to="/cv" type="item" content="CV" />
+        <NavigationItem to="/about" type="item" content="About" />
+      </div>
+    </>
   );
 };
 
