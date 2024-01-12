@@ -4,11 +4,13 @@ import Hero from "../containers/Hero/Hero";
 import Featured from "../containers/Featured/Featured";
 import MarqueeSlider from "../containers/MarqueeSlider/MarqueeSlider";
 import Works from "../containers/Works/Works";
+import HeroNew from "../containers/HeroNew/HeroNew";
 
 const Home = () => {
   return (
     <Layout>
-      <Hero />
+      <HeroNew />
+      {/* <Hero /> */}
       <Featured />
       <MarqueeSlider />
       <Works />
