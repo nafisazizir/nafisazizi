@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@types/styled-components": "^5.1.26",
+    "framer-motion": "^10.17.12",
     "fs": "^0.0.1-security",
     "gatsby": "^5.12.4",
     "gatsby-image": "^3.11.0",
