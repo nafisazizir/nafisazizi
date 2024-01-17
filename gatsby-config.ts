@@ -14,7 +14,9 @@ const config: GatsbyConfig = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-postcss',
+    "gatsby-plugin-postcss",
+    "gatsby-transformer-ffmpeg",
+    "gatsby-plugin-ffmpeg",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -56,6 +58,13 @@ const config: GatsbyConfig = {
       options: {
         name: `images`,
         path: `${__dirname}/src/assets/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `videos`,
+        path: `${__dirname}/src/assets/videos/`,
       },
     },
     {
