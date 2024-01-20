@@ -1,7 +1,9 @@
 import React from "react";
-import "./style.css";
 import Img from "gatsby-image";
 import { navigate } from "gatsby";
+import Button from "../../component/Button/Button";
+import Newspaper from "../../assets/icons/newspaper.svg";
+import "./style.css";
 
 interface ProjectCardProps {
   title: string;
@@ -27,19 +29,33 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   });
 
   return (
-    <>
-      <div
-        className="project-card-container"
-        onClick={() => navigate("/" + type + "/" + slug)}
-      >
-        <Img fluid={image.childImageSharp.fluid} className="featured-img" />
-        <div className="details">
-          <div className="label-large">{title}</div>
-          <div className="paragraph-medium details-wrapper">{description}</div>
-          <div className="paragraph-small">{formattedDate}</div>
+    <div
+      className="project-card flex flex-row items-center justify-center gap-9 cursor-pointer"
+      onClick={() => navigate("/" + type + "/" + slug)}
+    >
+      <div className="relative flex w-40 h-40 md:w-60 md:h-60 justify-center items-center overflow-hidden rounded-xl md:rounded-2xl">
+        <div className="image-overlay flex justify-center items-center">
+          <Button
+            content="Learn more"
+            onClick={() => navigate("/" + type + "/" + slug)}
+            type="secondary"
+            icon={<Newspaper />}
+          />
+        </div>
+        <Img
+          fluid={image.childImageSharp.fluid}
+          className="image w-full h-full rounded-xl md:rounded-2xl"
+        />
+      </div>
+      <div className="content-container">
+        <div className="title flex items-center top-0 bottom-0 text-start text-sm sm:text-xl md:text-2xl font-medium">
+          {title}
+        </div>
+        <div className="description flex items-center top-0 bottom-0 text-neutral-600 text-start text-md">
+          {description}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

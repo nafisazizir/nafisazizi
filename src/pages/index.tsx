@@ -10,7 +10,7 @@ const Home = () => {
     <Layout>
       <Hero />
       <Featured />
-      <MarqueeSlider />
+      {/* <MarqueeSlider /> */}
       <Works />
     </Layout>
   );
