@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../app-components/Layout/Layout";
-import ProjectCard from "../app-components/ProjectCard/ProjectCard";
 import { useStaticQuery, graphql } from "gatsby";
+import BlogCard from "../app-components/BlogCard/BlogCard";
 
 const blogs = () => {
   const blogResponse = useStaticQuery(graphql`
@@ -31,29 +31,18 @@ const blogs = () => {
   const projects = blogResponse.allMarkdownRemark.nodes;
   return (
     <Layout>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "12px",
-        }}
-      >
-        <div
-          className="display-medium"
-          style={{ color: "var(--primary-default)" }}
-        >
-          Blogs
+      <div className="flex flex-col gap-8 justify-center items-center">
+        <div className="w-11/12 lg:w-[800px] text-3xl md:text-4xl lg:text-5xl font-semibold text-primary-500 text-center">
+          Personal Blogs
         </div>
-        <div className="paragraph-xlarge">
-          Get to know more about myself through my awe-inspiring stories
+        <div className="w-11/12 lg:w-[700px] text-lg md:text-xl lg:text-2xl text-neutral-600 text-center">
+          I wrote about personal experiences, software engineering, and tech!
         </div>
       </div>
 
       <div className="project-highlights-container">
         {projects.map((project: any) => (
-          <ProjectCard
+          <BlogCard
             title={project.frontmatter.title}
             description={project.frontmatter.description}
             slug={project.frontmatter.slug}
