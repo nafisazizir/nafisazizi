@@ -6,6 +6,7 @@ import Img, { FluidObject } from "gatsby-image";
 import ArrowLeft from "../../assets/icons/arrow-left.svg";
 import ArrowRight from "../../assets/icons/arrow-right.svg";
 import Newspaper from "../../assets/icons/newspaper.svg";
+import Reveal from "../../component/Reveal/Reveal";
 
 interface ImageQuery {
   allImageSharp: {
@@ -97,50 +98,38 @@ const Featured = () => {
   };
 
   return (
-    <div className="featured">
-      <div className="flex flex-col gap-8 justify-center items-center">
-        <div className="w-11/12 lg:w-[800px] text-3xl md:text-4xl lg:text-5xl font-semibold text-black-900 text-center">
-          Get to know more about myself through my{" "}
-          <span className="text-primary-500">awe-inspiring</span> stories
+    <Reveal>
+      <div className="featured">
+        <div className="flex flex-col gap-8 justify-center items-center">
+          <div className="w-11/12 lg:w-[800px] text-3xl md:text-4xl lg:text-5xl font-semibold text-black-900 text-center">
+            Get to know more about myself through my{" "}
+            <span className="text-primary-500">awe-inspiring</span> stories
+          </div>
+          <div className="w-11/12 lg:w-[700px] text-lg md:text-xl lg:text-2xl text-neutral-600 text-center">
+            Bonds and Adventures of a Lifetime at NUS - our shared travel
+            experiences forged unforgettable bonds.
+          </div>
         </div>
-        <div className="w-11/12 lg:w-[700px] text-lg md:text-xl lg:text-2xl text-neutral-600 text-center">
-          Bonds and Adventures of a Lifetime at NUS - our shared travel
-          experiences forged unforgettable bonds.
-        </div>
-      </div>
 
-      <div className="flex flex-col w-full items-center justify-center gap-12">
-        <div className="flex flex-row self-stretch justify-between items-center gap-18">
-          <Button
-            icon={<ArrowLeft />}
-            type="secondary"
-            size="sm"
-            onClick={prevSlide}
-            className="hidden md:flex"
-          />
+        <div className="flex flex-col w-full items-center justify-center gap-12">
+          <div className="flex flex-row self-stretch justify-between items-center gap-18">
+            <Button
+              icon={<ArrowLeft />}
+              type="secondary"
+              size="sm"
+              onClick={prevSlide}
+              className="hidden md:flex"
+            />
 
-          {slides.map((item: any, index: any) => {
-            return (
-              <div
-                className={
-                  index === slide ? "flex flex-col w-full gap-10" : "hidden"
-                }
-              >
-                <div className="flex md:hidden flex-col items-center justify-center gap-4">
-                  <div className="text-2xl font-medium text-center text-black-900">
-                    {item.alt}
-                  </div>
-                  <Button
-                    content="Read full story"
-                    size="sm"
-                    icon={<Newspaper />}
-                    onClick={() => navigate("/blogs/nus-exchange/")}
-                  />
-                </div>
-
-                <div className="featured-card w-full">
-                  <div className="hidden md:flex flex-col gap-10 justify-center items-start">
-                    <div className="text-3xl md:text-xl lg:text-3xl font-medium text-black-900">
+            {slides.map((item: any, index: any) => {
+              return (
+                <div
+                  className={
+                    index === slide ? "flex flex-col w-full gap-10" : "hidden"
+                  }
+                >
+                  <div className="flex md:hidden flex-col items-center justify-center gap-4">
+                    <div className="text-2xl font-medium text-center text-black-900">
                       {item.alt}
                     </div>
                     <Button
@@ -148,77 +137,91 @@ const Featured = () => {
                       size="sm"
                       icon={<Newspaper />}
                       onClick={() => navigate("/blogs/nus-exchange/")}
-                      className="lg:hidden"
-                    />
-                    <Button
-                      content="Read full story"
-                      size="md"
-                      icon={<Newspaper />}
-                      onClick={() => navigate("/blogs/nus-exchange/")}
-                      className="hidden lg:flex"
                     />
                   </div>
-                  <div className="image-container rounded-2xl">
-                    <Img
-                      fluid={item.image1}
-                      alt={item.alt}
-                      key={0}
-                      className="w-full h-full rounded-2xl"
-                    />
-                  </div>
-                  <div className="image-container rounded-2xl">
-                    <Img
-                      fluid={item.image2}
-                      alt={item.alt}
-                      key={1}
-                      className="w-full h-full rounded-2xl"
-                    />
+
+                  <div className="featured-card w-full">
+                    <div className="hidden md:flex flex-col gap-10 justify-center items-start">
+                      <div className="text-3xl md:text-xl lg:text-3xl font-medium text-black-900">
+                        {item.alt}
+                      </div>
+                      <Button
+                        content="Read full story"
+                        size="sm"
+                        icon={<Newspaper />}
+                        onClick={() => navigate("/blogs/nus-exchange/")}
+                        className="lg:hidden"
+                      />
+                      <Button
+                        content="Read full story"
+                        size="md"
+                        icon={<Newspaper />}
+                        onClick={() => navigate("/blogs/nus-exchange/")}
+                        className="hidden lg:flex"
+                      />
+                    </div>
+                    <div className="image-container rounded-2xl">
+                      <Img
+                        fluid={item.image1}
+                        alt={item.alt}
+                        key={0}
+                        className="w-full h-full rounded-2xl"
+                      />
+                    </div>
+                    <div className="image-container rounded-2xl">
+                      <Img
+                        fluid={item.image2}
+                        alt={item.alt}
+                        key={1}
+                        className="w-full h-full rounded-2xl"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-
-          <Button
-            icon={<ArrowRight />}
-            type="secondary"
-            size="sm"
-            onClick={nextSlide}
-            className="hidden md:flex"
-          />
-        </div>
-
-        <div className="flex flex-row gap-10 items-center justify-center">
-          <Button
-            icon={<ArrowLeft />}
-            type="secondary"
-            size="xs"
-            onClick={prevSlide}
-            className="flex md:hidden"
-          />
-          <div className="flex flex-row gap-3 items-center justify-center">
-            {slides.map((item: any, index: any) => {
-              return (
-                <div
-                  className={
-                    index == slide
-                      ? "w-16 h-4 rounded-full bg-primary-500"
-                      : "w-4 h-4 rounded-full bg-neutral-300"
-                  }
-                />
               );
             })}
+
+            <Button
+              icon={<ArrowRight />}
+              type="secondary"
+              size="sm"
+              onClick={nextSlide}
+              className="hidden md:flex"
+            />
           </div>
-          <Button
-            icon={<ArrowRight />}
-            type="secondary"
-            size="xs"
-            onClick={nextSlide}
-            className="flex md:hidden"
-          />
+
+          <div className="flex flex-row gap-10 items-center justify-center">
+            <Button
+              icon={<ArrowLeft />}
+              type="secondary"
+              size="xs"
+              onClick={prevSlide}
+              className="flex md:hidden"
+            />
+            <div className="flex flex-row gap-3 items-center justify-center">
+              {slides.map((item: any, index: any) => {
+                return (
+                  <div
+                    className={
+                      index == slide
+                        ? "w-16 h-4 rounded-full bg-primary-500"
+                        : "w-4 h-4 rounded-full bg-neutral-300"
+                    }
+                  />
+                );
+              })}
+            </div>
+            <Button
+              icon={<ArrowRight />}
+              type="secondary"
+              size="xs"
+              onClick={nextSlide}
+              className="flex md:hidden"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </Reveal>
   );
 };
 
