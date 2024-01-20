@@ -56,7 +56,7 @@ const Works = () => {
       </div>
 
       <div className="project-highlights-container">
-        {projects.map((project: any, index: number) => (
+        {projects.map((project: any) => (
           <ProjectCard
             title={project.frontmatter.title}
             description={project.frontmatter.description}
@@ -64,7 +64,6 @@ const Works = () => {
             image={project.frontmatter.featuredImage}
             date={project.frontmatter.date}
             type="projects"
-            key={index}
           />
         ))}
       </div>
