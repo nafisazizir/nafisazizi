@@ -1,8 +1,8 @@
 import React from "react";
-import BlogLayout from "../app-components/BlogLayout/BlogLayout";
+import BlogLayout from "../components/BlogLayout/BlogLayout";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
-import BlogHeader from "../app-components/BlogHeader/BlogHeader";
+import BlogHeader from "../components/BlogHeader/BlogHeader";
 
 const BlogDetails = ({ data }: { data: any }) => {
   const { html } = data.markdownRemark;

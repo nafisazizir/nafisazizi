@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import Typist from "react-typist";
 import styled from "styled-components";
-import ButtonPillLarge from "../../app-components/Button/Pill/ButtonPillLarge";
+import ButtonPillLarge from "../../components/Button/Pill/ButtonPillLarge";
 import VerticalLine from "../../assets/icons/vertical-line.svg";
 import { navigate } from "gatsby";
 
