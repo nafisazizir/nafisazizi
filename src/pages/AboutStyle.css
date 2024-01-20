@@ -16,9 +16,9 @@
 .subtitle {
   padding: 18px;
   border-radius: 6px;
-  background-color: var(--primary-100);
+  background-color: var(--background-info);
 
-  color: var(--primary-700);
+  color: var(--typography-info);
 
   /* Paragraph */
   font-family: Inter;
