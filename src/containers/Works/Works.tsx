@@ -35,7 +35,7 @@ const Works = () => {
   const projects = projectsResponse.allMarkdownRemark.nodes;
 
   return (
-    <div className="flex flex-col w-full justify-center items-center gap-18">
+    <div className="flex flex-col w-full justify-center items-center gap-16">
       <div className="w-11/12 lg:w-[800px] text-3xl md:text-4xl lg:text-5xl font-semibold text-black-900 text-center">
         Turning ideas to life through innovative and impactful{" "}
         <span className="text-primary-500">projects</span>

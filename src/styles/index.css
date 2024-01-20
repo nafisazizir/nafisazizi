@@ -3,29 +3,6 @@ body {
   background-color: var(--background-1);
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 1240px;
-  margin: auto;
-  gap: 96px;
-}
-
-@media (max-width: 1240px) {
-  .page {
-    padding: 0px 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .page {
-    padding: 0px 16px;
-    gap: 42px;
-  }
-}
-
 .text-gradient-2-animation {
   background: linear-gradient(
     var(--gradient-angle),
