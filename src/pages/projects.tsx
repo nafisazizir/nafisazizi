@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../app-components/Layout/Layout";
-import BlogCard from "../app-components/BlogCard/BlogCard";
+import ProjectCard from "../app-components/ProjectCard/ProjectCard";
 import { useStaticQuery, graphql } from "gatsby";
 
 const Projects = () => {
@@ -31,18 +31,29 @@ const Projects = () => {
   const projects = projectsResponse.allMarkdownRemark.nodes;
   return (
     <Layout>
-      <div className="flex flex-col gap-8 justify-center items-center">
-        <div className="w-11/12 lg:w-[800px] text-3xl md:text-4xl lg:text-5xl font-semibold text-primary-500 text-center">
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "12px",
+        }}
+      >
+        <div
+          className="display-medium"
+          style={{ color: "var(--primary-default)" }}
+        >
           Previous Projects
         </div>
-        <div className="w-11/12 lg:w-[700px] text-lg md:text-xl lg:text-2xl text-neutral-600 text-center">
-          I turned ideas to life through innovative and impactful projects!
+        <div className="paragraph-xlarge">
+          learn more about my innovative and impactful projects
         </div>
       </div>
 
       <div className="project-highlights-container">
         {projects.map((project: any) => (
-          <BlogCard
+          <ProjectCard
             title={project.frontmatter.title}
             description={project.frontmatter.description}
             slug={project.frontmatter.slug}

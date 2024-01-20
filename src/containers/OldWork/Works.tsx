@@ -1,14 +1,17 @@
 import React from "react";
-import Layout from "../app-components/Layout/Layout";
-import ProjectCard from "../app-components/ProjectCard/ProjectCard";
-import { useStaticQuery, graphql } from "gatsby";
+import "./style.css";
+import ButtonPillLarge from "../../app-components/Button/Pill/ButtonPillLarge";
+import ProjectCard from "../../app-components/ProjectCard/ProjectCard";
+import { useStaticQuery, graphql, navigate } from "gatsby";
 
-const blogs = () => {
-  const blogResponse = useStaticQuery(graphql`
-    query BlogLists {
+const Works = () => {
+  const projectsResponse = useStaticQuery(graphql`
+    query ProjectHighlights {
       allMarkdownRemark(
+        filter: {
+          frontmatter: { slug: { in: ["matkulgue", "peopl", "seanema"] } }
+        }
         sort: { frontmatter: { date: DESC } }
-        filter: { frontmatter: { type: { eq: "blog" } } }
       ) {
         nodes {
           frontmatter {
@@ -28,9 +31,10 @@ const blogs = () => {
       }
     }
   `);
-  const projects = blogResponse.allMarkdownRemark.nodes;
+  const projects = projectsResponse.allMarkdownRemark.nodes;
+
   return (
-    <Layout>
+    <div className="works-container">
       <div
         style={{
           display: "flex",
@@ -44,27 +48,34 @@ const blogs = () => {
           className="display-medium"
           style={{ color: "var(--primary-default)" }}
         >
-          Blogs
+          Previous Works
         </div>
         <div className="paragraph-xlarge">
-          Get to know more about myself through my awe-inspiring stories
+          learn more about my innovative and impactful projects
         </div>
       </div>
 
       <div className="project-highlights-container">
-        {projects.map((project: any) => (
+        {projects.map((project: any, index: number) => (
           <ProjectCard
             title={project.frontmatter.title}
             description={project.frontmatter.description}
             slug={project.frontmatter.slug}
             image={project.frontmatter.featuredImage}
             date={project.frontmatter.date}
-            type="blogs"
+            type="projects"
+            key={index}
           />
         ))}
       </div>
-    </Layout>
+
+      <ButtonPillLarge
+        variant="primary"
+        text="See all my works"
+        onClick={() => navigate("/projects")}
+      />
+    </div>
   );
 };
 
-export default blogs;
+export default Works;

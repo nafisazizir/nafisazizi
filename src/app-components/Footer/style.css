@@ -6,8 +6,8 @@
   align-items: center;
   gap: 24px;
 
-  border-top: 0.5px solid var(--neutral-300);
-  background: var(--white-900);
+  border-top: 0.5px solid var(--neutral-200);
+  background: var(--neutral-100);
 }
 
 .footer {
