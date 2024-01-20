@@ -1,67 +1,56 @@
-.project-card .content-container {
-  position: relative;
-  width: var(--spacing-72);
-  height: var(--spacing-60);
+.project-card-container {
+  display: flex;
+  width: 300px;
+  padding: 16px;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  cursor: pointer;
+
+  border-radius: 16px;
+  border: 1px solid var(--border-default);
+  background: var(--background-1);
 }
 
-.project-card .description {
-  position: absolute;
-  opacity: 0;
-  transition: opacity var(--transition-duration-5) ease;
+.project-card-container .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
 }
 
-.project-card .title {
-  position: absolute;
-  transition: opacity var(--transition-duration-5) ease;
+.project-card-container .featured-img {
+  width: 100%;
+  border-radius: 12px;
 }
 
-.project-card:hover {
-  .title {
-    opacity: 0;
-  }
-  .description {
-    opacity: 1;
-  }
+.project-card-container:hover {
+  border: 1px solid var(--border-hover);
+  background: var(--background-3);
 }
 
-.project-card .image {
-  transform: scale(1);
-  transition: transform var(--transition-duration-5) ease;
-}
-
-.project-card:hover .image {
-  transform: scale(1.1);
-  transition: transform var(--transition-duration-5) ease;
-}
-
-.project-card .image-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  background-color: var(--black-alpha-60);
-  z-index: 90;
-
-  opacity: 0;
-  transition: opacity var(--transition-duration-5) ease;
-}
-
-.project-card:hover .image-overlay {
-  opacity: 1;
-  transition: opacity var(--transition-duration-5) ease;
+.details-wrapper {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
 }
 
 @media (max-width: 768px) {
-  .project-card {
-    width: 100%;
-  }
-  .project-card .content-container {
-    position: relative;
+  .project-card-container {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
     width: auto;
-    height: auto;
-    flex-grow: 1;
-    height: var(--spacing-40);
+    align-self: stretch;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .project-card-container .featured-img {
+    order: 2;
+    border-radius: 6px;
   }
 }

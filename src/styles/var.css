@@ -161,9 +161,6 @@
 
   --transition-duration-1: 100ms;
   --transition-duration-2: 200ms;
-  --transition-duration-3: 300ms;
-  --transition-duration-4: 400ms;
-  --transition-duration-5: 500ms;
 }
 
 [data-theme="dark"] {
