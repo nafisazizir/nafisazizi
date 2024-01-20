@@ -127,7 +127,7 @@ const Featured = () => {
                 }
               >
                 <div className="flex md:hidden flex-col items-center justify-center gap-4">
-                  <div className="text-2xl font-medium text-center text-black-900">
+                  <div className="text-2xl font-medium text-center">
                     {item.alt}
                   </div>
                   <Button
@@ -140,7 +140,7 @@ const Featured = () => {
 
                 <div className="featured-card w-full">
                   <div className="hidden md:flex flex-col gap-10 justify-center items-start">
-                    <div className="text-3xl md:text-xl lg:text-3xl font-medium text-black-900">
+                    <div className="text-3xl md:text-xl lg:text-3xl font-medium">
                       {item.alt}
                     </div>
                     <Button
