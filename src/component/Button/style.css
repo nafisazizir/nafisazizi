@@ -1,11 +1,12 @@
 .button.xl {
+  display: inline-flex;
   padding: var(--spacing-7, 14px) var(--spacing-10, 24px);
   align-items: center;
   gap: var(--spacing-6, 12px);
   border-radius: var(--rounded-xl, 12px);
 
   /* md/medium */
-  text-align: center;
+  text-align: right;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -23,13 +24,14 @@
 }
 
 .button.lg {
+  display: inline-flex;
   padding: var(--spacing-7, 14px) var(--spacing-9, 20px);
   align-items: center;
   gap: var(--spacing-4, 8px);
   border-radius: var(--rounded-lg, 8px);
 
   /* sm/medium */
-  text-align: center;
+  text-align: right;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -47,13 +49,14 @@
 }
 
 .button.md {
+  display: inline-flex;
   padding: var(--spacing-5, 10px) var(--spacing-8, 16px);
   align-items: center;
   gap: var(--spacing-4, 8px);
   border-radius: var(--rounded-lg, 8px);
 
   /* sm/medium */
-  text-align: center;
+  text-align: right;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -71,13 +74,14 @@
 }
 
 .button.sm {
+  display: inline-flex;
   padding: var(--spacing-3, 6px) var(--spacing-6, 12px);
   align-items: center;
   gap: var(--spacing-4, 8px);
   border-radius: var(--rounded-lg, 8px);
 
   /* sm/medium */
-  text-align: center;
+  text-align: right;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -95,13 +99,14 @@
 }
 
 .button.xs {
+  display: inline-flex;
   padding: var(--spacing-1, 2px) var(--spacing-4, 8px);
   align-items: center;
   gap: var(--spacing-4, 8px);
   border-radius: var(--rounded-md, 6px);
 
   /* sm/medium */
-  text-align: center;
+  text-align: right;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;

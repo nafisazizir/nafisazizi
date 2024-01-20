@@ -19,7 +19,6 @@ type ButtonProps = {
   leftIcon?: boolean;
   rightIcon?: boolean;
   onClick: () => void;
-  className?: string;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -32,18 +31,17 @@ const Button: React.FC<ButtonProps> = ({
   leftIcon = false,
   rightIcon = true,
   onClick,
-  className = "",
 }) => {
   const classNames = [
-    "button flex",
+    "button",
     size && size,
     type && type,
     state && state,
     content ? "" : "icon-only",
-    className,
   ]
     .filter(Boolean)
     .join(" ");
+  console.log(classNames);
 
   return (
     <button
