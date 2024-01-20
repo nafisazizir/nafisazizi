@@ -1,8 +1,10 @@
 const fs = require("fs");
 const _ = require("lodash");
 
+// Load the exported variables from Figma
 const data = require("./variableFigma.json");
 
+// Define the fields that contain colors and their respective Tailwind keywords
 const COLOR_FIELDS = {
   white: "white",
   black: "black",
@@ -13,9 +15,9 @@ const COLOR_FIELDS = {
   success: "success",
 };
 
+// Define the fields that contain spacing
 const SPACING_FIELD = "spacing";
 
-const cssVariable = {};
 const processedData = {
   theme: {
     colors: {},
@@ -23,40 +25,33 @@ const processedData = {
   },
 };
 
+// Process colors
 Object.entries(COLOR_FIELDS).forEach(([field, keyword]) => {
   if (data[field]) {
     Object.entries(data[field])
       .sort()
       .forEach(([key, value]) => {
-        const cssColorName = `--${keyword}-${key
-          .toLowerCase()
-          .replace(" ", "-")}`;
+        // Create color name as 'bg-critical', 'border-neutral', 'fg-primary', etc.
         const tailwindColorName = `${keyword}-${key
           .toLowerCase()
           .replace(" ", "-")}`;
 
-        cssVariable[cssColorName] = value["$value"];
-        processedData.theme.colors[tailwindColorName] = `var(${cssColorName})`;
+        // Map color names to their respective values
+        processedData.theme.colors[tailwindColorName] = value["$value"];
       });
   }
 });
 
+// Process spacing
 if (data[SPACING_FIELD]) {
   Object.entries(data[SPACING_FIELD])
     .sort(([keyA], [keyB]) => parseFloat(keyA) - parseFloat(keyB))
     .forEach(([key, value]) => {
-      cssName = "--spacing-" + key.replace(",", ".");
-
-      cssVariable[cssName] = `${value["$value"]}px`;
-      processedData.theme.spacing[key.replace(",", ".")] = `var(${cssName})`;
+      processedData.theme.spacing[
+        key.replace(",", ".")
+      ] = `${value["$value"]}px`;
     });
 }
-
-const formattedVar = Object.entries(cssVariable)
-  .map(([key, value]) => `${key}: ${value};`)
-  .join("\n");
-
-fs.writeFileSync("cssVar.txt", formattedVar, "utf-8");
 
 fs.writeFileSync(
   "./variableToken.ts",
