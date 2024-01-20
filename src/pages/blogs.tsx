@@ -36,7 +36,16 @@ const blogs = () => {
           Personal Blogs
         </div>
         <div className="w-11/12 lg:w-[700px] text-lg md:text-xl lg:text-2xl text-neutral-600 text-center">
-          I wrote about personal experiences, software engineering, and tech!
+          Talks about personal experiences, software engineering, and tech! I've
+          been lazy to migrate my articles from medium to this personal blog 😅,
+          you can find it{" "}
+          <a
+            href="https://medium.com/@nafisazizi"
+            target="_blank"
+            className="text-primary-500 hover:text-primary-700"
+          >
+            here.
+          </a>
         </div>
       </div>
 
