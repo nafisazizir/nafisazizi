@@ -193,4 +193,129 @@
   --background-3: #2c2c2c;
   --background-4: #343536;
   --background-info: #e0eefe;
+
+  /* new variables */
+  --white-900: #060606;
+  --white-alpha-10: rgba(6, 6, 6, 0.1);
+  --white-alpha-20: rgba(6, 6, 6, 0.2);
+  --white-alpha-30: rgba(6, 6, 6, 0.3);
+  --white-alpha-40: rgba(6, 6, 6, 0.4);
+  --white-alpha-50: rgba(6, 6, 6, 0.5);
+  --white-alpha-60: rgba(6, 6, 6, 0.6);
+  --white-alpha-70: rgba(6, 6, 6, 0.7);
+  --white-alpha-80: rgba(6, 6, 6, 0.8);
+  --white-alpha-90: rgba(6, 6, 6, 0.9);
+
+  --black-900: #ffffff;
+  --black-alpha-10: rgba(255, 255, 255, 0.1);
+  --black-alpha-20: rgba(255, 255, 255, 0.2);
+  --black-alpha-30: rgba(255, 255, 255, 0.3);
+  --black-alpha-40: rgba(255, 255, 255, 0.4);
+  --black-alpha-50: rgba(255, 255, 255, 0.5);
+  --black-alpha-60: rgba(255, 255, 255, 0.6);
+  --black-alpha-70: rgba(255, 255, 255, 0.7);
+  --black-alpha-80: rgba(255, 255, 255, 0.8);
+  --black-alpha-90: rgba(255, 255, 255, 0.9);
+
+  --neutral-100: #212121;
+  --neutral-200: #3f3f3f;
+  --neutral-300: #5b5b5b;
+  --neutral-400: #797979;
+  --neutral-50: #060606;
+  --neutral-500: #969696;
+  --neutral-600: #b2b2b2;
+  --neutral-700: #dfdfdf;
+  --neutral-800: #f5f5f5;
+  --neutral-900: #fafafa;
+
+  --primary-100: #14418c;
+  --primary-200: #1a54b5;
+  --primary-300: #216ce8;
+  --primary-400: #2477ff;
+  --primary-50: #0f326b;
+  --primary-500: #5092ff;
+  --primary-600: #6ca4ff;
+  --primary-700: #9ac0ff;
+  --primary-800: #bbd5ff;
+  --primary-900: #e9f1ff;
+
+  --error-100: #7d201c;
+  --error-200: #a12a24;
+  --error-300: #cf362e;
+  --error-400: #e33b32;
+  --error-50: #5f1915;
+  --error-500: #e9625b;
+  --error-600: #ec7c76;
+  --error-700: #f2a5a1;
+  --error-800: #f6c2bf;
+  --error-900: #fcebeb;
+
+  --warning-100: #835923;
+  --warning-200: #a9732d;
+  --warning-300: #d99339;
+  --warning-400: #eea23f;
+  --warning-50: #64441a;
+  --warning-500: #f1b565;
+  --warning-600: #f4c17e;
+  --warning-700: #f7d4a7;
+  --warning-800: #fae2c3;
+  --warning-900: #fdf6ec;
+
+  --success-100: #196925;
+  --success-200: #218830;
+  --success-300: #2aae3d;
+  --success-400: #2ebf43;
+  --success-50: #13501c;
+  --success-500: #58cc69;
+  --success-600: #73d481;
+  --success-700: #9fe2a9;
+  --success-800: #beebc5;
+  --success-900: #eaf9ec;
+
+  /* focus */
+  --focus-primary: 0px 0px 0px 3px rgba(80, 146, 255, 0.4);
+  --focus-error: 0px 0px 0px 3px rgba(233, 98, 91, 0.4);
+  --focus-warning: 0px 0px 0px 3px rgba(241, 181, 101, 0.4);
+  --focus-success: 0px 0px 0px 3px rgba(88, 204, 105, 0.4);
+
+  --spacing-0: 0px;
+  --spacing-1: 2px;
+  --spacing-2: 4px;
+  --spacing-3: 6px;
+  --spacing-4: 8px;
+  --spacing-5: 10px;
+  --spacing-6: 12px;
+  --spacing-7: 14px;
+  --spacing-8: 16px;
+  --spacing-9: 20px;
+  --spacing-10: 24px;
+  --spacing-11: 28px;
+  --spacing-12: 32px;
+  --spacing-13: 36px;
+  --spacing-14: 40px;
+  --spacing-15: 44px;
+  --spacing-16: 48px;
+  --spacing-17: 56px;
+  --spacing-18: 64px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-28: 112px;
+  --spacing-32: 128px;
+  --spacing-36: 144px;
+  --spacing-40: 160px;
+  --spacing-44: 176px;
+  --spacing-48: 192px;
+  --spacing-52: 208px;
+  --spacing-56: 224px;
+  --spacing-60: 240px;
+  --spacing-64: 256px;
+  --spacing-72: 288px;
+  --spacing-80: 320px;
+  --spacing-96: 384px;
+
+  --transition-duration-1: 100ms;
+  --transition-duration-2: 200ms;
+  --transition-duration-3: 300ms;
+  --transition-duration-4: 400ms;
+  --transition-duration-5: 500ms;
 }

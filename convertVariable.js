@@ -1,7 +1,8 @@
 const fs = require("fs");
 const _ = require("lodash");
 
-const data = require("./variableFigma.json");
+// const data = require("./variableFigma.json");
+const data = require("./variableFigmaDark.json");
 
 const COLOR_FIELDS = {
   white: "white",
