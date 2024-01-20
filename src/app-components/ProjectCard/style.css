@@ -1,0 +1,67 @@
+.project-card .content-container {
+  position: relative;
+  width: var(--spacing-72);
+  height: var(--spacing-60);
+}
+
+.project-card .description {
+  position: absolute;
+  opacity: 0;
+  transition: opacity var(--transition-duration-5) ease;
+}
+
+.project-card .title {
+  position: absolute;
+  transition: opacity var(--transition-duration-5) ease;
+}
+
+.project-card:hover {
+  .title {
+    opacity: 0;
+  }
+  .description {
+    opacity: 1;
+  }
+}
+
+.project-card .image {
+  transform: scale(1);
+  transition: transform var(--transition-duration-5) ease;
+}
+
+.project-card:hover .image {
+  transform: scale(1.1);
+  transition: transform var(--transition-duration-5) ease;
+}
+
+.project-card .image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: var(--black-alpha-60);
+  z-index: 90;
+
+  opacity: 0;
+  transition: opacity var(--transition-duration-5) ease;
+}
+
+.project-card:hover .image-overlay {
+  opacity: 1;
+  transition: opacity var(--transition-duration-5) ease;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+  .project-card .content-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    flex-grow: 1;
+    height: var(--spacing-40);
+  }
+}

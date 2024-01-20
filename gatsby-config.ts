@@ -14,6 +14,9 @@ const config: GatsbyConfig = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-postcss",
+    "gatsby-transformer-ffmpeg",
+    "gatsby-plugin-ffmpeg",
     {
       resolve: `gatsby-transformer-remark`,
       options: {

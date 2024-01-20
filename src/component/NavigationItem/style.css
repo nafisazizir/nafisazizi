@@ -1,0 +1,98 @@
+.nav-item.workspace {
+  display: flex;
+  padding: var(--spacing-3, 6px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: var(--spacing-2, 4px);
+  background: var(--black-900, #060606);
+  transition: box-shadow var(--transition-duration-1) ease;
+
+  .icon svg {
+    color: var(--white-900, #fff);
+    height: var(--spacing-9);
+    width: var(--spacing-9);
+  }
+
+  &:active:not([disabled]) {
+    box-shadow: var(--focus-primary);
+  }
+}
+
+.nav-item.item {
+  display: inline-flex;
+  padding: var(--spacing-5, 10px) var(--spacing-8, 16px);
+  align-items: flex-start;
+  gap: var(--spacing-4, 8px);
+
+  border-radius: var(--spacing-4, 8px);
+  color: var(--neutral-600, #5b5b5b);
+  transition: background-color var(--transition-duration-2) ease,
+    color var(--transition-duration-2) ease,
+    box-shadow var(--transition-duration-1) ease;
+
+  /* sm/medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+
+  .icon svg {
+    width: var(--spacing-9, 20px);
+    height: var(--spacing-9, 20px);
+  }
+
+  &:hover {
+    background: var(--neutral-100, #f5f5f5);
+  }
+
+  &.active {
+    color: var(--neutral-900, #060606);
+    background: var(--neutral-100, #f5f5f5);
+  }
+
+  &:active:not([disabled]) {
+    box-shadow: var(--focus-primary);
+  }
+}
+
+.nav-item.button {
+  display: inline-flex;
+  padding: var(--spacing-5, 10px) var(--spacing-8, 16px);
+  align-items: flex-start;
+  gap: var(--spacing-4, 8px);
+  border: 1px solid var(--neutral-200, #dfdfdf);
+
+  border-radius: var(--spacing-4, 8px);
+  color: var(--neutral-600, #5b5b5b);
+  transition: background-color var(--transition-duration-2) ease,
+    color var(--transition-duration-2) ease,
+    box-shadow var(--transition-duration-1) ease;
+
+  /* sm/medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+
+  .icon svg {
+    width: var(--spacing-9, 20px);
+    height: var(--spacing-9, 20px);
+  }
+
+  &:hover {
+    background: var(--neutral-100, #f5f5f5);
+  }
+
+  &.active {
+    color: var(--neutral-900, #060606);
+    background: var(--neutral-100, #f5f5f5);
+  }
+
+  &:active:not([disabled]) {
+    box-shadow: var(--focus-primary);
+  }
+}

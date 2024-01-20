@@ -1,5 +1,5 @@
 import React from "react";
-import BlogLayout from "../components/BlogLayout/BlogLayout";
+import BlogLayout from "../app-components/BlogLayout/BlogLayout";
 import { graphql, useStaticQuery } from "gatsby";
 import "./AboutStyle.css";
 import Img from "gatsby-image";
@@ -39,8 +39,9 @@ const about = () => {
 
       <div className="subtitle">
         Crafted, designed, and coded with passion by Nafis Azizi Riza,
-        completing Computer Science 💻🏫 undergraduate at the Universitas
-        Indonesia | Outdoor Enthusiast, Adventurer, Explorer 🥾🏄🏻‍♂️.
+        completing Computer Science undergraduate at The University of
+        Queensland & University of Indonesia | Outdoor Enthusiast, Adventurer,
+        Explorer 🥾🏄🏻‍♂️.
       </div>
 
       <div
