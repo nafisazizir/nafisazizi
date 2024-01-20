@@ -10,7 +10,7 @@
 .blog-header .profile-pic {
   width: 50px;
   height: 50px;
-  background-color: var(--background-info);
+  background-color: var(--primary-500);
   border-radius: 50px;
 }
 
@@ -23,7 +23,7 @@
 
 .blog-header .info a {
   position: relative;
-  color: var(--typography-primary);
+  color: var(--black-900);
 }
 
 .blog-header .info a:hover {
@@ -38,7 +38,7 @@
   height: 1.5px;
   bottom: 0;
   left: 0;
-  background-color: var(--typography-primary);
+  background-color: var(--black-900);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

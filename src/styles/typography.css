@@ -7,7 +7,7 @@ body {
 }
 
 .display-large {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Display/Large */
   font-family: Inter;
@@ -18,7 +18,7 @@ body {
 }
 
 .display-medium {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Display/Medium */
   font-family: Inter;
@@ -29,7 +29,7 @@ body {
 }
 
 .display-small {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Display/Small */
   font-family: Inter;
@@ -40,7 +40,7 @@ body {
 }
 
 .display-xsmall {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Display/XSmall */
   font-family: Inter;
@@ -60,7 +60,7 @@ h6 {
 }
 
 h1 {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Heading/1 */
   font-family: Inter;
@@ -71,7 +71,7 @@ h1 {
 }
 
 h2 {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Heading/2 */
   font-family: Inter;
@@ -82,7 +82,7 @@ h2 {
 }
 
 h3 {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Heading/3 */
   font-family: Inter;
@@ -93,7 +93,7 @@ h3 {
 }
 
 h4 {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Heading/4 */
   font-family: Inter;
@@ -104,7 +104,7 @@ h4 {
 }
 
 h5 {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Heading/5 */
   font-family: Inter;
@@ -115,7 +115,7 @@ h5 {
 }
 
 h6 {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Heading/6 */
   font-family: Inter;
@@ -126,7 +126,7 @@ h6 {
 }
 
 .label-xlarge {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Label/XLarge */
   font-family: Inter;
@@ -137,7 +137,7 @@ h6 {
 }
 
 .label-large {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Label/Large */
   font-family: Inter;
@@ -148,7 +148,7 @@ h6 {
 }
 
 .label-medium {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Label/Medium */
   font-family: Inter;
@@ -159,7 +159,7 @@ h6 {
 }
 
 .label-small {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Label/Small */
   font-family: Inter;
@@ -170,7 +170,7 @@ h6 {
 }
 
 .label-xsmall {
-  color: var(--typography-primary);
+  color: var(--black-900);
 
   /* Label/XSmall */
   font-family: Inter;
