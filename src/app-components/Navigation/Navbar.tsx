@@ -44,7 +44,6 @@ const Navbar = () => {
           <NavigationItem to="/" type="item" content="Home" />
           <NavigationItem to="/projects" type="item" content="Projects" />
           <NavigationItem to="/blogs" type="item" content="Blogs" />
-          <NavigationItem to="/cv" type="item" content="CV" />
           <NavigationItem to="/about" type="item" content="About" />
         </div>
 
@@ -68,13 +67,12 @@ const Navbar = () => {
       <div
         className={`absolute left-0 ${
           nav ? "top-[72px]" : "top-[-100%]"
-        } flex flex-col px-12 py-8 gap-2 w-full z-0 justify-center bg-white-900 border-b border-neutral-200 transition-all ease-in-out duration-500`}
+        } flex flex-col px-12 py-8 gap-2 w-full z-50 justify-center bg-white-900 border-b border-neutral-200 transition-all ease-in-out duration-500`}
         onClick={handleLinkClick}
       >
         <NavigationItem to="/" type="item" content="Home" />
         <NavigationItem to="/projects" type="item" content="Projects" />
         <NavigationItem to="/blogs" type="item" content="Blogs" />
-        <NavigationItem to="/cv" type="item" content="CV" />
         <NavigationItem to="/about" type="item" content="About" />
       </div>
     </>
