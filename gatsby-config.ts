@@ -78,7 +78,7 @@ const config: GatsbyConfig = {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "Nafis Azizi Riza",
-        icon: "src/assets/icons/logo.svg",
+        icon: "src/assets/icons/logo.png",
       },
     },
   ],
