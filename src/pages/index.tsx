@@ -7,7 +7,7 @@ import Hero from "../containers/Hero/Hero";
 
 const Home = () => {
   return (
-    <Layout page="landing">
+    <Layout>
       <Hero />
       <Featured />
       {/* <MarqueeSlider /> */}
