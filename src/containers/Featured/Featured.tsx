@@ -112,7 +112,7 @@ const Featured = () => {
         </div>
 
         <div className="flex flex-col w-full items-center justify-center gap-12">
-          <div className="flex flex-row mx-2 self-stretch justify-between items-center gap-18">
+          <div className="flex flex-row self-stretch justify-between items-center gap-18">
             <Button
               icon={<ArrowLeft />}
               type="secondary"
@@ -121,22 +121,28 @@ const Featured = () => {
               className="hidden md:flex"
             />
 
-            <div className="relative">
-              {slides.map((item: any, index: any) => {
-                return (
-                  <div
-                    className={
-                      index === 0
-                        ? index === slide
-                          ? "flex flex-col w-full gap-10 featured-container-0 active"
-                          : "flex flex-col w-full gap-10 featured-container-0"
-                        : index === slide
-                        ? "featured-container active"
-                        : "featured-container"
-                    }
-                  >
-                    <div className="flex md:hidden flex-col items-center justify-center gap-4">
-                      <div className="text-2xl font-medium text-center text-black-900">
+            {slides.map((item: any, index: any) => {
+              return (
+                <div
+                  className={
+                    index === slide ? "flex flex-col w-full gap-10" : "hidden"
+                  }
+                >
+                  <div className="flex md:hidden flex-col items-center justify-center gap-4">
+                    <div className="text-2xl font-medium text-center text-black-900">
+                      {item.alt}
+                    </div>
+                    <Button
+                      content="Read full story"
+                      size="sm"
+                      icon={<Newspaper />}
+                      onClick={() => navigate("/blogs/nus-exchange/")}
+                    />
+                  </div>
+
+                  <div className="featured-card w-full">
+                    <div className="hidden md:flex flex-col gap-10 justify-center items-start">
+                      <div className="text-3xl md:text-xl lg:text-3xl font-medium text-black-900">
                         {item.alt}
                       </div>
                       <Button
@@ -144,50 +150,36 @@ const Featured = () => {
                         size="sm"
                         icon={<Newspaper />}
                         onClick={() => navigate("/blogs/nus-exchange/")}
+                        className="lg:hidden"
+                      />
+                      <Button
+                        content="Read full story"
+                        size="md"
+                        icon={<Newspaper />}
+                        onClick={() => navigate("/blogs/nus-exchange/")}
+                        className="hidden lg:flex"
                       />
                     </div>
-
-                    <div className="featured-card w-full">
-                      <div className="hidden md:flex flex-col gap-10 justify-center items-start">
-                        <div className="text-3xl md:text-xl lg:text-3xl font-medium text-black-900">
-                          {item.alt}
-                        </div>
-                        <Button
-                          content="Read full story"
-                          size="sm"
-                          icon={<Newspaper />}
-                          onClick={() => navigate("/blogs/nus-exchange/")}
-                          className="lg:hidden"
-                        />
-                        <Button
-                          content="Read full story"
-                          size="md"
-                          icon={<Newspaper />}
-                          onClick={() => navigate("/blogs/nus-exchange/")}
-                          className="hidden lg:flex"
-                        />
-                      </div>
-                      <div className="image-container rounded-2xl">
-                        <Img
-                          fluid={item.image1}
-                          alt={item.alt}
-                          key={0}
-                          className="w-full h-full rounded-2xl"
-                        />
-                      </div>
-                      <div className="image-container rounded-2xl">
-                        <Img
-                          fluid={item.image2}
-                          alt={item.alt}
-                          key={1}
-                          className="w-full h-full rounded-2xl"
-                        />
-                      </div>
+                    <div className="image-container rounded-2xl">
+                      <Img
+                        fluid={item.image1}
+                        alt={item.alt}
+                        key={0}
+                        className="w-full h-full rounded-2xl"
+                      />
+                    </div>
+                    <div className="image-container rounded-2xl">
+                      <Img
+                        fluid={item.image2}
+                        alt={item.alt}
+                        key={1}
+                        className="w-full h-full rounded-2xl"
+                      />
                     </div>
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
 
             <Button
               icon={<ArrowRight />}
@@ -212,8 +204,8 @@ const Featured = () => {
                   <div
                     className={
                       index == slide
-                        ? "w-16 h-4 rounded-full bg-primary-500 indicator"
-                        : "w-4 h-4 rounded-full bg-neutral-300 indicator"
+                        ? "w-16 h-4 rounded-full bg-primary-500"
+                        : "w-4 h-4 rounded-full bg-neutral-300"
                     }
                   />
                 );
