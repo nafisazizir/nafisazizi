@@ -11,7 +11,7 @@ const Works = () => {
     query ProjectHighlights {
       allMarkdownRemark(
         filter: {
-          frontmatter: { slug: { in: ["matkulgue", "sparc", "peopl", "seanema"] } }
+          frontmatter: { slug: { in: ["matkulgue", "peopl", "seanema"] } }
         }
         sort: { frontmatter: { date: DESC } }
       ) {
