@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import "./style.css";
 import Typist from "react-typist";
-import Reveal from "../../component/Reveal/Reveal";
-import Button from "../../component/Button/Button";
-import ArrowDownTray from "../../assets/icons/arrow-down-tray.svg";
-import HandRaised from "../../assets/icons/hand-raised.svg";
+import styled from "styled-components";
+import ButtonPillLarge from "../../app-components/Button/Pill/ButtonPillLarge";
+import VerticalLine from "../../assets/icons/vertical-line.svg";
 import { navigate } from "gatsby";
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
 
   const desc = [
-    "A penultimate CS UQ student",
-    "An aspiring software engineer 🧑🏻‍💻",
-    "Adventurer, explorer!",
+    "a junior CS UI student",
+    "an aspiring software engineer",
+    "adventurer, explorer!",
   ];
 
   const onComplete = () => {
@@ -23,52 +22,107 @@ const Hero = () => {
       setIndex(index + 1);
     }
   };
+
+  const HeroSubtitle = styled.div`
+    width: 720px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  `;
+
+  const ButtonContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+
+    @media (max-width: 560px) {
+      gap: 18px;
+    }
+
+    @media (max-width: 380px) {
+      flex-direction: column;
+      gap: 8px;
+    }
+  `;
+
+  const highlightItem = (quant: string, desc: string) => {
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <div className="display-medium">{quant}</div>
+        <div
+          className="label-small"
+          style={{ color: "var(--typography-tertiary)" }}
+        >
+          {desc}
+        </div>
+      </div>
+    );
+  };
+
   return (
-    <Reveal width="100%">
-      <div className="hero-new w-full flex flex-col items-center justify-evenly sm:justify-center sm:gap-16">
-        <div className="flex flex-col w-full h-1/3 items-center justify-center text-4xl sm:text-5xl lg:text-6xl text-center font-semibold text-black-900">
-          <div className="w-9/12 sm:w-full">
-            Hey, it’s{" "}
-            <span className="text-gradient-2-animation">Nafis Azizi</span> here!
-          </div>
+    <div className="hero">
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "24px",
+        }}
+      >
+        <div className="display-large" style={{ textAlign: "center" }}>
+          Hello, I’m Nafis
+        </div>
+        <div className="hero-terminal">
+          <div className="hero-terminal-text">{">>"}</div>
           <Typist
-            className="w-11/12 sm:w-10/12 lg:w-7/12 h-full"
+            className="hero-terminal-text"
             onTypingDone={onComplete}
             stdTypingDelay={20}
             key={index}
           >
             {desc[index]}
-            <Typist.Backspace count={desc[index].length} delay={2500} />
+            <Typist.Backspace count={desc[index].length} delay={1000} />
           </Typist>
         </div>
-
-        <div className="flex flex-col items-center justify-center gap-8">
-          <div className="w-11/12 md:w-[720px] text-center text-lg md:text-2xl text-neutral-600 font-normal">
-            Welcome to where I bring my ideas to life through{" "}
-            <span className="font-mono text-md md:text-xl p-3 bg-neutral-100 rounded-md border border-black-alpha-10">
-              {"<coding/>"}
-            </span>
-            , problem-solving, and a passion for technology
-          </div>
-          <div className="flex flex-row gap-8">
-            <Button
-              content="My Resume"
-              size="xl"
-              type="primary"
-              icon={<ArrowDownTray />}
-              onClick={() => window.open("https://resume.nafisazizi.com/")}
-            />
-            <Button
-              content="About Me"
-              size="xl"
-              type="secondary"
-              icon={<HandRaised />}
-              onClick={() => navigate("/about")}
-            />
-          </div>
-        </div>
       </div>
-    </Reveal>
+
+      <HeroSubtitle>
+        <div className="paragraph-xlarge">
+          Welcome to where I bring my ideas to life through coding,
+          problem-solving, and a passion for technology
+        </div>
+      </HeroSubtitle>
+
+      <ButtonContainer>
+        <ButtonPillLarge
+          text="MY RESUME (.PDF)"
+          variant="primary"
+          onClick={() => window.open("https://resume.nafisazizi.com/")}
+        />
+        <ButtonPillLarge
+          text="GET IN TOUCH"
+          variant="tertiary"
+          onClick={() => navigate("/about")}
+        />
+      </ButtonContainer>
+
+      <div className="highlights">
+        {highlightItem("2+", "EXP. IN SWE")}
+        <VerticalLine className="vertical-line" />
+        {highlightItem("10+", "PROJECTS")}
+        <VerticalLine className="vertical-line" />
+        {highlightItem("5+", "AWARDS")}
+      </div>
+    </div>
   );
 };
 
