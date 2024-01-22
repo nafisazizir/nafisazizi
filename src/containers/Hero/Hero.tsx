@@ -28,8 +28,8 @@ const Hero = () => {
       <div className="hero-new w-full flex flex-col items-center justify-evenly sm:justify-center sm:gap-16">
         <div className="flex flex-col w-full h-1/3 items-center justify-center text-4xl sm:text-5xl lg:text-6xl text-center font-semibold text-black-900">
           <div className="w-9/12 sm:w-full">
-            Hey, it’s{" "}
-            <span className="text-gradient-2-animation">Nafis Azizi</span> here!
+            Hey, it’s <span className="text-primary-500">Nafis Azizi</span>{" "}
+            here!
           </div>
           <Typist
             className="w-11/12 sm:w-10/12 lg:w-7/12 h-full"

@@ -15,13 +15,12 @@
   transition: opacity var(--transition-duration-5) ease;
 }
 
-.project-card:hover {
-  .title {
-    opacity: 0;
-  }
-  .description {
-    opacity: 1;
-  }
+.project-card:hover .title {
+  opacity: 0;
+}
+
+.project-card:hover .description {
+  opacity: 1;
 }
 
 .project-card .image {

@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       className="project-card flex flex-row items-center justify-center gap-9 cursor-pointer"
       onClick={() => navigate("/" + type + "/" + slug)}
     >
-      <div className="relative flex w-40 h-40 md:w-60 md:h-60 justify-center items-center overflow-hidden rounded-xl md:rounded-2xl">
+      <div className="relative image-cobaya flex w-40 h-40 md:w-60 md:h-60 justify-center items-center overflow-hidden rounded-xl md:rounded-2xl">
         <div className="image-overlay flex justify-center items-center">
           <Button
             content="Learn more"

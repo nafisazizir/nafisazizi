@@ -8,16 +8,16 @@
   border-radius: var(--spacing-2, 4px);
   background: var(--black-900, #060606);
   transition: box-shadow var(--transition-duration-1) ease;
+}
 
-  .icon svg {
-    color: var(--white-900, #fff);
-    height: var(--spacing-9);
-    width: var(--spacing-9);
-  }
+.nav-item.workspace .icon svg {
+  color: var(--white-900, #fff);
+  height: var(--spacing-9);
+  width: var(--spacing-9);
+}
 
-  &:active:not([disabled]) {
-    box-shadow: var(--focus-primary);
-  }
+.nav-item.workspace:active:not([disabled]) {
+  box-shadow: var(--focus-primary);
 }
 
 .nav-item.item {
@@ -38,24 +38,24 @@
   font-style: normal;
   font-weight: 500;
   line-height: 20px; /* 142.857% */
+}
 
-  .icon svg {
-    width: var(--spacing-9, 20px);
-    height: var(--spacing-9, 20px);
-  }
+.nav-item.item.icon svg {
+  width: var(--spacing-9, 20px);
+  height: var(--spacing-9, 20px);
+}
 
-  &:hover {
-    background: var(--neutral-100, #f5f5f5);
-  }
+.nav-item.item:hover {
+  background: var(--neutral-100, #f5f5f5);
+}
 
-  &.active {
-    color: var(--neutral-900, #060606);
-    background: var(--neutral-100, #f5f5f5);
-  }
+.nav-item.item.active {
+  color: var(--neutral-900, #060606);
+  background: var(--neutral-100, #f5f5f5);
+}
 
-  &:active:not([disabled]) {
-    box-shadow: var(--focus-primary);
-  }
+.nav-item.item:active:not([disabled]) {
+  box-shadow: var(--focus-primary);
 }
 
 .nav-item.button {
@@ -77,22 +77,22 @@
   font-style: normal;
   font-weight: 500;
   line-height: 20px; /* 142.857% */
+}
 
-  .icon svg {
-    width: var(--spacing-9, 20px);
-    height: var(--spacing-9, 20px);
-  }
+.nav-item.button.icon svg {
+  width: var(--spacing-9, 20px);
+  height: var(--spacing-9, 20px);
+}
 
-  &:hover {
-    background: var(--neutral-100, #f5f5f5);
-  }
+.nav-item.button:hover {
+  background: var(--neutral-100, #f5f5f5);
+}
 
-  &.active {
-    color: var(--neutral-900, #060606);
-    background: var(--neutral-100, #f5f5f5);
-  }
+.nav-item.button.active {
+  color: var(--neutral-900, #060606);
+  background: var(--neutral-100, #f5f5f5);
+}
 
-  &:active:not([disabled]) {
-    box-shadow: var(--focus-primary);
-  }
+.nav-item.button:active:not([disabled]) {
+  box-shadow: var(--focus-primary);
 }
