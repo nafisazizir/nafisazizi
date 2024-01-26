@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import NavigationItem from "../../component/NavigationItem/NavigationItem";
-import Button from "../../component/Button/Button";
+import NavigationItem from "../../components/NavigationItem/NavigationItem";
+import Button from "../../components/Button/Button";
 import XMark from "../../assets/icons/x-mark.svg";
 import Sun from "../../assets/icons/sun.svg";
 import Moon from "../../assets/icons/moon.svg";

@@ -22,7 +22,12 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
     .join(" ");
 
   return (
-    <Link className={classNames} to={to} activeClassName="active">
+    <Link
+      className={classNames}
+      to={to}
+      activeClassName="active"
+      partiallyActive={content === "Home" ? false : true}
+    >
       {type == "workspace" && (
         <span className="icon">
           <Logo />

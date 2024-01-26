@@ -1,9 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql, navigate } from "gatsby";
 import ProjectCard from "../../app-components/ProjectCard/ProjectCard";
-import Button from "../../component/Button/Button";
+import Button from "../../components/Button/Button";
 import LightBulb from "../../assets/icons/light-bulb.svg";
-import Reveal from "../../component/Reveal/Reveal";
+import Reveal from "../../components/Reveal/Reveal";
 import "./style.css";
 
 const Works = () => {
@@ -11,7 +11,9 @@ const Works = () => {
     query ProjectHighlights {
       allMarkdownRemark(
         filter: {
-          frontmatter: { slug: { in: ["matkulgue", "sparc", "peopl", "seanema"] } }
+          frontmatter: {
+            slug: { in: ["matkulgue", "sparc", "peopl", "seanema"] }
+          }
         }
         sort: { frontmatter: { date: DESC } }
       ) {

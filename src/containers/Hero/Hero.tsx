@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./style.css";
 import Typist from "react-typist";
-import Reveal from "../../component/Reveal/Reveal";
-import Button from "../../component/Button/Button";
+import Reveal from "../../components/Reveal/Reveal";
+import Button from "../../components/Button/Button";
 import ArrowDownTray from "../../assets/icons/arrow-down-tray.svg";
 import HandRaised from "../../assets/icons/hand-raised.svg";
 import { navigate } from "gatsby";

@@ -2,8 +2,8 @@ import React from "react";
 import "./style.css";
 import LinkedIn from "../../assets/icons/linkedin.svg";
 import Github from "../../assets/icons/github.svg";
-import Button from "../../component/Button/Button";
-import NavigationItem from "../../component/NavigationItem/NavigationItem";
+import Button from "../../components/Button/Button";
+import NavigationItem from "../../components/NavigationItem/NavigationItem";
 import Envelope from "../../assets/icons/envelope.svg";
 
 const Footer = () => {

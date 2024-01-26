@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./FeaturedStyle.css";
-import Button from "../../component/Button/Button";
+import Button from "../../components/Button/Button";
 import { graphql, navigate, useStaticQuery } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
 import ArrowLeft from "../../assets/icons/arrow-left.svg";
 import ArrowRight from "../../assets/icons/arrow-right.svg";
 import Newspaper from "../../assets/icons/newspaper.svg";
-import Reveal from "../../component/Reveal/Reveal";
+import Reveal from "../../components/Reveal/Reveal";
 
 interface ImageQuery {
   allImageSharp: {

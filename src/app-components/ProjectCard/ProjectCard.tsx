@@ -1,7 +1,7 @@
 import React from "react";
 import Img from "gatsby-image";
 import { navigate } from "gatsby";
-import Button from "../../component/Button/Button";
+import Button from "../../components/Button/Button";
 import Newspaper from "../../assets/icons/newspaper.svg";
 import "./style.css";
 
