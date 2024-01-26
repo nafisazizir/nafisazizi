@@ -32,11 +32,17 @@ const BlogCard: React.FC<BlogCardProps> = ({
         className="blog-card-container"
         onClick={() => navigate("/" + type + "/" + slug)}
       >
-        <Img fluid={image.childImageSharp.fluid} className="featured-img" />
+        <div className="featured-img-container">
+          <Img fluid={image.childImageSharp.fluid} className="featured-img" />
+        </div>
         <div className="details">
-          <div className="label-large">{title}</div>
-          <div className="paragraph-medium details-wrapper">{description}</div>
-          <div className="paragraph-small">{formattedDate}</div>
+          <div className="text-xl md:text-2xl text-black-900 font-medium">
+            {title}
+          </div>
+          <div className="text-sm md:text-md text-neutral-600 details-wrapper">
+            {description}
+          </div>
+          <div className="text-sm text-neutral-600">{formattedDate}</div>
         </div>
       </div>
     </>

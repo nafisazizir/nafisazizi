@@ -159,6 +159,14 @@
   --spacing-80: 320px;
   --spacing-96: 384px;
 
+  --rounded: 4px;
+  --rounded-md: 6px;
+  --rounded-lg: 8px;
+  --rounded-xl: 12px;
+  --rounded-2xl: 16px;
+  --rounded-3xl: 24px;
+  --rounded-full: 9999px;
+
   --transition-duration-1: 100ms;
   --transition-duration-2: 200ms;
   --transition-duration-3: 300ms;
@@ -312,6 +320,14 @@
   --spacing-72: 288px;
   --spacing-80: 320px;
   --spacing-96: 384px;
+
+  --rounded: 4px;
+  --rounded-md: 6px;
+  --rounded-lg: 8px;
+  --rounded-xl: 12px;
+  --rounded-2xl: 16px;
+  --rounded-3xl: 24px;
+  --rounded-full: 9999px;
 
   --transition-duration-1: 100ms;
   --transition-duration-2: 200ms;
