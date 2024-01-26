@@ -96,6 +96,13 @@
 .blog-content ul {
   margin: 0px;
   padding-left: 30px;
+  list-style-type: disc;
+}
+
+.blog-content ol {
+  margin: 0px;
+  padding-left: 30px;
+  list-style-type: decimal;
 }
 
 .blog-content li {

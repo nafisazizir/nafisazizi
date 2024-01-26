@@ -1,15 +1,17 @@
 import React from "react";
-import "./style.css";
-import ButtonPillLarge from "../../components/Button/Pill/ButtonPillLarge";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { useStaticQuery, graphql, navigate } from "gatsby";
+import ProjectCard from "../../app-components/ProjectCard/ProjectCard";
+import Button from "../../component/Button/Button";
+import LightBulb from "../../assets/icons/light-bulb.svg";
+import Reveal from "../../component/Reveal/Reveal";
+import "./style.css";
 
 const Works = () => {
   const projectsResponse = useStaticQuery(graphql`
     query ProjectHighlights {
       allMarkdownRemark(
         filter: {
-          frontmatter: { slug: { in: ["matkulgue", "peopl", "seanema"] } }
+          frontmatter: { slug: { in: ["matkulgue", "sparc", "peopl", "seanema"] } }
         }
         sort: { frontmatter: { date: DESC } }
       ) {
@@ -34,46 +36,35 @@ const Works = () => {
   const projects = projectsResponse.allMarkdownRemark.nodes;
 
   return (
-    <div className="works-container">
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "12px",
-        }}
-      >
-        <div
-          className="display-medium"
-          style={{ color: "var(--primary-default)" }}
-        >
-          Previous Works
+    <Reveal>
+      <div className="flex flex-col w-full justify-center items-center gap-16">
+        <div className="w-11/12 lg:w-[800px] text-3xl md:text-4xl lg:text-5xl font-semibold text-black-900 text-center">
+          Turning ideas to life through innovative and impactful{" "}
+          <span className="text-primary-500">projects</span>
         </div>
-        <div className="paragraph-xlarge">
-          learn more about my innovative and impactful projects
+
+        <div className="works-highlights-container">
+          {projects.map((project: any, index: number) => (
+            <ProjectCard
+              title={project.frontmatter.title}
+              description={project.frontmatter.description}
+              slug={project.frontmatter.slug}
+              image={project.frontmatter.featuredImage}
+              date={project.frontmatter.date}
+              type="projects"
+              key={index}
+            />
+          ))}
         </div>
-      </div>
 
-      <div className="project-highlights-container">
-        {projects.map((project: any) => (
-          <ProjectCard
-            title={project.frontmatter.title}
-            description={project.frontmatter.description}
-            slug={project.frontmatter.slug}
-            image={project.frontmatter.featuredImage}
-            date={project.frontmatter.date}
-            type="projects"
-          />
-        ))}
+        <Button
+          content="All projects"
+          size="lg"
+          icon={<LightBulb />}
+          onClick={() => navigate("/projects/")}
+        />
       </div>
-
-      <ButtonPillLarge
-        variant="primary"
-        text="See all my works"
-        onClick={() => navigate("/projects")}
-      />
-    </div>
+    </Reveal>
   );
 };
 
