@@ -73,10 +73,10 @@
 
 .blog-content code {
   padding: 1px 6px;
-  background-color: var(--background-4);
+  background-color: var(--neutral-100);
   border-radius: 4px;
 
-  color: var(--typography-code);
+  color: var(--neutral-600);
   text-align: start;
   font-family: Roboto Mono;
   font-size: 16px;
@@ -87,10 +87,12 @@
 
 .blog-content pre {
   padding: 18px;
-  background-color: var(--background-4);
+  background-color: var(--neutral-100);
   border-radius: 4px;
   /* text-wrap: wrap; */
   white-space: pre-wrap;
+
+  min-width: 100%;
 }
 
 .blog-content ul {
