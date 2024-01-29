@@ -64,3 +64,13 @@
     height: var(--spacing-40);
   }
 }
+
+@media (max-width: 375px) {
+  .project-card .description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    line-clamp: 10;
+    -webkit-box-orient: vertical;
+  }
+}
