@@ -33,7 +33,7 @@ const Footer = () => {
             size="sm"
             icon={<Github />}
             onClick={() =>
-              window.open("https://www.linkedin.com/in/nafisazizi/")
+              window.open("https://github.com/nafisazizir")
             }
           />
           <Button
@@ -41,7 +41,7 @@ const Footer = () => {
             size="sm"
             icon={<Envelope />}
             onClick={() =>
-              (window.location.href = "mailto:nafisredzone@gmail.com")
+              (window.location.href = "mailto:nafisaziziriza@gmail.com")
             }
           />
         </div>
