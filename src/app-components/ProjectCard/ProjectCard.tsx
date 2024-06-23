@@ -51,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="title flex items-center top-0 bottom-0 text-start text-black-900 text-sm sm:text-xl md:text-2xl font-medium">
           {title}
         </div>
-        <div className="description flex items-center top-0 bottom-0 text-neutral-600 text-start text-xs md:text-md">
+        <div className="description flex items-center top-0 bottom-0 text-neutral-600 text-start text-xs sm:text-sm md:text-lg">
           {description}
         </div>
       </div>

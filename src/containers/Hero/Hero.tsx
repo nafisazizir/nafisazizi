@@ -11,7 +11,7 @@ const Hero = () => {
   const [index, setIndex] = useState(0);
 
   const desc = [
-    "A penultimate CS UQ student",
+    "A CS UQ student",
     "An aspiring software engineer 🧑🏻‍💻",
     "Adventurer, explorer!",
   ];
