@@ -32,22 +32,20 @@ const Footer = () => {
             type="secondary"
             size="sm"
             icon={<Github />}
-            onClick={() =>
-              window.open("https://github.com/nafisazizir")
-            }
+            onClick={() => window.open("https://github.com/nafisazizir")}
           />
           <Button
             type="secondary"
             size="sm"
             icon={<Envelope />}
             onClick={() =>
-              (window.location.href = "mailto:nafisaziziriza@gmail.com")
+              (window.location.href = "mailto:hello@nafisazizi.com")
             }
           />
         </div>
       </div>
 
-      <div className="paragraph-small">© 2023 Nafis Azizi Riza.</div>
+      <div className="paragraph-small">© 2024 Nafis Azizi Riza.</div>
     </div>
   );
 };
