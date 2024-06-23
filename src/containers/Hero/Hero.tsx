@@ -51,14 +51,14 @@ const Hero = () => {
             , problem-solving, and a passion for technology
           </div>
           <div className="flex flex-wrap items-center justify-center gap-8">
-            <Button
+            {/* <Button
               content="My Resume"
               size="xl"
               type="primary"
               icon={<ArrowDownTray />}
               onClick={() => window.open("https://resume.nafisazizi.com/")}
               className="hidden sm:flex"
-            />
+            /> */}
             <Button
               content="About Me"
               size="xl"
@@ -67,14 +67,14 @@ const Hero = () => {
               onClick={() => navigate("/about")}
               className="hidden sm:flex"
             />
-            <Button
+            {/* <Button
               content="My Resume"
               size="md"
               type="primary"
               icon={<ArrowDownTray />}
               onClick={() => window.open("https://resume.nafisazizi.com/")}
               className="flex sm:hidden"
-            />
+            /> */}
             <Button
               content="About Me"
               size="md"
