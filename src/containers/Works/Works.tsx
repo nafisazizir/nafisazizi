@@ -12,7 +12,7 @@ const Works = () => {
       allMarkdownRemark(
         filter: {
           frontmatter: {
-            slug: { in: ["matkulgue", "sparc", "peopl", "seanema"] }
+            slug: { in: ["uquizzle", "matkulgue", "sparc", "alzheimersnet"] }
           }
         }
         sort: { frontmatter: { date: DESC } }
