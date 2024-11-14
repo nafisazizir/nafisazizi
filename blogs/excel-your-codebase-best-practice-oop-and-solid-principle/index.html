@@ -1,0 +1,1033 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.12.4"/><meta data-react-helmet="true" charSet="utf-8"/><style data-href="/styles.a46f07ab33aee7325707.css" data-identity="gatsby-global-css">@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+/*
+! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com
+*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}:host,html{-webkit-text-size-adjust:100%;font-feature-settings:normal;-webkit-tap-highlight-color:transparent;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-variation-settings:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-feature-settings:normal;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em;font-variation-settings:normal}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{font-feature-settings:inherit;color:inherit;font-family:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.visible{visibility:visible}.absolute{position:absolute}.relative{position:relative}.bottom-0{bottom:var(--spacing-0)}.left-0{left:var(--spacing-0)}.top-0{top:var(--spacing-0)}.top-\[-100\%\]{top:-100%}.top-\[72px\]{top:72px}.z-50{z-index:50}.z-\[99\]{z-index:99}.mx-2{margin-left:var(--spacing-2);margin-right:var(--spacing-2)}.flex{display:flex}.hidden{display:none}.h-1\/3{height:33.333333%}.h-4{height:var(--spacing-4)}.h-40{height:var(--spacing-40)}.h-\[72px\]{height:72px}.h-full{height:100%}.w-11\/12{width:91.666667%}.w-16{width:var(--spacing-16)}.w-4{width:var(--spacing-4)}.w-40{width:var(--spacing-40)}.w-9\/12{width:75%}.w-full{width:100%}.cursor-pointer{cursor:pointer}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-evenly{justify-content:space-evenly}.gap-10{gap:var(--spacing-10)}.gap-12{gap:var(--spacing-12)}.gap-16{gap:var(--spacing-16)}.gap-18{gap:var(--spacing-18)}.gap-2{gap:var(--spacing-2)}.gap-3{gap:var(--spacing-3)}.gap-4{gap:var(--spacing-4)}.gap-6{gap:var(--spacing-6)}.gap-8{gap:var(--spacing-8)}.gap-9{gap:var(--spacing-9)}.self-stretch{align-self:stretch}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-black-alpha-10{border-color:var(--black-alpha-10)}.border-neutral-200{border-color:var(--neutral-200)}.bg-neutral-100{background-color:var(--neutral-100)}.bg-neutral-300{background-color:var(--neutral-300)}.bg-primary-500{background-color:var(--primary-500)}.bg-white-900{background-color:var(--white-900)}.p-3{padding:var(--spacing-3)}.px-12{padding-left:var(--spacing-12);padding-right:var(--spacing-12)}.py-8{padding-bottom:var(--spacing-8);padding-top:var(--spacing-8)}.text-center{text-align:center}.text-start{text-align:start}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.text-black-900{color:var(--black-900)}.text-neutral-600{color:var(--neutral-600)}.text-primary-500{color:var(--primary-500)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-500{transition-duration:.5s}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (min-width:640px){.sm\:flex{display:flex}.sm\:hidden{display:none}.sm\:w-10\/12{width:83.333333%}.sm\:w-full{width:100%}.sm\:justify-center{justify-content:center}.sm\:gap-16{gap:var(--spacing-16)}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-sm{font-size:.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width:768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:h-60{height:var(--spacing-60)}.md\:w-60{width:var(--spacing-60)}.md\:w-\[720px\]{width:720px}.md\:rounded-2xl{border-radius:1rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width:1024px){.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:w-7\/12{width:58.333333%}.lg\:w-\[700px\]{width:700px}.lg\:w-\[800px\]{width:800px}.lg\:text-2xl{font-size:1.5rem;line-height:2rem}.lg\:text-3xl{font-size:1.875rem;line-height:2.25rem}.lg\:text-5xl{font-size:3rem;line-height:1}.lg\:text-6xl{font-size:3.75rem;line-height:1}}.nav-item.workspace{align-items:center;background:var(--black-900,#060606);border-radius:var(--spacing-2,4px);display:flex;flex-direction:column;justify-content:center;padding:var(--spacing-3,6px);transition:box-shadow var(--transition-duration-1) ease}.nav-item.workspace .icon svg{color:var(--white-900,#fff);height:var(--spacing-9);width:var(--spacing-9)}.nav-item.workspace:active:not([disabled]){box-shadow:var(--focus-primary)}.nav-item.item{align-items:flex-start;border-radius:var(--spacing-4,8px);color:var(--neutral-600,#5b5b5b);display:inline-flex;font-family:Inter;font-size:14px;font-style:normal;font-weight:500;gap:var(--spacing-4,8px);line-height:20px;padding:var(--spacing-5,10px) var(--spacing-8,16px);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.nav-item.item.icon svg{height:var(--spacing-9,20px);width:var(--spacing-9,20px)}.nav-item.item.active,.nav-item.item:hover{background:var(--neutral-100,#f5f5f5)}.nav-item.item.active{color:var(--neutral-900,#060606)}.nav-item.item:active:not([disabled]){box-shadow:var(--focus-primary)}.nav-item.button{align-items:flex-start;border:1px solid var(--neutral-200,#dfdfdf);border-radius:var(--spacing-4,8px);color:var(--neutral-600,#5b5b5b);display:inline-flex;font-family:Inter;font-size:14px;font-style:normal;font-weight:500;gap:var(--spacing-4,8px);line-height:20px;padding:var(--spacing-5,10px) var(--spacing-8,16px);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.nav-item.button.icon svg{height:var(--spacing-9,20px);width:var(--spacing-9,20px)}.nav-item.button.active,.nav-item.button:hover{background:var(--neutral-100,#f5f5f5)}.nav-item.button.active{color:var(--neutral-900,#060606)}.nav-item.button:active:not([disabled]){box-shadow:var(--focus-primary)}.button.xl{align-items:center;border-radius:var(--rounded-xl,12px);font-family:Inter;font-size:16px;font-style:normal;font-weight:500;gap:var(--spacing-6,12px);line-height:24px;padding:var(--spacing-7,14px) var(--spacing-10,24px);text-align:center}.button.xl.icon svg{height:24px;width:24px}.button.xl.icon-only{padding:var(--spacing-7,14px)}.button.lg{align-items:center;border-radius:var(--rounded-lg,8px);font-family:Inter;font-size:14px;font-style:normal;font-weight:500;gap:var(--spacing-4,8px);line-height:20px;padding:var(--spacing-7,14px) var(--spacing-9,20px);text-align:center}.button.lg.icon svg{height:20px;width:20px}.button.lg.icon-only{padding:var(--spacing-7,14px)}.button.md{align-items:center;border-radius:var(--rounded-lg,8px);font-family:Inter;font-size:14px;font-style:normal;font-weight:500;gap:var(--spacing-4,8px);line-height:20px;padding:var(--spacing-5,10px) var(--spacing-8,16px);text-align:center}.button.md.icon svg{height:20px;width:20px}.button.md.icon-only{padding:var(--spacing-5,10px)}.button.sm{align-items:center;border-radius:var(--rounded-lg,8px);font-family:Inter;font-size:14px;font-style:normal;font-weight:500;gap:var(--spacing-4,8px);line-height:20px;padding:var(--spacing-3,6px) var(--spacing-6,12px);text-align:center}.button.sm.icon svg{height:20px;width:20px}.button.sm.icon-only{padding:var(--spacing-3,6px)}.button.xs{align-items:center;border-radius:var(--rounded-md,6px);font-family:Inter;font-size:14px;font-style:normal;font-weight:500;gap:var(--spacing-4,8px);line-height:20px;padding:var(--spacing-1,2px) var(--spacing-4,8px);text-align:center}.button.xs.icon svg{height:20px;width:20px}.button.xs.icon-only{padding:var(--spacing-1,2px)}.button.primary{background:var(--primary-500,#2477ff);color:var(--white-900,#fff);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.primary:hover{background-color:var(--primary-600,#216ce8)}.button.primary:active:not([disabled]){background:var(--primary-500,#2477ff);box-shadow:var(--focus-primary)}.button.primary:disabled{background:var(--primary-200,#9ac0ff)}.button.secondary{background:var(--white-900,#fff);border:1px solid var(--neutral-200,#dfdfdf);color:var(--black-900,#060606);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.secondary:hover{background-color:var(--neutral-100,#f5f5f5)}.button.secondary:active:not([disabled]){background:var(--white-900,#fff);box-shadow:var(--focus-primary)}.button.secondary:disabled{background:var(--white-900,#fff);color:var(--neutral-200,#dfdfdf)}.button.tertiary{background:var(--neutral-900,#060606);color:var(--white-900,#fff);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.tertiary:hover{background-color:var(--neutral-700,#3f3f3f)}.button.tertiary:active:not([disabled]){background:var(--neutral-900,#060606);box-shadow:var(--focus-primary)}.button.tertiary:disabled{background:var(--neutral-200,#dfdfdf)}.button.error{background:var(--error-500,#e33b32);color:var(--white-900,#fff);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.error:hover{background-color:var(--error-600,#cf362e)}.button.error:active:not([disabled]){background:var(--error-500,#e33b32);box-shadow:var(--focus-error)}.button.error:disabled{background:var(--error-200,#f2a5a1)}.button.warning{background:var(--warning-500,#eea23f);color:var(--white-900,#fff);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.warning:hover{background-color:var(--warning-600,#d99339)}.button.warning:active:not([disabled]){background:var(--warning-500,#eea23f);box-shadow:var(--focus-warning)}.button.warning:disabled{background:var(--warning-200,#f7d4a7)}.button.success{background:var(--success-500,#2ebf43);color:var(--white-900,#fff);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.success:hover{background-color:var(--success-600,#2aae3d)}.button.success:active:not([disabled]){background:var(--success-500,#2ebf43);box-shadow:var(--focus-success)}.button.success:disabled{background:var(--success-200,#9fe2a9)}.button.clear{background:var(--white-900,#fff);color:var(--black-900,#060606);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.clear:hover{background-color:var(--neutral-100,#f5f5f5)}.button.clear:active:not([disabled]){background:var(--white-900,#fff);box-shadow:var(--focus-primary)}.button.clear:disabled{background:var(--white-900,#fff);color:var(--neutral-200,#dfdfdf)}.footer-container{background:var(--white-900);border-top:.5px solid var(--neutral-200);flex-direction:column;gap:24px;justify-content:center;padding:64px 32px}.footer,.footer-container{align-items:center;display:flex}.footer{justify-content:space-between;width:100%}body{background-color:var(--white-900);margin:0}.text-gradient-2-animation{-webkit-text-fill-color:transparent;animation:rotation 5s linear infinite;background:linear-gradient(var(--gradient-angle),var(--primary-500),var(--primary-100));background-clip:text;-webkit-background-clip:text}@property --gradient-angle{syntax:"<angle>";initial-value:0deg;inherits:false}@keyframes rotation{0%{--gradient-angle:0deg}to{--gradient-angle:360deg}}:root{--primary-default:#2e90fb;--primary-hover:#2982e2;--primary-active:#2573c9;--typography-primary:#252627;--typography-secondary:rgba(37,38,39,.8);--typography-tertiary:rgba(37,38,39,.7);--typography-light:#fdfdfd;--typography-link:#2e90fb;--typography-link-hover:#2982e2;--typography-link-active:#2573c9;--typography-info:#2573c9;--typography-error:#db1436;--typography-code:#e2445e;--border-default:#ddd;--border-hover:#bcbcbc;--border-active:#2e90fb;--border-disabled:#f0f0f0;--border-info:#7dbbff;--background-1:#fdfdfd;--background-2:hsla(0,0%,99%,.3);--background-3:#fafafa;--background-4:#eee;--background-info:#e0eefe;--white-900:#fff;--white-alpha-10:hsla(0,0%,100%,.1);--white-alpha-20:hsla(0,0%,100%,.2);--white-alpha-30:hsla(0,0%,100%,.3);--white-alpha-40:hsla(0,0%,100%,.4);--white-alpha-50:hsla(0,0%,100%,.5);--white-alpha-60:hsla(0,0%,100%,.6);--white-alpha-70:hsla(0,0%,100%,.7);--white-alpha-80:hsla(0,0%,100%,.8);--white-alpha-90:hsla(0,0%,100%,.9);--black-900:#060606;--black-alpha-10:rgba(6,6,6,.1);--black-alpha-20:rgba(6,6,6,.2);--black-alpha-30:rgba(6,6,6,.3);--black-alpha-40:rgba(6,6,6,.4);--black-alpha-50:rgba(6,6,6,.5);--black-alpha-60:rgba(6,6,6,.6);--black-alpha-70:rgba(6,6,6,.7);--black-alpha-80:rgba(6,6,6,.8);--black-alpha-90:rgba(6,6,6,.9);--neutral-100:#f5f5f5;--neutral-200:#dfdfdf;--neutral-300:#b2b2b2;--neutral-400:#969696;--neutral-50:#fafafa;--neutral-500:#797979;--neutral-600:#5b5b5b;--neutral-700:#3f3f3f;--neutral-800:#212121;--neutral-900:#060606;--primary-100:#bbd5ff;--primary-200:#9ac0ff;--primary-300:#6ca4ff;--primary-400:#5092ff;--primary-50:#e9f1ff;--primary-500:#2477ff;--primary-600:#216ce8;--primary-700:#1a54b5;--primary-800:#14418c;--primary-900:#0f326b;--error-100:#f6c2bf;--error-200:#f2a5a1;--error-300:#ec7c76;--error-400:#e9625b;--error-50:#fcebeb;--error-500:#e33b32;--error-600:#cf362e;--error-700:#a12a24;--error-800:#7d201c;--error-900:#5f1915;--warning-100:#fae2c3;--warning-200:#f7d4a7;--warning-300:#f4c17e;--warning-400:#f1b565;--warning-50:#fdf6ec;--warning-500:#eea23f;--warning-600:#d99339;--warning-700:#a9732d;--warning-800:#835923;--warning-900:#64441a;--success-100:#beebc5;--success-200:#9fe2a9;--success-300:#73d481;--success-400:#58cc69;--success-50:#eaf9ec;--success-500:#2ebf43;--success-600:#2aae3d;--success-700:#218830;--success-800:#196925;--success-900:#13501c;--focus-primary:0px 0px 0px 3px rgba(36,119,255,.4);--focus-error:0px 0px 0px 3px rgba(227,59,50,.4);--focus-warning:0px 0px 0px 3px rgba(238,162,63,.4);--focus-success:0px 0px 0px 3px rgba(46,191,67,.4);--spacing-0:0px;--spacing-1:2px;--spacing-2:4px;--spacing-3:6px;--spacing-4:8px;--spacing-5:10px;--spacing-6:12px;--spacing-7:14px;--spacing-8:16px;--spacing-9:20px;--spacing-10:24px;--spacing-11:28px;--spacing-12:32px;--spacing-13:36px;--spacing-14:40px;--spacing-15:44px;--spacing-16:48px;--spacing-17:56px;--spacing-18:64px;--spacing-20:80px;--spacing-24:96px;--spacing-28:112px;--spacing-32:128px;--spacing-36:144px;--spacing-40:160px;--spacing-44:176px;--spacing-48:192px;--spacing-52:208px;--spacing-56:224px;--spacing-60:240px;--spacing-64:256px;--spacing-72:288px;--spacing-80:320px;--spacing-96:384px;--rounded:4px;--rounded-md:6px;--rounded-lg:8px;--rounded-xl:12px;--rounded-2xl:16px;--rounded-3xl:24px;--rounded-full:9999px;--transition-duration-1:100ms;--transition-duration-2:200ms;--transition-duration-3:300ms;--transition-duration-4:400ms;--transition-duration-5:500ms}[data-theme=dark]{--primary-default:#2e90fb;--primary-hover:#2982e2;--primary-active:#2573c9;--typography-primary:#fdfdfd;--typography-secondary:hsla(0,0%,99%,.8);--typography-tertiary:hsla(0,0%,99%,.7);--typography-light:#252627;--typography-link:#2e90fb;--typography-link-hover:#2982e2;--typography-link-active:#2573c9;--typography-info:#2573c9;--typography-error:#db1436;--typography-code:#e2445e;--border-default:#3c3c3c;--border-hover:grey;--border-active:#2e90fb;--border-disabled:#2c2c2c;--border-info:#7dbbff;--background-1:#252627;--background-2:rgba(37,38,39,.3);--background-3:#2c2c2c;--background-4:#343536;--background-info:#e0eefe;--white-900:#060606;--white-alpha-10:rgba(6,6,6,.1);--white-alpha-20:rgba(6,6,6,.2);--white-alpha-30:rgba(6,6,6,.3);--white-alpha-40:rgba(6,6,6,.4);--white-alpha-50:rgba(6,6,6,.5);--white-alpha-60:rgba(6,6,6,.6);--white-alpha-70:rgba(6,6,6,.7);--white-alpha-80:rgba(6,6,6,.8);--white-alpha-90:rgba(6,6,6,.9);--black-900:#fff;--black-alpha-10:hsla(0,0%,100%,.1);--black-alpha-20:hsla(0,0%,100%,.2);--black-alpha-30:hsla(0,0%,100%,.3);--black-alpha-40:hsla(0,0%,100%,.4);--black-alpha-50:hsla(0,0%,100%,.5);--black-alpha-60:hsla(0,0%,100%,.6);--black-alpha-70:hsla(0,0%,100%,.7);--black-alpha-80:hsla(0,0%,100%,.8);--black-alpha-90:hsla(0,0%,100%,.9);--neutral-100:#212121;--neutral-200:#3f3f3f;--neutral-300:#5b5b5b;--neutral-400:#797979;--neutral-50:#060606;--neutral-500:#969696;--neutral-600:#b2b2b2;--neutral-700:#dfdfdf;--neutral-800:#f5f5f5;--neutral-900:#fafafa;--primary-100:#14418c;--primary-200:#1a54b5;--primary-300:#216ce8;--primary-400:#2477ff;--primary-50:#0f326b;--primary-500:#5092ff;--primary-600:#6ca4ff;--primary-700:#9ac0ff;--primary-800:#bbd5ff;--primary-900:#e9f1ff;--error-100:#7d201c;--error-200:#a12a24;--error-300:#cf362e;--error-400:#e33b32;--error-50:#5f1915;--error-500:#e9625b;--error-600:#ec7c76;--error-700:#f2a5a1;--error-800:#f6c2bf;--error-900:#fcebeb;--warning-100:#835923;--warning-200:#a9732d;--warning-300:#d99339;--warning-400:#eea23f;--warning-50:#64441a;--warning-500:#f1b565;--warning-600:#f4c17e;--warning-700:#f7d4a7;--warning-800:#fae2c3;--warning-900:#fdf6ec;--success-100:#196925;--success-200:#218830;--success-300:#2aae3d;--success-400:#2ebf43;--success-50:#13501c;--success-500:#58cc69;--success-600:#73d481;--success-700:#9fe2a9;--success-800:#beebc5;--success-900:#eaf9ec;--focus-primary:0px 0px 0px 3px rgba(80,146,255,.4);--focus-error:0px 0px 0px 3px rgba(233,98,91,.4);--focus-warning:0px 0px 0px 3px hsla(34,83%,67%,.4);--focus-success:0px 0px 0px 3px rgba(88,204,105,.4);--spacing-0:0px;--spacing-1:2px;--spacing-2:4px;--spacing-3:6px;--spacing-4:8px;--spacing-5:10px;--spacing-6:12px;--spacing-7:14px;--spacing-8:16px;--spacing-9:20px;--spacing-10:24px;--spacing-11:28px;--spacing-12:32px;--spacing-13:36px;--spacing-14:40px;--spacing-15:44px;--spacing-16:48px;--spacing-17:56px;--spacing-18:64px;--spacing-20:80px;--spacing-24:96px;--spacing-28:112px;--spacing-32:128px;--spacing-36:144px;--spacing-40:160px;--spacing-44:176px;--spacing-48:192px;--spacing-52:208px;--spacing-56:224px;--spacing-60:240px;--spacing-64:256px;--spacing-72:288px;--spacing-80:320px;--spacing-96:384px;--rounded:4px;--rounded-md:6px;--rounded-lg:8px;--rounded-xl:12px;--rounded-2xl:16px;--rounded-3xl:24px;--rounded-full:9999px;--transition-duration-1:100ms;--transition-duration-2:200ms;--transition-duration-3:300ms;--transition-duration-4:400ms;--transition-duration-5:500ms}body{font-family:Inter,sans-serif}.display-large{font-size:72px}.display-large,.display-medium{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:800;line-height:normal}.display-medium{font-size:52px}.display-small{font-size:44px}.display-small,.display-xsmall{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:800;line-height:normal}.display-xsmall{font-size:36px}h1,h2,h3,h4,h5,h6{margin:0}h1{font-size:40px}h1,h2{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:700;line-height:normal}h2{font-size:36px}h3{font-size:32px}h3,h4{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:700;line-height:normal}h4{font-size:28px}h5{font-size:24px}h5,h6{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:700;line-height:normal}h6{font-size:20px}.label-xlarge{font-size:24px}.label-large,.label-xlarge{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:500;line-height:normal}.label-large{font-size:20px}.label-medium{font-size:16px}.label-medium,.label-small{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:500;line-height:normal}.label-small{font-size:14px}.label-xsmall{color:var(--black-900);font-family:Inter;font-size:12px;font-style:normal;font-weight:500;line-height:normal}.paragraph-xlarge{font-size:24px}.paragraph-large,.paragraph-xlarge{color:var(--typography-secondary);font-family:Inter;font-style:normal;font-weight:400;line-height:normal}.paragraph-large{font-size:18px}.paragraph-medium{font-size:16px}.paragraph-medium,.paragraph-small{color:var(--typography-secondary);font-family:Inter;font-style:normal;font-weight:400;line-height:normal}.paragraph-small{font-size:14px}.paragraph-xsmall{color:var(--typography-secondary,#6a6a6a);font-family:Inter;font-size:12px;font-style:normal;font-weight:400;line-height:normal}.badge{align-items:center;background:var(--background-info,#e0eefe);border:1px solid var(--border-info,#7dbbff);border-radius:39px;display:inline-flex;gap:10px;justify-content:center;margin:0 12px;padding:4px 14px;text-align:center}@media (max-width:768px){.display-large{font-size:62px}.display-medium{font-size:42px}.display-small{font-size:36px}.display-xsmall{font-size:28px}.label-large{font-size:18px}.label-small{font-size:12px}.paragraph-medium{font-size:14px}.paragraph-xlarge{font-size:20px}}@media (max-width:560px){.display-large{font-size:52px}.display-medium{font-size:32px}.label-large,.paragraph-xlarge{font-size:16px}}.page{gap:var(--spacing-24);padding:var(--spacing-20) var(--spacing-0)}.landing,.page{align-items:center;display:flex;flex-direction:column;justify-content:center;margin:auto;max-width:1240px}.landing{gap:var(--spacing-40);padding:var(--spacing-0) var(--spacing-0) var(--spacing-24)}@media (max-width:1240px){.page{padding:var(--spacing-20) var(--spacing-10)}.landing{padding:var(--spacing-0) var(--spacing-10) var(--spacing-24)}}@media (max-width:480px){.page{gap:var(--spacing-15);padding:var(--spacing-17) var(--spacing-8)}.landing{gap:var(--spacing-20);padding:var(--spacing-0) var(--spacing-8) var(--spacing-17)}}.blog-layout{align-items:start;display:flex;flex-direction:column;gap:42px;justify-content:center;margin:auto;max-width:680px;padding:72px 0}@media (max-width:1240px){.blog-layout{padding:72px 24px}}@media (max-width:480px){.blog-layout{gap:42px;padding:56px 16px}}.blog-content{align-items:start;display:flex;flex-direction:column;gap:24px;justify-content:center;width:100%}.blog-content h1{font-size:30px}.blog-content h1,.blog-content h2{color:var(--typography-primary);font-family:Inter;font-style:normal;font-weight:700;line-height:normal}.blog-content h2{font-size:24px}.blog-content h3{color:var(--typography-primary);font-size:20px;font-weight:700;line-height:normal}.blog-content h3,.blog-content p{font-family:Inter;font-style:normal}.blog-content p{color:var(--typography-secondary);font-size:18px;font-weight:400;line-height:27px;margin:0}.blog-content a{color:var(--typography-link);position:relative}.blog-content a:hover{color:var(--typography-link-hover);position:relative;text-decoration:underline}.blog-content a:active{color:var(--typography-link-active)}.blog-content strong{font-weight:600}.blog-content code{color:var(--neutral-600);font-family:Roboto Mono;font-size:16px;font-style:normal;font-weight:400;line-height:normal;padding:1px 6px;text-align:start}.blog-content code,.blog-content pre{background-color:var(--neutral-100);border-radius:4px}.blog-content pre{min-width:100%;padding:18px;white-space:pre-wrap}.blog-content ul{list-style-type:disc;margin:0;padding-left:30px}.blog-content ol{list-style-type:decimal;margin:0;padding-left:30px}.blog-content li{font-size:18px;line-height:27px}.blog-content figcaption,.blog-content li{color:var(--typography-secondary);font-family:Inter;font-style:normal;font-weight:400}.blog-content figcaption{font-size:14px;line-height:24px;margin-top:6px}.blog-content blockquote{all:unset;border-left:3px solid var(--typography-primary);padding:6px 12px}.blog-content blockquote p{color:var(--typography-primary);font-family:PT Serif;font-size:20px;font-style:normal;font-style:italic;font-weight:400;line-height:27px}@media (max-width:720px){.blog-content{gap:20px}.blog-content h1{font-size:24px}.blog-content h2{font-size:20px}.blog-content h3{font-size:18px}.blog-content p{font-size:16px;line-height:24px}.blog-content code{font-size:14px}.blog-content li{font-size:16px}.blog-content figcaption{font-size:12px;line-height:20px}.blog-content blockquote p{font-size:18px;line-height:22px}}.about-profile-title{align-items:center;display:flex;flex-direction:row;gap:24px;justify-content:start}.about-profile-pic{background-color:var(--background-info);border-radius:100px;height:100px;width:100px}.subtitle{background-color:var(--primary-100);border-radius:6px;color:var(--primary-700);font-family:Inter;font-size:18px;font-style:normal;font-weight:500;line-height:27px;padding:18px}@media (max-width:720px){.subtitle{font-size:16px;line-height:24px}}@media (max-width:450px){.about-profile-title{align-self:center;flex-direction:column;gap:12px}.about-profile-title h1{text-align:center}}.blog-card-container{align-items:flex-start;align-self:stretch;background:var(--white-900);border-radius:var(--rounded-2xl);cursor:pointer;display:flex;flex-direction:column;gap:var(--spacing-10);transition:all var(--transition-duration-5) ease;width:330px}.blog-card-container .featured-img-container{aspect-ratio:16/9;border-radius:var(--rounded-xl);overflow:hidden;position:relative;width:100%}.blog-card-container .featured-img{transform:scale(1);transition:all var(--transition-duration-5) ease;width:100%}.blog-card-container:hover .featured-img{transform:scale(1.2);transition:all var(--transition-duration-5) ease}.blog-card-container .details{display:flex;flex-direction:column;gap:var(--spacing-8);justify-content:start}.details-wrapper{-webkit-line-clamp:5;line-clamp:5;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}@media (max-width:768px){.blog-card-container{align-items:flex-start;align-self:stretch;background:var(--white-900);cursor:pointer;display:flex;flex-direction:column;gap:var(--spacing-8);width:100%}.blog-card-container .featured-img-container{aspect-ratio:30/10;border-radius:var(--rounded-lg)}.blog-card-container .details{gap:var(--spacing-5)}}@media (max-width:425px){.blog-card-container .featured-img-container{aspect-ratio:16/9;border-radius:var(--rounded-md)}}.project-highlights-container{align-items:center;display:flex;flex-wrap:wrap;gap:var(--spacing-11);justify-content:space-evenly;width:100%}@media (max-width:768px){.project-highlights-container{gap:var(--spacing-15)}}.featured{align-items:center;align-self:stretch;display:flex;flex-direction:column;gap:48px}.featured-card{display:grid;gap:var(--spacing-10);grid-template-columns:repeat(3,1fr)}.featured .image-container{align-items:center;align-self:center;aspect-ratio:3/4;display:flex;justify-content:center;overflow:hidden;position:relative;width:100%}.featured.image-container.image{height:100%;width:100%}@media (max-width:768px){.featured-card{display:grid;gap:var(--spacing-10);grid-template-columns:repeat(2,1fr)}}.indicator{transition:all var(--transition-duration-5) ease-in-out}.featured-container,.featured-container-0{opacity:0;transition:opacity var(--transition-duration-5) ease}.featured-container{bottom:0;position:absolute;top:0}.featured .active{opacity:1;transition-delay:var(--transition-duration-5)}.project-card .content-container{height:var(--spacing-60);position:relative;width:var(--spacing-72)}.project-card .description{opacity:0}.project-card .description,.project-card .title{position:absolute;transition:opacity var(--transition-duration-5) ease}.project-card:hover .title{opacity:0}.project-card:hover .description{opacity:1}.project-card .image{transform:scale(1)}.project-card .image,.project-card:hover .image{transition:transform var(--transition-duration-5) ease}.project-card:hover .image{transform:scale(1.1)}.project-card .image-overlay{background-color:var(--black-alpha-60);bottom:0;left:0;opacity:0;position:absolute;right:0;top:0;transition:opacity var(--transition-duration-5) ease;z-index:90}.project-card:hover .image-overlay{opacity:1;transition:opacity var(--transition-duration-5) ease}@media (max-width:768px){.project-card{width:100%}.project-card .content-container{flex-grow:1;height:auto;height:var(--spacing-40);position:relative;width:auto}}@media (max-width:375px){.project-card .description{-webkit-line-clamp:10;line-clamp:10;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}}.works-highlights-container{align-items:center;display:flex;flex-wrap:wrap;gap:var(--spacing-10);justify-content:space-evenly;width:100%}.hero-new{height:calc(100vh - 72px)}.blog-header{align-items:center;display:flex;flex-direction:row;gap:16px;justify-content:start;width:100%}.blog-header .profile-pic{background-color:var(--primary-500);border-radius:50px;height:50px;width:50px}.blog-header .info{align-self:stretch;display:flex;flex-direction:column;justify-content:space-evenly}.blog-header .info a{color:var(--black-900);position:relative}.blog-header .info a:hover{position:relative}.blog-header .info a:after{background-color:var(--black-900);bottom:0;content:"";height:1.5px;left:0;position:absolute;transform:scaleX(0);transform-origin:bottom right;transition:transform .25s ease-out;width:100%}.blog-header .info a:hover:after{transform:scaleX(1);transform-origin:bottom left}</style><title data-react-helmet="true">Nafis Azizi Riza</title><link rel="preconnect" href="https://www.googletagmanager.com"/><link rel="dns-prefetch" href="https://www.googletagmanager.com"/><link rel="icon" href="/favicon-32x32.png?v=de395f9cc434845c76ac61cd5e725b7a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=de395f9cc434845c76ac61cd5e725b7a"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="relative flex h-[72px] px-12 py-8 z-[99] justify-between items-center bg-white-900 border-b border-neutral-200"><a class="nav-item workspace default active" href="/"><span class="icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.67406 12C3.07461 12 3.39932 11.6753 3.39932 11.2747V8.29427C3.39932 7.58914 4.30376 7.29873 4.71426 7.87206L7.45197 11.6957C7.58815 11.8859 7.80772 11.9987 8.04165 11.9987H10.5802C11.1703 11.9987 11.5134 11.3315 11.17 10.8515L3.69616 0.403924C3.51481 0.150415 3.22227 0 2.91057 0H1.88182L1.07045 1.75477e-07H0.725256C0.324708 1.75477e-07 0 0.324708 0 0.725256V11.2747C0 11.6753 0.324709 12 0.725257 12H2.67406Z" fill="currentColor"></path><path d="M7.58709 0.919395C7.30968 0.536196 7.58346 0 8.05654 0H11.2747C11.6753 0 12 0.324707 12 0.725255V5.2262C12 5.78812 11.2805 6.02122 10.951 5.56605L7.58709 0.919395Z" fill="currentColor"></path></svg></span></a><div class="hidden gap-8 sm:flex"><a class="nav-item item default" href="/"><span class="content">Home</span></a><a class="nav-item item default" href="/projects/"><span class="content">Projects</span></a><a class="nav-item item default active" href="/blogs/"><span class="content">Blogs</span></a><a class="nav-item item default" href="/about/"><span class="content">About</span></a></div><div class="flex gap-6"><button class="button flex sm secondary default icon-only"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21.7519 15.0021C20.597 15.484 19.3296 15.7501 18 15.7501C12.6152 15.7501 8.25 11.3849 8.25 6.00011C8.25 4.67052 8.51614 3.40308 8.99806 2.24817C5.47566 3.71798 3 7.19493 3 11.2501C3 16.6349 7.36522 21.0001 12.75 21.0001C16.8052 21.0001 20.2821 18.5245 21.7519 15.0021Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button><div class="flex sm:hidden"><button class="button flex sm secondary default icon-only"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button></div></div></div><div class="absolute left-0 top-[-100%] flex flex-col px-12 py-8 gap-2 w-full z-50 justify-center bg-white-900 border-b border-neutral-200 transition-all ease-in-out duration-500"><a class="nav-item item default" href="/"><span class="content">Home</span></a><a class="nav-item item default" href="/projects/"><span class="content">Projects</span></a><a class="nav-item item default active" href="/blogs/"><span class="content">Blogs</span></a><a class="nav-item item default" href="/about/"><span class="content">About</span></a></div><div class="blog-layout"><h1>Excel Your Codebase: Best Practice, OOP, and SOLID Principle</h1><div class="blog-header"><div class="profile-pic"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;border-radius:50px"><div aria-hidden="true" style="width:100%;padding-bottom:100%"></div><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECBAP/xAAXAQEBAQEAAAAAAAAAAAAAAAADBAEC/9oADAMBAAIQAxAAAAHZXpkFdSXOzUrnAE//xAAbEAEAAgIDAAAAAAAAAAAAAAABAgMAMRASE//aAAgBAQABBQItjkbxfUyQdad8mv/EABcRAQADAAAAAAAAAAAAAAAAAAEAECH/2gAIAQMBAT8BGbf/xAAXEQEBAQEAAAAAAAAAAAAAAAABABAR/9oACAECAQE/AULhjf/EABkQAAIDAQAAAAAAAAAAAAAAAAERABAgcf/aAAgBAQAGPwKJEds5/8QAHBAAAgICAwAAAAAAAAAAAAAAAAERIRAxUYGR/9oACAEBAAE/IbF6PHEicUhSXQjbOMSQlosjP//aAAwDAQACAAMAAAAQGAeA/8QAGBEBAQADAAAAAAAAAAAAAAAAAAERIWH/2gAIAQMBAT8QozwiXT//xAAaEQEAAQUAAAAAAAAAAAAAAAABABARIVGR/9oACAECAQE/EFC2hpe0GWf/xAAeEAEAAgEEAwAAAAAAAAAAAAABABExIUFxkVGBsf/aAAgBAQABPxBSahvcPEU2BhpDyRty9RStIUdk0E0arV+z0dSzeuIlaVxErLaXP//Z" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/9e066ccef68ae7b13f4dd843f0774773/f836f/profile.jpg 200w,
+/static/9e066ccef68ae7b13f4dd843f0774773/2244e/profile.jpg 400w,
+/static/9e066ccef68ae7b13f4dd843f0774773/14b42/profile.jpg 800w,
+/static/9e066ccef68ae7b13f4dd843f0774773/47498/profile.jpg 1200w,
+/static/9e066ccef68ae7b13f4dd843f0774773/0e329/profile.jpg 1600w,
+/static/9e066ccef68ae7b13f4dd843f0774773/28849/profile.jpg 2027w" sizes="(max-width: 800px) 100vw, 800px" /><img loading="lazy" sizes="(max-width: 800px) 100vw, 800px" srcset="/static/9e066ccef68ae7b13f4dd843f0774773/f836f/profile.jpg 200w,
+/static/9e066ccef68ae7b13f4dd843f0774773/2244e/profile.jpg 400w,
+/static/9e066ccef68ae7b13f4dd843f0774773/14b42/profile.jpg 800w,
+/static/9e066ccef68ae7b13f4dd843f0774773/47498/profile.jpg 1200w,
+/static/9e066ccef68ae7b13f4dd843f0774773/0e329/profile.jpg 1600w,
+/static/9e066ccef68ae7b13f4dd843f0774773/28849/profile.jpg 2027w" src="/static/9e066ccef68ae7b13f4dd843f0774773/14b42/profile.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div class="info"><a href="/about/"><div class="label-medium">Nafis Azizi Riza</div></a><div class="paragraph-small">October 2, 2023</div></div></div><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;width:100%"><div aria-hidden="true" style="width:100%;padding-bottom:70.5%"></div><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAQX/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAABqyNzNzmiP//EABoQAQEAAgMAAAAAAAAAAAAAAAECABIEESH/2gAIAQEAAQUCPc0cWc3oo5Cyz2//xAAXEQADAQAAAAAAAAAAAAAAAAAAAREC/9oACAEDAQE/AVGiZP/EABsRAAIBBQAAAAAAAAAAAAAAAAABAgMSEyIx/9oACAECAQE/AZ1Hdrwys//EABkQAAIDAQAAAAAAAAAAAAAAAAABESExA//aAAgBAQAGPwI0vohOqMkk/8QAHBABAAMAAgMAAAAAAAAAAAAAAQARITFBYXGB/9oACAEBAAE/IdM1iONX1LfJ8w+QES2KdsvE6z//2gAMAwEAAgADAAAAEIc//8QAFhEBAQEAAAAAAAAAAAAAAAAAASEQ/9oACAEDAQE/EIi3H//EABYRAQEBAAAAAAAAAAAAAAAAACEAYf/aAAgBAgEBPxBNi3v/xAAaEAEBAAMBAQAAAAAAAAAAAAABEQAhMVGR/9oACAEBAAE/ENcnoDx2YVRTYBlwDPd4cnOEsWOpv7gSslXWoeYjmpXP/9k=" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/afdaf80f4f6f3411355ea240de5a6dfd/f836f/qGbDw69UGvelAAFz.jpg 200w,
+/static/afdaf80f4f6f3411355ea240de5a6dfd/2244e/qGbDw69UGvelAAFz.jpg 400w,
+/static/afdaf80f4f6f3411355ea240de5a6dfd/20d2d/qGbDw69UGvelAAFz.jpg 596w" sizes="(max-width: 596px) 100vw, 596px" /><img loading="lazy" sizes="(max-width: 596px) 100vw, 596px" srcset="/static/afdaf80f4f6f3411355ea240de5a6dfd/f836f/qGbDw69UGvelAAFz.jpg 200w,
+/static/afdaf80f4f6f3411355ea240de5a6dfd/2244e/qGbDw69UGvelAAFz.jpg 400w,
+/static/afdaf80f4f6f3411355ea240de5a6dfd/20d2d/qGbDw69UGvelAAFz.jpg 596w" src="/static/afdaf80f4f6f3411355ea240de5a6dfd/20d2d/qGbDw69UGvelAAFz.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><div class="blog-content"><p>Hey there, fellow devs! Today, we’re diving deep into the world of programming best practices, object-oriented programming principles, and SOLID principles. Exploring guidelines and principles that will not only make your code understandable but also maintainable. Let’s unravel the secrets to writing impeccable code!</p>
+<h1><strong>Best Practice Programming</strong></h1>
+<p>Best practice programming is a set of proven techniques, methods, and design principles that experienced developers have discovered over years of trial and error. These practices ensure your code is readable, maintainable, and efficient.</p>
+<h2><strong>Naming Convention</strong></h2>
+<p><strong>1. Class names should be nouns and normally use the CapWords convention.</strong></p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 452px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a2efc87f65c2ada6485ba1baf6e20738/fcb94/x9uom7Xb_AdaO5DWNi2N8Q.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 12.269938650306749%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAgklEQVR42h2MWw6CMBQFWQqFW+C2gAiJL0BBkGji/rczVv7OTCYniuMY8UdEa6SoMJkl8UpaOtLKh+2wXYO0B6SpSYKXptr53ySak9Yl4hRjDJGRjKId8LcNd1n3M309cJ8Ft82U3+DfT3R9oMudvD9TjFdcaHQesKeOfOqpppHMWn7bKT3C8qc6lwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/a2efc87f65c2ada6485ba1baf6e20738/fcb94/x9uom7Xb_AdaO5DWNi2N8Q.png"
+        srcset="/static/a2efc87f65c2ada6485ba1baf6e20738/222b7/x9uom7Xb_AdaO5DWNi2N8Q.png 163w,
+/static/a2efc87f65c2ada6485ba1baf6e20738/ff46a/x9uom7Xb_AdaO5DWNi2N8Q.png 325w,
+/static/a2efc87f65c2ada6485ba1baf6e20738/fcb94/x9uom7Xb_AdaO5DWNi2N8Q.png 452w"
+        sizes="(max-width: 452px) 100vw, 452px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>When it comes to naming in programming, consistency and clarity are the key. Class names should be chosen as nouns, reflecting the essence of the object they represent. For example, a class representing a Lowongan Details Service could be named <code>LowonganDetailsService</code>. This makes it instantly clear what the class is about.</p>
+<p><strong>2. Function and variables names should be lowercase_with_underscores as necessary to improve readability. Function must be verbs and plural form should be used on names representing a collection of objects.</strong></p>
+<p>Functions and variables are the workhorses of your code. They should be named in a way that clearly indicates their purpose. Use lowercase_with_underscores to separate words, enhancing readability. When naming functions, use verbs to represent actions.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 414px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ff9a3179ac103f0772d199aab6402e2a/b910a/1UmeWKXgNhZaRK7FF2GrFA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 19.631901840490798%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA50lEQVR42k2OwU7DMBBE+x/Q2KntrO04TojaUojaUhVxAC5IIMSlB/7/Hx6mFRKH0YxWu29nVhuH8ekia0gpkgeh7QOSBuIwUi8MthFCHpA2Y62jNgtMF9Elh2QRp6mUZubSyHB8x+YN+92a0+mN7UbYPx2YXr8Yp0N50tMt73n8/GZ6+eB2esC2kfb5SLOdGHeZu6VHaVOAzqGVYn51XdoILlqa1tKtA76zWKnJq0i8EUxTnz2UPd85VFWhyq2q1MWLZiKC1qXuXBWQw3mDzw39XST0zVm/Oa1CAS5oR19mcp7/Qf7rB7c6eCwzRbzNAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/ff9a3179ac103f0772d199aab6402e2a/b910a/1UmeWKXgNhZaRK7FF2GrFA.png"
+        srcset="/static/ff9a3179ac103f0772d199aab6402e2a/222b7/1UmeWKXgNhZaRK7FF2GrFA.png 163w,
+/static/ff9a3179ac103f0772d199aab6402e2a/ff46a/1UmeWKXgNhZaRK7FF2GrFA.png 325w,
+/static/ff9a3179ac103f0772d199aab6402e2a/b910a/1UmeWKXgNhZaRK7FF2GrFA.png 414w"
+        sizes="(max-width: 414px) 100vw, 414px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>For instance, a function in <code>LowonganDetailsService</code> that is responsible to get the data might be named <code>get()</code>. This makes it immediately evident that the function performs a get data.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/53fc31d60e0c6ce9e6f3d57088d33b75/8c557/55qYPf05oOlTIspGd2UmYQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 44.171779141104295%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABvUlEQVR42m1S2Y6cMBCcv1hFYsxlwGAMtlkfXLNZZTcTKXnI//9MpSHaiaLkoWQb7Orqrrr01sHur9DLDXb7DO0i6l6hjh7V7NB5D7O9QPkZo9WYF7o/KRRlhrzkKIoSaZo+cOG8hI0R6/sd07rDbxuW969wtxsGa+i8I2w3hP0Gv2yEFX7foJ6fMcYV7WjArtc/hF1XwrsRk5EYlIAxPULQsAOHbjhc38BJgThKeNVhFA1MX6EkhYwRCWN/K2xKQfIr8KaDUBqcH20UqNoezaBR0ipIRZoXSEgJo0fJlf0mS/8FEVYYfcT2/Sf8lzu1H6j1DfH+A3aluTqD3kzgVYWMHmRZduJ/ZCchSxkKuizUgPj2DYFgqUCYZ6zbir6r8enpCddDHbWXJMm5/zh/rA/CsxpLkLMMujPk9g73+oZxchhaBUWuG1KqXIDR5DIZGEMgt2eatYc1huZuYK2FrCQuB2tLxlSiRV0ThEDX0/zaFpxicewlqed1jUZKyFGf/wTtW6XQUsSO6BRFjjzLiZDkNrKHjgs0xUYNI7nuECh/0zRhWRZ476gYxxiWM5OSZiopv8ORTfqWZtmj7V83JA80WMQe1gAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/53fc31d60e0c6ce9e6f3d57088d33b75/a6d36/55qYPf05oOlTIspGd2UmYQ.png"
+        srcset="/static/53fc31d60e0c6ce9e6f3d57088d33b75/222b7/55qYPf05oOlTIspGd2UmYQ.png 163w,
+/static/53fc31d60e0c6ce9e6f3d57088d33b75/ff46a/55qYPf05oOlTIspGd2UmYQ.png 325w,
+/static/53fc31d60e0c6ce9e6f3d57088d33b75/a6d36/55qYPf05oOlTIspGd2UmYQ.png 650w,
+/static/53fc31d60e0c6ce9e6f3d57088d33b75/8c557/55qYPf05oOlTIspGd2UmYQ.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>When dealing with collections of objects, like lists or arrays, use the plural form in the naming. This indicates that the variable contains multiple objects. For example, if you have a list of lowongan, name it <code>lowongan_data</code> rather than <code>lowongan</code>, making it clear that it’s a collection. Make sure to use <code>lowercase_with_underscores</code> styles as well. Maybe this example is a bit unclear since lowongan is not an English words. Another examples for the plural could be <code>books</code> to store a collection of book, instead naming the variables to <code>book</code> which is singular.</p>
+<p><strong>3. Constant names must be all UPPERCASE_WITH_UNDERSCORES.</strong></p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/262e35703f9f5e09a992c480807f992b/8c557/Qw_g4r6k2VWe8cDiCjOSew.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 5.521472392638037%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAASUlEQVR42h2KSw6AIBQDPczjKxD5xYjuvP+ZRnDRdJrpJvVC6kD1G/O8SDkRbUhWM3JkHIG8W8pMDY6e/L/b5NVx/rJf3mGV8AHKax6VJrj8nAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/262e35703f9f5e09a992c480807f992b/a6d36/Qw_g4r6k2VWe8cDiCjOSew.png"
+        srcset="/static/262e35703f9f5e09a992c480807f992b/222b7/Qw_g4r6k2VWe8cDiCjOSew.png 163w,
+/static/262e35703f9f5e09a992c480807f992b/ff46a/Qw_g4r6k2VWe8cDiCjOSew.png 325w,
+/static/262e35703f9f5e09a992c480807f992b/a6d36/Qw_g4r6k2VWe8cDiCjOSew.png 650w,
+/static/262e35703f9f5e09a992c480807f992b/8c557/Qw_g4r6k2VWe8cDiCjOSew.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>Constants, values that do not change during the program’s execution, serve as important reference points. To distinguish them, use all <code>UPPERCASE_WITH_UNDERSCORES</code> . For example, a constant representing the name of lowongan instance could be named <code>NAMA_LOWONGAN_1</code>.</p>
+<p><strong>4. Boolean variables/methods should be named to sound like booleans.</strong></p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e9bd61e56ff9b4b19601637e6a6bf2f2/8c557/WoXfYCJvvUXOrshA39hv7A.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 34.96932515337423%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABj0lEQVR42i2QyW7bQBBE9RsBJK4ebhpuw50UZVuSo0hGYl9zSBBAhwT5//tzi8mhMNNbdXWtvEijdIkyOWpqidoM1deo2hAODTpP8Hwf/0Hh+grHdbGtDZvNBsuy/kH+95xt2axc1yEpDGnTkux36N0opELY1SRTTT4O6GEknwT9JL0lsd4SJwlBGKCieIEXRHiew8qxLXTV0D6dMMNMsz+yzTKC/bCoVGOD31Wks/TMM2b3zPhyYXocKPuB7niWZTJTtfi+ELqOvSi8F4puJKkqor4lbAzB2PLQ3MlasnEkm2b6w4G6k7ifF8X+tsQPguXk+/kr23KIs4J6/0haGnTfEZuCoBZP+0qIc7SoTGSJHjoascF0HWm7IzXSH/hEyv3vp3gYqo0UR+rTV4rpQHV9pzh8IZRceDwSy6LsdGb7dKS/vIo1Z8zzheH8Rr8baNuWTqzQWS7EcnKdfUJPLxRvfzHvv9GffxFdfxJefhC9yitQEkfX75TfboI/pJcb8fm2eL9er7EdD8dxcGybD55Z3RMrwonXAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/e9bd61e56ff9b4b19601637e6a6bf2f2/a6d36/WoXfYCJvvUXOrshA39hv7A.png"
+        srcset="/static/e9bd61e56ff9b4b19601637e6a6bf2f2/222b7/WoXfYCJvvUXOrshA39hv7A.png 163w,
+/static/e9bd61e56ff9b4b19601637e6a6bf2f2/ff46a/WoXfYCJvvUXOrshA39hv7A.png 325w,
+/static/e9bd61e56ff9b4b19601637e6a6bf2f2/a6d36/WoXfYCJvvUXOrshA39hv7A.png 650w,
+/static/e9bd61e56ff9b4b19601637e6a6bf2f2/8c557/WoXfYCJvvUXOrshA39hv7A.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>Booleans represent true/false values. When naming variables or methods that return boolean values, make sure the names sound like booleans. For instance, a boolean variable indicating whether a lowongan is special or not, might be named <code>is_special</code> , and method that responsible to check whether a lowongan has <code>syarat_tambahan</code> or not might be named <code>has_syarat_tamabahn()</code> which will return boolean true/false as well.</p>
+<h2><strong>Statements</strong></h2>
+<p>Be explicit! Instead of using wildcards, list out your imported classes explicitly. It might seem like a hassle, but it avoids confusion and keeps your codebase clean.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a6f5f974fa351af9e200b5c90e0c8bf2/8c557/_fIYuucKY8KGuGscXGEAvg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 4.9079754601226995%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAARklEQVR42h3J2Q2AMAwEUXrBtriM4xAhSP99LRu+Rnoz+eLILSFXgfUb9jRoOSEtobThGg6ljy+VVuP/M9++Onq8OFgzwwfCQx6e3YZUEAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/a6f5f974fa351af9e200b5c90e0c8bf2/a6d36/_fIYuucKY8KGuGscXGEAvg.png"
+        srcset="/static/a6f5f974fa351af9e200b5c90e0c8bf2/222b7/_fIYuucKY8KGuGscXGEAvg.png 163w,
+/static/a6f5f974fa351af9e200b5c90e0c8bf2/ff46a/_fIYuucKY8KGuGscXGEAvg.png 325w,
+/static/a6f5f974fa351af9e200b5c90e0c8bf2/a6d36/_fIYuucKY8KGuGscXGEAvg.png 650w,
+/static/a6f5f974fa351af9e200b5c90e0c8bf2/8c557/_fIYuucKY8KGuGscXGEAvg.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>Examples above is the bad import statements, it used wildcards <code>*</code> to import everything in <code>lowongan.serializers.lowongan_serializer</code> . This can cause confusions for other developers to read, also it might confuse the dev who wrote the code itself since they don’t know explicitly what classes/methods they should use.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/35dbea4afa0868a0abc0ab559be9fe37/8c557/A4-QOa6_dPgaTDF3FcOucw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 28.22085889570552%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7klEQVR42oWQa26DMBCEOUix1/gJKMVAAiGQPu5/qOnalqK0qpQfo/Xa42/HrsZ+go4nuO0Ce5ng4jvMNMDMEeY8wgwnWK7utrBngRkH2HUunpX9ocM9HojtgL5VqFzXw7LZfx8In3u+mMG3FZbhSmtQo0DWQLGIe2VSbUCGz5SC0w5a8T4RKmo93HGF/9jg9ivC15GhqU/JUlLL0gwTbzWkEJA1S8iyZtWihpCCJVE1XchPSNBSV/j7Vr5gmcsz25CTSL7wSpUK/pHI7QxjcIFNPOCch6Skuefh9AooUnRFZYPot+G5T+u/5/8AfwDVWa8GQwPH4AAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/35dbea4afa0868a0abc0ab559be9fe37/a6d36/A4-QOa6_dPgaTDF3FcOucw.png"
+        srcset="/static/35dbea4afa0868a0abc0ab559be9fe37/222b7/A4-QOa6_dPgaTDF3FcOucw.png 163w,
+/static/35dbea4afa0868a0abc0ab559be9fe37/ff46a/A4-QOa6_dPgaTDF3FcOucw.png 325w,
+/static/35dbea4afa0868a0abc0ab559be9fe37/a6d36/A4-QOa6_dPgaTDF3FcOucw.png 650w,
+/static/35dbea4afa0868a0abc0ab559be9fe37/8c557/A4-QOa6_dPgaTDF3FcOucw.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>Instead, explicitly typed all the necessary import can avoid those confusions. In this example we know that from <code>lowongan.serializers.lowongan_serializer</code> we imported <code>LowonganSerializer, LowonganPembukaSerializer, PrerequisiteSerializer</code> and <code>LowonganGetDetailsSerializer</code> .</p>
+<h2><strong>Comments</strong></h2>
+<p>Comments should be like tour guides, providing insights where needed. If a complex algorithm is at play, a comment explaining the logic can be invaluable. However, remember, a well-written code is almost self-explanatory. Comments should only be used where the code isn’t immediately clear.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/6317b04879ac11362deadff64d931ab6/8c557/xlIDLlB7JE3PXt_jMFPs1Q.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 43.558282208588956%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABo0lEQVR42mWS2RLbIAxF8x9NwBiwsY3xmsRL0n2m//9Fp3Iyfcj04aBhmYt0pVM9NJSxJLQVVVfiG49PJUUs5CxQpUCdCurW4UqDLTJcyOXOUwohyfvKyntP7g2ndN+5/frD/O0nw7IR9wdhX4jryvz9N2ndWJ4HCyFGEeiwvkBnisxkZNkbnWm01pz6PrI9V8a5Z93vbPuNMdYs08B+u7LOI/MwMA09TdtINg157lAXhVYapdRL6B8nX1qszd44g3Oa3ChcrnFG4+XswMm9MUdWBxqTG8xxZs2nYBoSw2Ol36TMrqJfr4xfd9J9ZpDSfe3Fu5y8yCkaJ34feys+2ncUPgSLUDOJf4eH3fXOtH1l3p7EWIkv5lXa5Xx5cf5yfnG5vPdHVEp/Ch5LKaK3xw8Wac7t8WS9r3TjKJ1rKUJFU9fyQSSlRNM0VFVFCIHgA5nOPgWtFZ+8pC5GV22ScUhYYwlNS5quEiNdPwg9vcQkxLalLGW0XPEh9hb0jiSltkKU30fp6CDM00SSrErJsL0u1CJ0jEwjnxR15Hw+o7T6T/AvUP0JrmfI09kAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/6317b04879ac11362deadff64d931ab6/a6d36/xlIDLlB7JE3PXt_jMFPs1Q.png"
+        srcset="/static/6317b04879ac11362deadff64d931ab6/222b7/xlIDLlB7JE3PXt_jMFPs1Q.png 163w,
+/static/6317b04879ac11362deadff64d931ab6/ff46a/xlIDLlB7JE3PXt_jMFPs1Q.png 325w,
+/static/6317b04879ac11362deadff64d931ab6/a6d36/xlIDLlB7JE3PXt_jMFPs1Q.png 650w,
+/static/6317b04879ac11362deadff64d931ab6/8c557/xlIDLlB7JE3PXt_jMFPs1Q.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>Above is the example on how comments can be implemented. The dev teams are not familiar with built-in Django ORM such as <code>prefetch_related</code> , so that it is necessary to write the comment on what is exactly those lines of code does. Also, the second comment is about adding one more filed into Lowongan object. Lowongan models does not explicitly said that it has lowongan_pembuka fields, since it is stored in different tables. But after joining with LowonganPembuka tables, Lowongan object now have lowonganpembuka_set.all fields that contain the set of all pembuka/recruiter for a particular lowongan. I would like to introduce a new field that need to be included in the response and I put the comment so that the other devs can easily understand what I was trying to achieve.</p>
+<h2><strong>Simple and Effective Functions</strong></h2>
+<p>The principle of Simple and Effective Functions advocates for functions that do one thing and do it well. When a function has a clear and specific purpose, it becomes a reusable and predictable tool in your codebase. By avoiding side effects and ensuring that functions have minimal dependencies, you enhance their effectiveness. Simple functions are easy to understand, test, and debug, making the codebase more robust and developer-friendly. Embracing this principle not only streamlines code but also fosters a modular approach, allowing to compose complex behaviors from simple, well-defined functions.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/96922d27fa4c28c8bf2d65582437b66a/8c557/9s8Cb3UueFvSwf3r1xaovg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 80.98159509202453%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiUlEQVR42oVT2XKjMBD0Z2wSg0AIELo4bGPsijdXZXf//4d6W7LjeI+qPHQhCWmmp6dnJXXAZgqYph6NcWg7A9lpNLpCnmWfyPNPXPZZ9nl2XgushMhQlwq68/C7A/y0hWwbSCZQhOPeb2e44JjYoR+J3R5932E/DxjjvrdYlh7GKKzKUqYMlSoQgsa2d5jjhcljP3pM3sKbDk432AVDWIzOYusN2lqhLEtUlYSUJddkWBQFRF6gqQuYTiBfr1EWAgWTiAghrih5t0jgWsR35/NYan65u4oZ4sPGegzHJ5a9pDKH/RG271FXGbL1AzXK8MBka+LjG8+yi54fSVfFJWvcGBuwPL1j//YDy+MJx+WIMG3QusBmdfDeJ4QQ4JxDx7OIRjV/BhSkryoBJSsyqtENIztuIQuZvl0/pIDhEiwiBjbGQGs6oroJGEuOlDUzBjLqjyfYYUM9GzStREl9Hu6+4f7+Hnd3d1fEfUQs/b8lp6DaYpqPmJ9esNsvWPYHHJ5faZsdrLXoL+xiuY6ddtYldv8EjCVXFa0jJaFQszxVN2nd8pGOD9uWGtukmSbiWmveo4dzkf9dcobOsyHvv7A9PdOwO7y8vuBwOOD76YQNGYZ5wfz2E8PhEYYaB7pAMWB0wK21Vh8drhSbEQaY0Cehk+BkUjc1ajZGM2HrfGIv6ENBEkmuaLtC/Mmw4KLtLC3CEdvsEtt6CGiWHZp5m0ZQcmLk4NO36mPn2USOaiD76JA8v2GYMZuiXqH1ZGVhaJNoHTNOsPRhyh4rueL8uCjKM8PbkuNP0xiMmlPhHdSmR2k0upqCU4Y4ircPvsJKps5WsAw6hQ3cOKJUil1XkFWVGBTXGf4avwH7c88SqccSOQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/96922d27fa4c28c8bf2d65582437b66a/a6d36/9s8Cb3UueFvSwf3r1xaovg.png"
+        srcset="/static/96922d27fa4c28c8bf2d65582437b66a/222b7/9s8Cb3UueFvSwf3r1xaovg.png 163w,
+/static/96922d27fa4c28c8bf2d65582437b66a/ff46a/9s8Cb3UueFvSwf3r1xaovg.png 325w,
+/static/96922d27fa4c28c8bf2d65582437b66a/a6d36/9s8Cb3UueFvSwf3r1xaovg.png 650w,
+/static/96922d27fa4c28c8bf2d65582437b66a/8c557/9s8Cb3UueFvSwf3r1xaovg.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>Above example is a function that is responsible for one and only which to get the details of a lowongan. This function promotes easy to understand by other devs, easy to test, and easy to debug as well.</p>
+<h2><strong>Don’t Repeat Yourself (DRY Principle)</strong></h2>
+<p>DRY emphasizes the importance of reusability and modularity by encouraging developers to avoid duplicate code. When you find yourself copy-pasting chunks of code, it’s a signal that you should create a function or a class, promoting code reuse and reducing redundancy. DRY not only enhances maintainability but also improves readability, as developers can focus on the unique aspects of each component rather than sifting through repeated code.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/9e7afde87c05437df72cd63148156a8c/8c557/nShJi1y4KkJ-LUVXxiNDKA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 24.539877300613497%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAxUlEQVR42n3PWVLDMBAEUF/E2nfF1mI7JFDc/1jN2MEJH8DHKy2l6lEPoTWUjxW+zTDZQ+UIHT2kFODixMH5TkCI/w3aGOQp4UKM1gfJGcQ3SWGSHj6cwb97BDqHeb3h+v6J5e1ObmitYm4dhay9oE4eyVukYKGU+oOkQI5BaYO5dGzbdoT0vqDUdpx777j2ivtSkVJGiBGRhBCe609K0Q/3GlZKXJyBpYtoNLxWyFbD0dRkDSbvqL7AyEYwxg7j+Nqf9tpfHkWPvTSAhlsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/9e7afde87c05437df72cd63148156a8c/a6d36/nShJi1y4KkJ-LUVXxiNDKA.png"
+        srcset="/static/9e7afde87c05437df72cd63148156a8c/222b7/nShJi1y4KkJ-LUVXxiNDKA.png 163w,
+/static/9e7afde87c05437df72cd63148156a8c/ff46a/nShJi1y4KkJ-LUVXxiNDKA.png 325w,
+/static/9e7afde87c05437df72cd63148156a8c/a6d36/nShJi1y4KkJ-LUVXxiNDKA.png 650w,
+/static/9e7afde87c05437df72cd63148156a8c/8c557/nShJi1y4KkJ-LUVXxiNDKA.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>For instance, instead of I patch the values when getting the distinct values of semester and tahun_ajaran in every test suite. Here I put them in <code>setUp()</code> so that the other method can use it directly and reduce redundancy in writing code.</p>
+<h2><strong>Secure Your Code</strong></h2>
+<p>Security matters. Avoid hard-coding sensitive information like database credentials. Instead, use .env files to store them securely. It’s a simple step that goes a long way in keeping your application safe from prying eyes.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8138afb0cae84a633a0aa1bfa132ad50/8c557/NchXPZMa0ZumtFg2cfBzog.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.515337423312886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABVklEQVR42lWR6W6DMBCEeY2WK1ICsTGYG3MEkuZO+v7PM9110kr9MVqvZX+eHTsyUSjLAmEYIPDcl3zvb+37PjxWEFD9Ffc+XM+3fRiGf3KElBBCYKMKRLpBnHdYS03rFqIwyBKJJpXI5RalEnZdv3uTK1RK/geuN5F1IZoFarwinb+xrSYkwxXZdKPLAndT4NAW+CLdhxqXvsJYZniMDXZVZp1+vuVEUYyAyKLeEeQCtXta4LYcoecnsnaGaTu6qC1wqTVOXYl9neNsKhitrNuKXLdZAmfDQMqHIbI7kss7Yt29XPYnZOS6bCc0dJiBhybHRO64suuOgEOR2od4z4niGCEBRbMn2M2OzG4lw4YzukzgYXLs6TADecxrX6PPUzs6w12K7MP1rJwNZchhxkVPoBnSHOljDGIaWbYLtErsuJwZa6bM2E2nEyz0SEUftVqFpJWtP9Sp1bMsmNWUAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/8138afb0cae84a633a0aa1bfa132ad50/a6d36/NchXPZMa0ZumtFg2cfBzog.png"
+        srcset="/static/8138afb0cae84a633a0aa1bfa132ad50/222b7/NchXPZMa0ZumtFg2cfBzog.png 163w,
+/static/8138afb0cae84a633a0aa1bfa132ad50/ff46a/NchXPZMa0ZumtFg2cfBzog.png 325w,
+/static/8138afb0cae84a633a0aa1bfa132ad50/a6d36/NchXPZMa0ZumtFg2cfBzog.png 650w,
+/static/8138afb0cae84a633a0aa1bfa132ad50/8c557/NchXPZMa0ZumtFg2cfBzog.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>For instance you could use <code>.env</code> to store confidential information. env variables use key=value pairs that can be used as below in the python app:</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ee30abaa2bc78a14dd2ab8c1adae6262/8c557/NlW44E6O3PU1hv1YRci2nQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 42.94478527607362%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaklEQVR42nVS2XLCMAzMf0ASOyEhh+3cN9ACoe3//9BWStIZOgMPO7Jsa6WVZB3HG6LTjMAUUImE67pwhVjtGzgMh+FsdgW/WX4QoCkyDIVBbRKoMIF0BTwp4Qm2AlJsPkEIF74ncfAl/O0P+wx+swRntR30WYqfoUJlFMJjiFOd4dzmaHONS2VwLg2mQpPV6DKNRqcoVbyg0ckSHxx8IqQMXHpHF7cmhxsGSPsa87XHMFVQ2uBBxF+UbCIV332JSBnsHIHd3l5lP7VjJaRDTZnmtsBYZTBUVdGVGMYaHdm2zJdkdyK+NhmajKtUqHUMLwj/9XyrkAipbA6q6GNKsmsiO106DEODqSkWok9qw5WQa4U8jaCjANI/QLwmjHGh/giSrEjygyWPFVKlMRPZnSodc4UP6mcYp7Apbm/bcEny8wZYvvTBYIenyQmk58EjCJoi3634m/L2h6YvXqyUJeWbXXvarVf+O/wCfu4HDlUqhWUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/ee30abaa2bc78a14dd2ab8c1adae6262/a6d36/NlW44E6O3PU1hv1YRci2nQ.png"
+        srcset="/static/ee30abaa2bc78a14dd2ab8c1adae6262/222b7/NlW44E6O3PU1hv1YRci2nQ.png 163w,
+/static/ee30abaa2bc78a14dd2ab8c1adae6262/ff46a/NlW44E6O3PU1hv1YRci2nQ.png 325w,
+/static/ee30abaa2bc78a14dd2ab8c1adae6262/a6d36/NlW44E6O3PU1hv1YRci2nQ.png 650w,
+/static/ee30abaa2bc78a14dd2ab8c1adae6262/8c557/NlW44E6O3PU1hv1YRci2nQ.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>And please don’t forget to put your <code>.env</code> in the <code>.gitignore</code> to avoid adding the <code>.env</code> file into your git commit.</p>
+<h1><strong>Best Practice in Django Rest Framework (DRF)</strong></h1>
+<h2><strong>Versioning APIs</strong></h2>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/52a8eed986df2facff6a2866b86a4b81/8c557/x74EFqq5CHx_T7AO2gluCA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 35.58282208588957%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABUElEQVR42lWSa5KDIBCEc5BsVN4BRBREK+/d+9+pd9DUbuVHF2MJHz09HLTrkW935MsVIU7wVoDzDlpJaC3RNA1Op081zemtWrfvddehbrBWo+SIaxmRnEXvzygl4vW9wA0OWgg4JWBJRnBoqcA6gdMH+A3suhbH4xfMWeL5XJG8J6jBTKDXMiJ4izT2+HkUlCVjDRbXacDUewxnBaUs2paR868d2La7ZUeQ+61gtBaFDj1SoNqQe4N1HXG5JIxDj1t0G3T2GpEud8ZDUAddx/6BtW3vDZ6PBZk2XaPHJfZIwaFMPeZlgisZeQwUTUJOI+YYKQbKWUoorSGk3lz+AavDClxCwJ3c3Qh0nwK1pWlYFAPF4dOEtczIFUrA5M7wRsJITvkqcKFxUHKfHGPdZp13tLJdtW5JUtZB8O1bsRaKXoGk/7oOiCQ5A2eM2ub4BdEmz152MznuAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="API versioning"
+        title="API versioning"
+        src="/static/52a8eed986df2facff6a2866b86a4b81/a6d36/x74EFqq5CHx_T7AO2gluCA.png"
+        srcset="/static/52a8eed986df2facff6a2866b86a4b81/222b7/x74EFqq5CHx_T7AO2gluCA.png 163w,
+/static/52a8eed986df2facff6a2866b86a4b81/ff46a/x74EFqq5CHx_T7AO2gluCA.png 325w,
+/static/52a8eed986df2facff6a2866b86a4b81/a6d36/x74EFqq5CHx_T7AO2gluCA.png 650w,
+/static/52a8eed986df2facff6a2866b86a4b81/8c557/x74EFqq5CHx_T7AO2gluCA.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">API versioning</figcaption>
+  </figure></p>
+<p>It is important to implement API versioning from the beginning of the development to handle the application as it evolves to a bigger project. API can be evolve into much more complex as the requirements changes and versioning the API can be very useful and powerful to handle this such issues.</p>
+<h2><strong>Serialization for Data Representation</strong></h2>
+<p>Serialization</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ab0cb0f70ce5420189ab3151ebcdbb04/e9d87/ipV9cxjr1uMEcUikTpIGkA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 81.59509202453987%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAACqklEQVR42m1UV3LbMBT0OWSKvYIN7FUSZcXxTL5y/8tsFpAtyYo/dgAWPL4tjy9eJCCbBvXQo19GNG2FoilQjDXSpoeoe2SVRDOOiJIEoUgR5xJJUSGKA1imCcuybnixLBNxKjD/+sB0+cBw3NCdN5R9j+l0xnQ8Yz4eMa8L8rpBUtawbBvm3oBpWt+K6YK2bSGOPOS5QEaUMocsU+RxBJnxOk2QcS+iEJ7vwnZcHrT/K/RQ0EbghUjzGkJ2POTBj1NEZYOQtGwvwG630zCMV+wJ84umWr9gmfeC16I+5LigXjakZQkxtCjaFs20ou5ajEc+W7frc9kgSjMU/UwZWuTdiIx6xyK6F4x8UqxowHpAOQwscEa/ntD0E80Q1I4mZAXirITjuvqM7TgP63V/79D1SLtCNswo6ppdDShpgqxqeA5NMAzSNW6Uf8I3ykK2qJYTaY6oxhWyrhB6DjUN4YcxPH7QD2iMgu8jCAKEYQCfe8/zNBx2qQs67MB1TFKidtQnYd6yPKcMARLeU5kLWDhMCx0bIeh+yayWElmWIeF1ynz6jv/ZIVstSbXbfqPpehzWFSODfDisPFSiPlzQHt7QTgs66prQkFB36CCOY37Mxn6/v1NWm5QTUR/ftQnLsmCaZ2JC1Q4YtndIajocNk7Mgp6hH2hcXRVomQRZRM8aWvyih25eUfUNAr4YSKLI4JOmV7QIRK5HztzzoJoS3dFV/8eg3wrGSreioMgOXF+JH1B8akiXhQIdF5Jr03LfklGtJ8d8nuVbbJi1vJshpyMa6iUHFfITxj9/0Vyo7entiu2i0W1nBHRZd/xcULts7+FyWoI40dFQe7UqOsarAUON3uvuun7iubvr34YFEz/m8KvfUqknIRIZ0qrV06Eio178YvKIn34O/wAFydlc760yKgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/ab0cb0f70ce5420189ab3151ebcdbb04/a6d36/ipV9cxjr1uMEcUikTpIGkA.png"
+        srcset="/static/ab0cb0f70ce5420189ab3151ebcdbb04/222b7/ipV9cxjr1uMEcUikTpIGkA.png 163w,
+/static/ab0cb0f70ce5420189ab3151ebcdbb04/ff46a/ipV9cxjr1uMEcUikTpIGkA.png 325w,
+/static/ab0cb0f70ce5420189ab3151ebcdbb04/a6d36/ipV9cxjr1uMEcUikTpIGkA.png 650w,
+/static/ab0cb0f70ce5420189ab3151ebcdbb04/e548f/ipV9cxjr1uMEcUikTpIGkA.png 975w,
+/static/ab0cb0f70ce5420189ab3151ebcdbb04/e9d87/ipV9cxjr1uMEcUikTpIGkA.png 1176w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/9af3b969d557a4d9b2f4133f2af786ea/7321b/kG9fO1WZ2JkRfzsrDv5bQA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 58.89570552147239%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACG0lEQVR42m2T6W7bMBCE8xhpbeskdZAUKUqyDtuxgbQIUrQF+v4vMx1RsNEjPwakrtlvdqknoRykpUYPMfUQg4ekitOIevIoXQ3R1Mi0QqYq5Jr7RqMwFbIkRnSIEEcRoihGHMd4StMMbjzBLRf46yt0P6Do1gI9qsFCGBoYDcl7RdcGVUYgSVMkeYZE5EjzHBmvN8Msw/T1O5a3Hzi9/UR3vqGajigvM6qXJUjdZpjZQvkOajhCthq5URCkzq1mUY1KShpGK2EKe1zQDBMKxRcYJ3cNxCpvSWRRaVKkjHT4jN3zM/afdjjs9jjs94x82MTYj8jj6zfqHef3X2gZXy0Tqc4opyGQ1l+uKEk63CYYFnY9W1JI5HKNvvXurhDZn27s4xnufIWeZjTzCWZaQt+q0UFYFfpYDh2JPQwNTXeEYYo8Tx4DeRC2yxWe0gMn2/fBSI4dJKdejy2kb7ZBHHaI9lvUoBD1H8IkSaDbHm66QDWcojFsOg2d5dogWym8Q03Dtekxj0rMb4Li+D89JSRUxqJlrLY1sI2Cd4Z7GpY8g0KSbKWJPjT4wDBlc0s45zDOMxYO5OV2QUuqShkWI3EhNrI/PrxPdaW+79f4IXJKNbWF12y4drDdQMKWRSystWHNeYjXI/a3EiTJts+yLFwHw1UiE9CFguRa8+/QzWZmSS5FTFIF2/pg3vBZy7Y0tuSkPTyLrwBGF/gN/AJiO+bL4/cAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/9af3b969d557a4d9b2f4133f2af786ea/a6d36/kG9fO1WZ2JkRfzsrDv5bQA.png"
+        srcset="/static/9af3b969d557a4d9b2f4133f2af786ea/222b7/kG9fO1WZ2JkRfzsrDv5bQA.png 163w,
+/static/9af3b969d557a4d9b2f4133f2af786ea/ff46a/kG9fO1WZ2JkRfzsrDv5bQA.png 325w,
+/static/9af3b969d557a4d9b2f4133f2af786ea/a6d36/kG9fO1WZ2JkRfzsrDv5bQA.png 650w,
+/static/9af3b969d557a4d9b2f4133f2af786ea/e548f/kG9fO1WZ2JkRfzsrDv5bQA.png 975w,
+/static/9af3b969d557a4d9b2f4133f2af786ea/7321b/kG9fO1WZ2JkRfzsrDv5bQA.png 1184w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>Django app are not to be able to return native Python data types, hence it needs to be converted into another format such as JSON. It is important to serialize to convert any Python object into other format and Django provides serializers to convert to convert this native data types and control the output efficiently. Above is the example of the implementation of serialziers. Serializers can be generated to map all the fields in the model or just to return the response for specific fields.</p>
+<h2><strong>Authentication and Permissions</strong></h2>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/bc5cae3a89cf612555e4226304b81c96/8c557/Z6fqCIV4U_wqd-FbLaiJdA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 70.5521472392638%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACMElEQVR42n1T7VLbMBDkPRxb37K+bMd2CCYJodMw0E6Z/mun7/8i27OSQEmBHzsnWdbd7e7pqh880v13xB9/EL79RjwhPf6Ee/6FcHiGun2CmQ7gSoExBsb5Mb6Dq9oyuHEHf/OAsP6CMD0g0mXVThD9FnzYQq72MMMGnFGisiRUYFWFivBfQiGpqlCIKaDrItqhQ7ca4EKArS2cc9BKgNcKqmsg6T/ZRMjoYbykJNVFQiGgpKDLDtYF1CGh9hEhtbCeLmsLQVS5Jhj9Cq3pO3+nQyHhmh63NyuM1yNC02K5ntAse8TlgNiPqGNCM67z3jnzOWUpZV5Y6sRSZ7MEhjoz1K01Jp9Vs24U+WwGZx8a8pIw/0hapNUaN18fMW7uctwcHtHP68MTxT3SsELoevQjyWEEqn8dP8Vjh7QRgkPyCkIbcOpS1R7Suqyh8QmaNJ47LReL17goM+Z1WRT5+0uHnKikOmDVD2h3a3SbEU3r4EmzFI9uu6ZD7chdgkvkeHBQntaxyZ3PMr2hXPECRpFJRhElgtWUyCKEmqagztpqY6EIlpIKa4mFzQVm47SpX03xhl6MS+BUkUUaFzpUyqAoShRnWjPN7C7tyyP1M8rFBWUtDTrfYTmM8NtrtNOIGB2MlhmMdOVcHF/K2YQzLk3hp4O58nLsMW1pDq97tITNfodpv0d3e4d+e49IWn06NvNLOc4Yg5QsOyzoFTDSklMxoTTRN1k3bUmG02x+lPAvvt6UoeyOhsgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Using Authentication and Permissions to the views"
+        title="Using Authentication and Permissions to the views"
+        src="/static/bc5cae3a89cf612555e4226304b81c96/a6d36/Z6fqCIV4U_wqd-FbLaiJdA.png"
+        srcset="/static/bc5cae3a89cf612555e4226304b81c96/222b7/Z6fqCIV4U_wqd-FbLaiJdA.png 163w,
+/static/bc5cae3a89cf612555e4226304b81c96/ff46a/Z6fqCIV4U_wqd-FbLaiJdA.png 325w,
+/static/bc5cae3a89cf612555e4226304b81c96/a6d36/Z6fqCIV4U_wqd-FbLaiJdA.png 650w,
+/static/bc5cae3a89cf612555e4226304b81c96/8c557/Z6fqCIV4U_wqd-FbLaiJdA.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Using Authentication and Permissions to the views</figcaption>
+  </figure></p>
+<p>Authentication and permission used to validate that the API are accessed only the authenticated users. This can ensure that the information or the response that will be given is valid only the authenticated users. This can be done by adding the JWT token in the authentication header of the request.</p>
+<h2><strong>Optimizing Database Queries</strong></h2>
+<p>DRF provides built-in ORM queryset optimization techniques to avoid costly computation when querying the database. For example, this can be done by select_related and prefetch_realted. prefetch related is used to follow the FK of a model.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/3ff617369074a293e625fb725bace967/8c557/CrYP31ibw9JP0mKK4epOtA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 34.96932515337423%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABY0lEQVR42lWR626bQBBG/RSpkgALtmMweLksC2tTbLmNk1RWUtVK3/9VTodNmqY/jkYCzZn9ZmbLvKTtDb0z7IaOzpY0doMZKgpjKBqDLjXd0JPma9JiQ1EbNqYly1NUpFDqHzMVBWS1xZ1fcU8X7Pcz9elMMd7Tn55xpxfc8Qfu26PIWxFq3xgGAWEY/SfzwliFFHbAPP6mub/QPb1iHy7U+2e6409Pc3ihPv4ir1uS+YI4SVBxTCyoz3hhnLBKlhS5JttoFknEMk3JdMkqL6Q55vrLFTdCcHNNcHtLFIYSNfL1L+FU5dtsmpLIxPQuo9p+pbJbkWnSTvbUtpTWUbeN7NBRuoHa7ViXtR+m5d/bPq3Q+Z164cRqsZJGh97vqfqefn+gHw9yoOkYuZevdSWxm7fY00PmcyGRB809U5oPYbZMqUyPHkeaToTDiN3uaOSaC2mKovdYYeDj+iNM9TNK8QcRs9HWQ1ZycAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Optimizing the Database Queries using Django ORM"
+        title="Optimizing the Database Queries using Django ORM"
+        src="/static/3ff617369074a293e625fb725bace967/a6d36/CrYP31ibw9JP0mKK4epOtA.png"
+        srcset="/static/3ff617369074a293e625fb725bace967/222b7/CrYP31ibw9JP0mKK4epOtA.png 163w,
+/static/3ff617369074a293e625fb725bace967/ff46a/CrYP31ibw9JP0mKK4epOtA.png 325w,
+/static/3ff617369074a293e625fb725bace967/a6d36/CrYP31ibw9JP0mKK4epOtA.png 650w,
+/static/3ff617369074a293e625fb725bace967/8c557/CrYP31ibw9JP0mKK4epOtA.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Optimizing the Database Queries using Django ORM</figcaption>
+  </figure></p>
+<p>This can be avoid any operations that needs to join two models/tables and in Django it’s optimized rather than joining the table itself.</p>
+<h2><strong>Unit Testing for API Endpoints</strong></h2>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/50c48f74a99a29456bf904b0b180eae1/8c557/cuHo_krMrwSCjviS7MwY1A.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.87116564417178%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAACaUlEQVR42l2T6XabMBCF/RyJwYBAaAEhVtvgJTlxmvb9H+j2Sknanv64zEiMRprRp511LVrKSAFdCkghoMoSNW3Nsa5KjsWXchhaW1dwWsLKCo2S0LKMc6oS2Al+JNWaGs4qWAY0ukbX6CjfKAydQdsYGGPgWsuNiphEcbNgpSiiL/Icu1JZdNOIfvSY5wHjNGAKdhkwLBP6ecSyLqidQ1HVUFYj2T/j6ekJ+/0e+yRBkqZIqcPhgF2aJmjGBdP1Dj+GJAs8N/DrFcPllXqhf0d/WrmpheG/dlo4f4cbGN9qOFal6hJVxRNmWQZ3XHG+XfB4bPjxccW6ebTjhKYfYDoP2/fRVyy38g6GfjiEW47QRiHjyUKeQ8YT5nnGiRSVZp+mGdZ7LnSwRsKzd8G6VkXbewvXNKh1A8l4aehTMRmTxpJzZhVFhiIXEKJEURQxIGeD/1cWNg/KPpV/xX4niwmHeWbjJ9S1hKxrVEThu8lByb9K0j//gh8vJPn7LyZUWhEHlvTFYUDCyE/2dMCJfFki0XDOcBxsS6x6IuaC5domclnH+F3oneVkx9sahxadM/DUNDqOHYa+wenYo/UdDHvr+g4lW1Sy3FJ8SgSfyln+LhekndfvxxEDsRnZgqZpYecemizaqUN3u0MuG/T5yht3SL/Y2z8/IyWTCW2S7NlPlnzgDXenDevjHet1xXrbMJ9nzG8fWB4/Mb28Yby94Ui7XIjKdcOw3XB+/4WZ7K6XDdf7S3wIfzjUXY+OpZyOHuuZpyTAPRc5AtzOR5brcTpPcJ7vvm/jqzpyPK089eUBs73CEH6pavwG1OqEr9XTTYAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Unit testing the API"
+        title="Unit testing the API"
+        src="/static/50c48f74a99a29456bf904b0b180eae1/a6d36/cuHo_krMrwSCjviS7MwY1A.png"
+        srcset="/static/50c48f74a99a29456bf904b0b180eae1/222b7/cuHo_krMrwSCjviS7MwY1A.png 163w,
+/static/50c48f74a99a29456bf904b0b180eae1/ff46a/cuHo_krMrwSCjviS7MwY1A.png 325w,
+/static/50c48f74a99a29456bf904b0b180eae1/a6d36/cuHo_krMrwSCjviS7MwY1A.png 650w,
+/static/50c48f74a99a29456bf904b0b180eae1/8c557/cuHo_krMrwSCjviS7MwY1A.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Unit testing the API</figcaption>
+  </figure></p>
+<p>Add every API with unit testing to validate the functionality of the API. A comprehensive unit test is needed in order to ensure that the APi is robust and bug free.</p>
+<h2><strong>Uniform Response Output</strong></h2>
+<p>Provide uniform response</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b4b52de4954ffe985abee645d5b0e225/8740f/hVeqIBVfZrwDh2NOKrYvLA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50.920245398773%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB6UlEQVR42n2S227TQBRF8xGINok99tjj+/0SNzSJ06SkNFSqKiQkEG/whIQEX4DgyxdjN1KFRHlYmq0jz/Y5c/bEDVPqKqcoc1wvIMorgihBhRFJ3RHEyVgbdJJlSCkwTIFlWf9kYts2Srpk1YKkbIiLmqxdUtUNQRgiHQfHVY8oD1cplHKeNxwuCEvgxSlNvyerW8qLS9rNjnK5pt0eqDd78m5FmNekZUWeh9i2NtDNPCE1Q4dijmXOUI6FHxc4SYHSF720ROofKc8fu7L0d/OzFxjTl8zPzzBn54j5VHOu9dmIMOZMVHfEbQ8Ux6+sP/1m+eUnzedfdB9+kF7eUPa3ZKtbkv6B7OodwfKOZPuguUetj0Sb+7GeX7/Hq9ZMgrff8O6+E19/xM8XxOUrgmJJWF8StT1J149nuNiPeFVP0O7xm61upB/PoN0RLQ+4SaNHljaRH1PEGW4cYKcRru8R6FFNY4Yxm2LOZ+NowphiGbPTqANPengCaxh52LIjJWmQUup4hF1F1DUkaajrlsYetyf0owvDRAjx9zKsEyc9kdpsMDVNg3rRsnvzmmZ9QbXuWF31XN0c6Pa6tjvSrHY6q96j6f9yODg7jsDWEbIdvVGpc6a11Fq6/hh4Vz+BCnQu5fMZHAz/AD/sKI+5FwnMAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/b4b52de4954ffe985abee645d5b0e225/a6d36/hVeqIBVfZrwDh2NOKrYvLA.png"
+        srcset="/static/b4b52de4954ffe985abee645d5b0e225/222b7/hVeqIBVfZrwDh2NOKrYvLA.png 163w,
+/static/b4b52de4954ffe985abee645d5b0e225/ff46a/hVeqIBVfZrwDh2NOKrYvLA.png 325w,
+/static/b4b52de4954ffe985abee645d5b0e225/a6d36/hVeqIBVfZrwDh2NOKrYvLA.png 650w,
+/static/b4b52de4954ffe985abee645d5b0e225/e548f/hVeqIBVfZrwDh2NOKrYvLA.png 975w,
+/static/b4b52de4954ffe985abee645d5b0e225/8740f/hVeqIBVfZrwDh2NOKrYvLA.png 1106w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f72b57346478d399c203de82682bcc29/7b1dc/p87UV0O4XTgeXZFmPy0Ayg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 73.61963190184049%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACLUlEQVR42o1U2XbbIBT0h1iIRRuSEBLWaltemqQ97en//870go+zNUn7MOIawZgZ5mqjyg7OtTgfR+x6i2FqMexqdG2Fw2HANBq4eUYznlC0OxRZgrQxhBo8jhG/wyaOGXRaoDc9qn5Es++RaY1YKjB6xxiBFkYspvrVZs7/IguEnAtE2y0y02B6/I3p8kQnHDB0LVxZwBLqPIWrCugs/ZDkHSGH4Ax53cDtT+jXK3RVQ9JcoiQSKSGlgCJIIf6PMFUMnBZL2iwIvvYyvcTnkd3k/5OQRRFJJkTbID0gYgFbmg8kjN4zX0dU08Yw9zH5piSpbWthbQNjzA11CUu32HUWaZ5BpjmNGjLLoRQpSRS4xwcXs0lKC9d1uF4WrGuPmWIz7hccryvVFsvkMCwH2HGPtHbIc4qNLqBMFSx6f9KNlyO5xM62OBJRf5hRdQP6+QzTT9jvV7pxgx1BZxG2ZIW36VPJ/tg+b1vyTiU5dqcndMuK6bDAjQ6W6uHyA8fHB8zHgU59k/3ZBW38I1UpSgq3IF9kkVA87sFlAT6rMcGPUvCvb9k/MiJs6w71MMNMA3lEbUWnvUfFSwygOrrPvUZ8i5e34W2nPPzC8u0n+tN3OJJelQaV6WDnFcaNMHkNU2hqU41Gkz21pg7SNJfB0m/fScFD3xV5RR+BwxnVsELlZQi4EB4+JkmAoD8Xfr3gYVTi1j2C82cEwkS9GPzyAWBvOyRIe7XuuYPeevgHL+SvPvkX+PQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/f72b57346478d399c203de82682bcc29/a6d36/p87UV0O4XTgeXZFmPy0Ayg.png"
+        srcset="/static/f72b57346478d399c203de82682bcc29/222b7/p87UV0O4XTgeXZFmPy0Ayg.png 163w,
+/static/f72b57346478d399c203de82682bcc29/ff46a/p87UV0O4XTgeXZFmPy0Ayg.png 325w,
+/static/f72b57346478d399c203de82682bcc29/a6d36/p87UV0O4XTgeXZFmPy0Ayg.png 650w,
+/static/f72b57346478d399c203de82682bcc29/7b1dc/p87UV0O4XTgeXZFmPy0Ayg.png 956w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>By providing the uniform response, any application that need to call API request to the backend will be easily handle the response since all of them have the uniform response pattern. In this app, we create two patterns when the response is success or error.</p>
+<h1><strong>Object-oriented Programming Principles</strong></h1>
+<p>Object-Oriented Programming (OOP) is a programming paradigm that introduces a novel way of structuring code. OOP takes an approach by organizing operations and data into modular units called objects. These objects can interact with one another, forming structured networks that constitute a complete program.</p>
+<h2><strong>Abstraction</strong></h2>
+<p>Abstraction is like looking at an object from a distance. You don’t need to know all the intricate details; you just need to understand what it does. In programming, abstraction allows to hide complex implementation details and show only the necessary features of an object. Abstraction simplifies the programming process, making it more intuitive and manageable.</p>
+<h2><strong>Encapsulation</strong></h2>
+<p>Encapsulation is like putting the code in a box and giving it a label. It bundles the data and methods that operate on the data into a single unit known as a class. By encapsulating data, you protect it from unauthorized access and modification. It promotes modularity, allowing different parts of the code to function independently without interfering with each other.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0e368c34e21d53459851c4eb785c9f4e/8c557/jJyk7AodkTUwIDw5Jf85uw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 136.80981595092027%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAYAAAB836/YAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzUlEQVR42o1V13bbVhDUb0giUW5BvegAq0RSTOz4pJz8/9dM5i4YSjJlyw970Hd3dmcGdzotYVyHbOrgNj2K1YBsaGCrDLrms9QgDAKEYfhLcRdFEWKdwLUt+tWE6XhGs1qj7JjYNXJM8nxOPvYwXctzB91UfG4QhcFtQp3kcC7jhxlipWGSjJEgyQyWj48Ilst3sZRYIPig80uHBk1ZoerZVd0xsWP1GnlVI2WXCZ8leQGb5UiKEmWZIHclbGLnxJdC14RRFEq1xvXY7J9x/PcvHP78CkdorutQtR2TN8jrFpkvTLj+vi05Z2ulkA+f65IwQhgFnMcCZWbRNqWMoCwS6abmecbOfEJrU1gisGWJuEjZcSH3i3ZAFKvXhDlfzDi7IEsRGAOtLeJYE1KAJbsPLiGz8sdLyP1byBESk6DJG9TjiO3ff2D/cmQ3mklDxH4kYTQn8B8Koui6iCvK14QxXwihlMLueY/j1xd0hw2GzYTjbydsz2fUhzPG3ZGbLz7c7rst/w8nilidcwiDEEtfiOfKWNIqhbEJB59B6Z8T/c53pzOHrnUoKkdlcBltj5SdpFTJ4uEeC3JxjgfhpZ/rz5WiDBwTOG6qoDLKhltrKEMe86aTLaalQ8pNp6SNcylU7JH9IGEU+qEHhKfhxrVwzvUTZTehXe9EfgKdsH0kiZ4lJ5vmhiWC91tWcQxH6rTsavvtd6xPT9wyZ6gVDAvFSsn85H3SSZFakb/nKSaFrGz+ldi+Q8JoaQKrzYB+qFHRceq6mOdbe6MYZbbeNLKmgXI5pekEgRsmKXpNmJLIltWWlovw3ApjdhILlOUbIntYwQVm+IbUM7GDt0rJ0ZXU7TRiRR3vTkdCVa8O4xMvFnOiz/zQU0eWwo622zVOJPZwWKOj6T4d9pj2exSbPZpxI/P6lNizfGZiG+8c5GJIDhoS2btLcaGOmC3veWhvpXeTUNEUyjITZ/EdiMmaVLar+PHi/p6EfsAjj4+Pi6vJ/tBgFY2ho5n2qxFlP4peE/pd2rcw9MTYO3lONyq49SqTX4JHofVlxjc85IkfelW0GFZb8vALVl9OsPRBxWSmyOWYFfOvwivGO7jybqS16Fyb73gY0aZUHKCtCkzrHn1fo2E3LXk4kIdl1YhyTJLLbyEnD2O+6yVZUPu3PCRsyyrveag+NNjgncEuPzbYzLIbQm74K9398w1P55No1hus/HN8ouUvG+x8Ybjdp+MzTtTy8LLDuJ1wOB+xPZ1QP9Ng9ydZyKc8FAuLfQRisEJ0XkdKCwOMN1gf6ecG+x+AnAfSzMApLwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/0e368c34e21d53459851c4eb785c9f4e/a6d36/jJyk7AodkTUwIDw5Jf85uw.png"
+        srcset="/static/0e368c34e21d53459851c4eb785c9f4e/222b7/jJyk7AodkTUwIDw5Jf85uw.png 163w,
+/static/0e368c34e21d53459851c4eb785c9f4e/ff46a/jJyk7AodkTUwIDw5Jf85uw.png 325w,
+/static/0e368c34e21d53459851c4eb785c9f4e/a6d36/jJyk7AodkTUwIDw5Jf85uw.png 650w,
+/static/0e368c34e21d53459851c4eb785c9f4e/8c557/jJyk7AodkTUwIDw5Jf85uw.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>For instance, <code>LowonganDetailsService</code> class handles the encapsulation of data and methods related to lowongan details. The methods <code>get</code>, <code>put</code>, <code>delete</code> are encapsulated within the class <code>LowonganDetailsView</code>.</p>
+<h2><strong>Inheritance</strong></h2>
+<p>Inheritance is the family tree of programming. Just like we inherit traits from our parents, objects and classes in programming can inherit properties and behaviors from other objects and classes. It promotes reusability, allowing you to create a new class based on an existing class.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c17a52f3a0302a51a34753841110fcd5/8c557/KS_7jnIZst42Jm4xeYEKWw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 14.11042944785276%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAApUlEQVR42kWPTbKDIBAGvUgkAqMYBEHUxCyS+5+q37xVFl09NV/V/HSSDtyScW1lug78XpCmqMMW1atmWi8e0/cYYzC3/kf/o1c6KwFJjWVbeX0u6lHYvx/qdTLGB24KuHlGgtp7BjswjKKMDKIW7Y2eu2ZWLN39f6NOjqUyp0zen5Tnm9RO8vHisVbNNmLdibnoggl/bsjZ9JuKKxmvx9icCGXmD6D5WNuR4OoIAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/c17a52f3a0302a51a34753841110fcd5/a6d36/KS_7jnIZst42Jm4xeYEKWw.png"
+        srcset="/static/c17a52f3a0302a51a34753841110fcd5/222b7/KS_7jnIZst42Jm4xeYEKWw.png 163w,
+/static/c17a52f3a0302a51a34753841110fcd5/ff46a/KS_7jnIZst42Jm4xeYEKWw.png 325w,
+/static/c17a52f3a0302a51a34753841110fcd5/a6d36/KS_7jnIZst42Jm4xeYEKWw.png 650w,
+/static/c17a52f3a0302a51a34753841110fcd5/8c557/KS_7jnIZst42Jm4xeYEKWw.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>For instance, <code>LowonganDetailsView</code> class inherits from the <code>APIView</code> class. In Django REST Framework, views that inherit from <code>APIView</code> are used to handle HTTP requests. The <code>APIView</code> class provides the basic structure for handling different HTTP methods like GET, POST, PUT, DELETE, etc., and it is typically used as the base class for custom API views.</p>
+<h2><strong>Polymorphism</strong></h2>
+<p>Polymorphism allows objects of different classes to be treated as objects of a common superclass. In simpler terms, it enables a single interface to represent different underlying forms. Polymorphism allows to write flexible and scalable code. Polymorphism enhances the extensibility and maintainability of your code, making it easier to add new functionality without altering existing code.</p>
+<h1><strong>SOLID Principle</strong></h1>
+<p>SOLID is an acronym representing a set of five design principles in object-oriented programming that promote software development practices emphasizing readability, maintainability, and extensibility. Each letter in SOLID stands for a specific principle:</p>
+<h2><strong>Single Responsibility Principle</strong></h2>
+<p>This principle states that a class should have only one reason to change, meaning it should have only one job or responsibility within the software system. By adhering to SRP, classes become more focused and easier to understand, modify, and maintain.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d7cb62714ba019f393a189fd28d4b009/8c557/7QheQq1Qs-3-PwZ9s0zj3A.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 20.858895705521473%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAt0lEQVR42o2PS27DMAxEfRFblGRJbB1/YsWuGwQFuuj9j/Qq5wcU6CKLwQzJwZCsXFDiuOEPA2GdCeeVsJ1o5xF/HEn5QJo7fJ6uvR2x6Lj7lvnmK3XIA2/qqKy1WB9K6Ae6bOjXGc1HpPVIitgYytwhbodFHtr7O7snWytUIoKIwTSGabuwfP/QDQO+79Byha4ZUzymaf6i/qc25hEoNHWNlrenzwva9YSysU+B8T3Rli928yv4BRrdc5Mx6M0pAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/d7cb62714ba019f393a189fd28d4b009/a6d36/7QheQq1Qs-3-PwZ9s0zj3A.png"
+        srcset="/static/d7cb62714ba019f393a189fd28d4b009/222b7/7QheQq1Qs-3-PwZ9s0zj3A.png 163w,
+/static/d7cb62714ba019f393a189fd28d4b009/ff46a/7QheQq1Qs-3-PwZ9s0zj3A.png 325w,
+/static/d7cb62714ba019f393a189fd28d4b009/a6d36/7QheQq1Qs-3-PwZ9s0zj3A.png 650w,
+/static/d7cb62714ba019f393a189fd28d4b009/8c557/7QheQq1Qs-3-PwZ9s0zj3A.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>The <code>LowonganSerializer</code> class have a single responsibility: serializing instances of the <code>Lowongan</code> model. It takes care of converting complex data types, like queryset and model instances, into native Python datatypes. So, it adheres to the Single Responsibility Principle.</p>
+<h2><strong>Open Closed Principle</strong></h2>
+<p>The Open Closed Principle suggests that software entities should be open for extension but closed for modification. In other words, it should be able to add new functionality to a system without changing existing code. This promotes enabling easy additions without altering the existing, working code.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a9ccd367e694075ed1483ea10670fc01/8c557/Q8kmmPdDfH-v_u7bTKzKvw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 43.558282208588956%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR42oVS7W7cIBD0eyS2AYP5NDY+bHx3baIqrdS8/wNN9sgpqtpU+TEMCHY0u0Mj/QK5rpDnTDyDOws5WSiCmAOGyUMuEfK0QNBezBO0G8H6Hv0naJiQ8PsV68sLlLcYlgmShD4edR1xd+f+SzR920IZg5gLtLVwzmAKFpyz/xSxLwRp6Ui0uzG56B4f3918gu6Of+5u9fe7RoUEe95hCO7bBaZsNMsFKgXoskIddM4Jcl9htwhD3TAp0SsJTmCjAjcjBk0QHI2NC45frzh9f0b5+Zta3zGS4EhCqmSM24rxWkj4hPmakZ9/IF4O+BwhvIMMjoI0kBSmGgQa7QPW6xPm/Yx0eYKfE8JWENZcHw8pVocDJT2SS3MUuC0hUSc+ZcTZgbUP97F17ykLHSCjx+AVBBXevgunxAUJiuChggGvifd1xm1FW0Xav9JvGOPQ04xYDtg5QlGL+rJXVuRMUfv6Nr8Yq2s+DGD0AxjnYIxV/Cn4Bv3oBZMa3Vn1AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/a9ccd367e694075ed1483ea10670fc01/a6d36/Q8kmmPdDfH-v_u7bTKzKvw.png"
+        srcset="/static/a9ccd367e694075ed1483ea10670fc01/222b7/Q8kmmPdDfH-v_u7bTKzKvw.png 163w,
+/static/a9ccd367e694075ed1483ea10670fc01/ff46a/Q8kmmPdDfH-v_u7bTKzKvw.png 325w,
+/static/a9ccd367e694075ed1483ea10670fc01/a6d36/Q8kmmPdDfH-v_u7bTKzKvw.png 650w,
+/static/a9ccd367e694075ed1483ea10670fc01/8c557/Q8kmmPdDfH-v_u7bTKzKvw.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p><code>LowonganSerializer</code> is open for extension, but closed for modification. <code>LowonganGetSerialzier</code>extends the functionality of <code>LowonganSerializer</code>by adding extra fields without modifying the existing behavior.</p>
+<h2><strong>Liskov Substitution Principle</strong></h2>
+<p>LSP asserts that objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program. In practical terms, this means that derived classes must extend the behavior of the base class without altering its properties, ensuring seamless substitution of objects and preventing unexpected behaviors.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a9ccd367e694075ed1483ea10670fc01/8c557/Q8kmmPdDfH-v_u7bTKzKvw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 43.558282208588956%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR42oVS7W7cIBD0eyS2AYP5NDY+bHx3baIqrdS8/wNN9sgpqtpU+TEMCHY0u0Mj/QK5rpDnTDyDOws5WSiCmAOGyUMuEfK0QNBezBO0G8H6Hv0naJiQ8PsV68sLlLcYlgmShD4edR1xd+f+SzR920IZg5gLtLVwzmAKFpyz/xSxLwRp6Ui0uzG56B4f3918gu6Of+5u9fe7RoUEe95hCO7bBaZsNMsFKgXoskIddM4Jcl9htwhD3TAp0SsJTmCjAjcjBk0QHI2NC45frzh9f0b5+Zta3zGS4EhCqmSM24rxWkj4hPmakZ9/IF4O+BwhvIMMjoI0kBSmGgQa7QPW6xPm/Yx0eYKfE8JWENZcHw8pVocDJT2SS3MUuC0hUSc+ZcTZgbUP97F17ykLHSCjx+AVBBXevgunxAUJiuChggGvifd1xm1FW0Xav9JvGOPQ04xYDtg5QlGL+rJXVuRMUfv6Nr8Yq2s+DGD0AxjnYIxV/Cn4Bv3oBZMa3Vn1AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/a9ccd367e694075ed1483ea10670fc01/a6d36/Q8kmmPdDfH-v_u7bTKzKvw.png"
+        srcset="/static/a9ccd367e694075ed1483ea10670fc01/222b7/Q8kmmPdDfH-v_u7bTKzKvw.png 163w,
+/static/a9ccd367e694075ed1483ea10670fc01/ff46a/Q8kmmPdDfH-v_u7bTKzKvw.png 325w,
+/static/a9ccd367e694075ed1483ea10670fc01/a6d36/Q8kmmPdDfH-v_u7bTKzKvw.png 650w,
+/static/a9ccd367e694075ed1483ea10670fc01/8c557/Q8kmmPdDfH-v_u7bTKzKvw.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p><code>LowonganGetSerializer</code> inherits from <code>LowonganSerializer</code> without changing its behavior. Therefore, LSP is maintained.</p>
+<h2><strong>Interface Segregation Principle</strong></h2>
+<p>ISP dictates that a client should not be forced to depend on interfaces it doesn’t use. In essence, it encourages the creation of specific, client-focused interfaces rather than large, general-purpose ones. By adhering to ISP, you prevent clients from being burdened with unnecessary methods, making the system more modular and adaptable to changes.</p>
+<h2><strong>Dependency Inversion Principle</strong></h2>
+<p>DIP emphasizes the importance of high-level modules not depending on low-level modules, but both depending on abstractions. By relying on abstractions, changes in one module won’t directly impact other modules, promoting flexibility and maintainability.</p>
+<h1><strong>Challenges We Ran Into</strong></h1>
+<p>During the development of SIASISTEN, we’ve encountered on some issues regarding the best practices, OOP principles and SOLID principles.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/6658f6d3ebf98de5b4af3518c220f48e/8c557/vbyFbVfwE7_trQZ42MbXgQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 12.269938650306749%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVR42i3IWQ6CMABFUfa/MGnBKEhtaRnK1BBIlCVci+Hj5A1JdRMYmdEIgU0FLr9Tx13LnDLN0CLDCMkrlbhHwWwcXtUsMY++Z3ctbdz2qfBOkwxNweTfrH1FOI2GMOi/+fy9InQlS+zbZDiC5XP5XvbZMHaKLWh+NimNspooBzYAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="sonarqube issues"
+        title="sonarqube issues"
+        src="/static/6658f6d3ebf98de5b4af3518c220f48e/a6d36/vbyFbVfwE7_trQZ42MbXgQ.png"
+        srcset="/static/6658f6d3ebf98de5b4af3518c220f48e/222b7/vbyFbVfwE7_trQZ42MbXgQ.png 163w,
+/static/6658f6d3ebf98de5b4af3518c220f48e/ff46a/vbyFbVfwE7_trQZ42MbXgQ.png 325w,
+/static/6658f6d3ebf98de5b4af3518c220f48e/a6d36/vbyFbVfwE7_trQZ42MbXgQ.png 650w,
+/static/6658f6d3ebf98de5b4af3518c220f48e/8c557/vbyFbVfwE7_trQZ42MbXgQ.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">sonarqube issues</figcaption>
+  </figure></p>
+<p>One of the dev team member doesn’t apply best practice programming yet on the explicit import statements. And the way we try to resolve this issue is by reminding the other dev to always comply with the best practice programming, check and resolve issues that raised in the sonarqube.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8f3d2f480b2322eaa366b834b1267647/8c557/gzwDsNSMImRhScq92cS5Fw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 89.57055214723925%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAACTUlEQVR42pVUCZLbMAzz/3+4O+v4PuVbvuUEBZU6k3Rn2zQzjJRYAgGQtKOqCpcPF58fHjw/hHvxMC0b9v3Atu9c73EcB975OPI1DgO6pobWGmXRosgbtHpBz//7vrcxz/P7gNu2QakKdV1jJvBYKZh1wdUY/O/HOTciqW1aBFGEvCgQX1zUeY6pbWH4zOwbcLu9D2iZ0qsyTlB8ujaaOEWaZmjo80DwY5px2+gnmd9+AH8FpPSal7uqxkC2fdtZG7qmwdr1YLVw0xP2Zf2xSC+A1+sVXdfh4nkIgoBV9xGHIVLXtQXayMz8o9ovgIYXBl5Ms4xSU+SUmScJFNeyLFGxcGY37wOKL6MeEIYBfLLzyTL6+kJB0IrSG0offrfSOI5/B5QDcZYjqTTZldBpgpl+Sox5hp5gLe1oWXUBfQYXmyqekwFwzurKwSjN4edsnTDDEMcWbKJUTQs0AcZpsudOEKWUtUJWsUeSOHeZIxpKqpueDzsLtErw0syDmqumAlExEfQElFW6QNg9GBpzoKZUxWYubUZlR3DhqC2UJMlmgsjoCZi01un3Gd88lHYR6lmukGQKBYvRsRAti1Nzr7jPyPTO5D7zEiJfWH0DnJg9zQuELEhS0iteMrxgyGintG3U2MlsWZYHU5F/vjiem9yR3huZSfNBy2lo6OPE/XXlNDB2XtwJIkxW/hbQM05gUfgAFAekcUNKi1nZMIxY5dA2d8NEI5N09NG8+eaxknceTvhS8PwIXpASPLQJpBUqemunhP6doM8F+bMovwAbGW9aFimfAgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/8f3d2f480b2322eaa366b834b1267647/a6d36/gzwDsNSMImRhScq92cS5Fw.png"
+        srcset="/static/8f3d2f480b2322eaa366b834b1267647/222b7/gzwDsNSMImRhScq92cS5Fw.png 163w,
+/static/8f3d2f480b2322eaa366b834b1267647/ff46a/gzwDsNSMImRhScq92cS5Fw.png 325w,
+/static/8f3d2f480b2322eaa366b834b1267647/a6d36/gzwDsNSMImRhScq92cS5Fw.png 650w,
+/static/8f3d2f480b2322eaa366b834b1267647/8c557/gzwDsNSMImRhScq92cS5Fw.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"> </figcaption>
+  </figure></p>
+<p>The other one, due to unfamiliarity with view-service separation from the dev team member, <code>LowonganView</code> class seems violates SRP since it handles multiple things: request, business logic. Therefore, I tried to introduce them the separation of view-service so that view class should only handle the request and delegate all the complex business logic into service. They refactored the code into view-service.</p>
+<h1><strong>References</strong></h1>
+<p><a href="https://peps.python.org/pep-0008?source=post_page-----ca1527f1cf3d--------------------------------">PEP 8 - Style Guide for Python CodePython Enhancement Proposals (PEPs)</a></p>
+<p><a href="https://studygyaan.com/django/django-rest-framework-best-practices-for-building-powerful-apis">https://studygyaan.com/django/django-rest-framework-best-practices-for-building-powerful-apis</a></p></div></div><div class="footer-container"><div class="footer"><a class="nav-item workspace default active" href="/"><span class="icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.67406 12C3.07461 12 3.39932 11.6753 3.39932 11.2747V8.29427C3.39932 7.58914 4.30376 7.29873 4.71426 7.87206L7.45197 11.6957C7.58815 11.8859 7.80772 11.9987 8.04165 11.9987H10.5802C11.1703 11.9987 11.5134 11.3315 11.17 10.8515L3.69616 0.403924C3.51481 0.150415 3.22227 0 2.91057 0H1.88182L1.07045 1.75477e-07H0.725256C0.324708 1.75477e-07 0 0.324708 0 0.725256V11.2747C0 11.6753 0.324709 12 0.725257 12H2.67406Z" fill="currentColor"></path><path d="M7.58709 0.919395C7.30968 0.536196 7.58346 0 8.05654 0H11.2747C11.6753 0 12 0.324707 12 0.725255V5.2262C12 5.78812 11.2805 6.02122 10.951 5.56605L7.58709 0.919395Z" fill="currentColor"></path></svg></span></a><div style="display:flex;flex-direction:row;gap:12px;align-items:center"><button class="button flex sm secondary default icon-only"><span class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M20 1.47059V18.5294C20 18.9194 19.8451 19.2935 19.5693 19.5693C19.2935 19.8451 18.9194 20 18.5294 20H1.47059C1.08056 20 0.706514 19.8451 0.430725 19.5693C0.154937 19.2935 0 18.9194 0 18.5294L0 1.47059C0 1.08056 0.154937 0.706514 0.430725 0.430725C0.706514 0.154937 1.08056 0 1.47059 0L18.5294 0C18.9194 0 19.2935 0.154937 19.5693 0.430725C19.8451 0.706514 20 1.08056 20 1.47059V1.47059ZM5.88235 7.64706H2.94118V17.0588H5.88235V7.64706ZM6.14706 4.41176C6.14861 4.18929 6.10632 3.96869 6.02262 3.76255C5.93891 3.55642 5.81542 3.36879 5.65919 3.21039C5.50297 3.05198 5.31708 2.92589 5.11213 2.83933C4.90718 2.75277 4.68718 2.70742 4.46471 2.70588H4.41176C3.95934 2.70588 3.52544 2.88561 3.20552 3.20552C2.88561 3.52544 2.70588 3.95934 2.70588 4.41176C2.70588 4.86419 2.88561 5.29809 3.20552 5.61801C3.52544 5.93792 3.95934 6.11765 4.41176 6.11765V6.11765C4.63426 6.12312 4.85565 6.0847 5.06328 6.00458C5.27092 5.92447 5.46074 5.80422 5.62189 5.65072C5.78304 5.49722 5.91237 5.31346 6.00248 5.10996C6.09259 4.90646 6.14172 4.6872 6.14706 4.46471V4.41176ZM17.0588 11.3412C17.0588 8.51177 15.2588 7.41177 13.4706 7.41177C12.8851 7.38245 12.3021 7.50715 11.7799 7.77345C11.2576 8.03974 10.8143 8.43832 10.4941 8.92941H10.4118V7.64706H7.64706V17.0588H10.5882V12.0529C10.5457 11.5403 10.7072 11.0315 11.0376 10.6372C11.3681 10.2429 11.8407 9.99488 12.3529 9.94706H12.4647C13.4 9.94706 14.0941 10.5353 14.0941 12.0176V17.0588H17.0353L17.0588 11.3412Z" fill="currentColor"></path></svg></span></button><button class="button flex sm secondary default icon-only"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C18.2072 22.5808 20.2773 21.0498 21.7438 19.0074C23.2103 16.9651 23.9994 14.5143 24 12C24 5.37 18.63 0 12 0Z" fill="currentColor"></path></svg></span></button><button class="button flex sm secondary default icon-only"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M1.5 8.6691V17.25C1.5 18.9069 2.84315 20.25 4.5 20.25H19.5C21.1569 20.25 22.5 18.9069 22.5 17.25V8.6691L13.5723 14.1631C12.6081 14.7564 11.3919 14.7564 10.4277 14.1631L1.5 8.6691Z" fill="currentColor"></path><path d="M22.5 6.90783V6.75C22.5 5.09315 21.1569 3.75 19.5 3.75H4.5C2.84315 3.75 1.5 5.09315 1.5 6.75V6.90783L11.2139 12.8856C11.696 13.1823 12.304 13.1823 12.7861 12.8856L22.5 6.90783Z" fill="currentColor"></path></svg></span></button></div></div><div class="paragraph-small">© 2024 Nafis Azizi Riza.</div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3XPVG4V8N2"></script><script>
+      
+      
+      if(true) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3XPVG4V8N2', {"send_page_view":false});
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blogs/excel-your-codebase-best-practice-oop-and-solid-principle/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-5d391b6083140b646413.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-0574e57f987b8755f13d.js\"],\"component---src-pages-about-tsx\":[\"/component---src-pages-about-tsx-fe663a056b78bc054328.js\"],\"component---src-pages-blogs-tsx\":[\"/component---src-pages-blogs-tsx-52faee8c240573598264.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-69f22363816e6c27073a.js\"],\"component---src-pages-projects-tsx\":[\"/component---src-pages-projects-tsx-2b09cf73b1183316ec8e.js\"],\"component---src-templates-blog-details-tsx\":[\"/component---src-templates-blog-details-tsx-a0cc1378bb9e0409a968.js\"],\"component---src-templates-project-details-tsx\":[\"/component---src-templates-project-details-tsx-210c2c433bb32b7a651b.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="f5f6d41d4a7f9b2838a5";</script><script src="/webpack-runtime-66b7119fe3dbb97651b7.js" async></script><script src="/framework-13d409f0bad5fa6bd11b.js" async></script><script src="/app-5d391b6083140b646413.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>

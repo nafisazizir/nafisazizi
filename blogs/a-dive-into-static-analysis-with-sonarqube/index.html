@@ -1,0 +1,471 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.12.4"/><meta data-react-helmet="true" charSet="utf-8"/><style data-href="/styles.a46f07ab33aee7325707.css" data-identity="gatsby-global-css">@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+/*
+! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com
+*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}:host,html{-webkit-text-size-adjust:100%;font-feature-settings:normal;-webkit-tap-highlight-color:transparent;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-variation-settings:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-feature-settings:normal;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em;font-variation-settings:normal}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{font-feature-settings:inherit;color:inherit;font-family:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.visible{visibility:visible}.absolute{position:absolute}.relative{position:relative}.bottom-0{bottom:var(--spacing-0)}.left-0{left:var(--spacing-0)}.top-0{top:var(--spacing-0)}.top-\[-100\%\]{top:-100%}.top-\[72px\]{top:72px}.z-50{z-index:50}.z-\[99\]{z-index:99}.mx-2{margin-left:var(--spacing-2);margin-right:var(--spacing-2)}.flex{display:flex}.hidden{display:none}.h-1\/3{height:33.333333%}.h-4{height:var(--spacing-4)}.h-40{height:var(--spacing-40)}.h-\[72px\]{height:72px}.h-full{height:100%}.w-11\/12{width:91.666667%}.w-16{width:var(--spacing-16)}.w-4{width:var(--spacing-4)}.w-40{width:var(--spacing-40)}.w-9\/12{width:75%}.w-full{width:100%}.cursor-pointer{cursor:pointer}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-evenly{justify-content:space-evenly}.gap-10{gap:var(--spacing-10)}.gap-12{gap:var(--spacing-12)}.gap-16{gap:var(--spacing-16)}.gap-18{gap:var(--spacing-18)}.gap-2{gap:var(--spacing-2)}.gap-3{gap:var(--spacing-3)}.gap-4{gap:var(--spacing-4)}.gap-6{gap:var(--spacing-6)}.gap-8{gap:var(--spacing-8)}.gap-9{gap:var(--spacing-9)}.self-stretch{align-self:stretch}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-black-alpha-10{border-color:var(--black-alpha-10)}.border-neutral-200{border-color:var(--neutral-200)}.bg-neutral-100{background-color:var(--neutral-100)}.bg-neutral-300{background-color:var(--neutral-300)}.bg-primary-500{background-color:var(--primary-500)}.bg-white-900{background-color:var(--white-900)}.p-3{padding:var(--spacing-3)}.px-12{padding-left:var(--spacing-12);padding-right:var(--spacing-12)}.py-8{padding-bottom:var(--spacing-8);padding-top:var(--spacing-8)}.text-center{text-align:center}.text-start{text-align:start}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.text-black-900{color:var(--black-900)}.text-neutral-600{color:var(--neutral-600)}.text-primary-500{color:var(--primary-500)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-500{transition-duration:.5s}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (min-width:640px){.sm\:flex{display:flex}.sm\:hidden{display:none}.sm\:w-10\/12{width:83.333333%}.sm\:w-full{width:100%}.sm\:justify-center{justify-content:center}.sm\:gap-16{gap:var(--spacing-16)}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-sm{font-size:.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width:768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:h-60{height:var(--spacing-60)}.md\:w-60{width:var(--spacing-60)}.md\:w-\[720px\]{width:720px}.md\:rounded-2xl{border-radius:1rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width:1024px){.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:w-7\/12{width:58.333333%}.lg\:w-\[700px\]{width:700px}.lg\:w-\[800px\]{width:800px}.lg\:text-2xl{font-size:1.5rem;line-height:2rem}.lg\:text-3xl{font-size:1.875rem;line-height:2.25rem}.lg\:text-5xl{font-size:3rem;line-height:1}.lg\:text-6xl{font-size:3.75rem;line-height:1}}.nav-item.workspace{align-items:center;background:var(--black-900,#060606);border-radius:var(--spacing-2,4px);display:flex;flex-direction:column;justify-content:center;padding:var(--spacing-3,6px);transition:box-shadow var(--transition-duration-1) ease}.nav-item.workspace .icon svg{color:var(--white-900,#fff);height:var(--spacing-9);width:var(--spacing-9)}.nav-item.workspace:active:not([disabled]){box-shadow:var(--focus-primary)}.nav-item.item{align-items:flex-start;border-radius:var(--spacing-4,8px);color:var(--neutral-600,#5b5b5b);display:inline-flex;font-family:Inter;font-size:14px;font-style:normal;font-weight:500;gap:var(--spacing-4,8px);line-height:20px;padding:var(--spacing-5,10px) var(--spacing-8,16px);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.nav-item.item.icon svg{height:var(--spacing-9,20px);width:var(--spacing-9,20px)}.nav-item.item.active,.nav-item.item:hover{background:var(--neutral-100,#f5f5f5)}.nav-item.item.active{color:var(--neutral-900,#060606)}.nav-item.item:active:not([disabled]){box-shadow:var(--focus-primary)}.nav-item.button{align-items:flex-start;border:1px solid var(--neutral-200,#dfdfdf);border-radius:var(--spacing-4,8px);color:var(--neutral-600,#5b5b5b);display:inline-flex;font-family:Inter;font-size:14px;font-style:normal;font-weight:500;gap:var(--spacing-4,8px);line-height:20px;padding:var(--spacing-5,10px) var(--spacing-8,16px);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.nav-item.button.icon svg{height:var(--spacing-9,20px);width:var(--spacing-9,20px)}.nav-item.button.active,.nav-item.button:hover{background:var(--neutral-100,#f5f5f5)}.nav-item.button.active{color:var(--neutral-900,#060606)}.nav-item.button:active:not([disabled]){box-shadow:var(--focus-primary)}.button.xl{align-items:center;border-radius:var(--rounded-xl,12px);font-family:Inter;font-size:16px;font-style:normal;font-weight:500;gap:var(--spacing-6,12px);line-height:24px;padding:var(--spacing-7,14px) var(--spacing-10,24px);text-align:center}.button.xl.icon svg{height:24px;width:24px}.button.xl.icon-only{padding:var(--spacing-7,14px)}.button.lg{align-items:center;border-radius:var(--rounded-lg,8px);font-family:Inter;font-size:14px;font-style:normal;font-weight:500;gap:var(--spacing-4,8px);line-height:20px;padding:var(--spacing-7,14px) var(--spacing-9,20px);text-align:center}.button.lg.icon svg{height:20px;width:20px}.button.lg.icon-only{padding:var(--spacing-7,14px)}.button.md{align-items:center;border-radius:var(--rounded-lg,8px);font-family:Inter;font-size:14px;font-style:normal;font-weight:500;gap:var(--spacing-4,8px);line-height:20px;padding:var(--spacing-5,10px) var(--spacing-8,16px);text-align:center}.button.md.icon svg{height:20px;width:20px}.button.md.icon-only{padding:var(--spacing-5,10px)}.button.sm{align-items:center;border-radius:var(--rounded-lg,8px);font-family:Inter;font-size:14px;font-style:normal;font-weight:500;gap:var(--spacing-4,8px);line-height:20px;padding:var(--spacing-3,6px) var(--spacing-6,12px);text-align:center}.button.sm.icon svg{height:20px;width:20px}.button.sm.icon-only{padding:var(--spacing-3,6px)}.button.xs{align-items:center;border-radius:var(--rounded-md,6px);font-family:Inter;font-size:14px;font-style:normal;font-weight:500;gap:var(--spacing-4,8px);line-height:20px;padding:var(--spacing-1,2px) var(--spacing-4,8px);text-align:center}.button.xs.icon svg{height:20px;width:20px}.button.xs.icon-only{padding:var(--spacing-1,2px)}.button.primary{background:var(--primary-500,#2477ff);color:var(--white-900,#fff);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.primary:hover{background-color:var(--primary-600,#216ce8)}.button.primary:active:not([disabled]){background:var(--primary-500,#2477ff);box-shadow:var(--focus-primary)}.button.primary:disabled{background:var(--primary-200,#9ac0ff)}.button.secondary{background:var(--white-900,#fff);border:1px solid var(--neutral-200,#dfdfdf);color:var(--black-900,#060606);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.secondary:hover{background-color:var(--neutral-100,#f5f5f5)}.button.secondary:active:not([disabled]){background:var(--white-900,#fff);box-shadow:var(--focus-primary)}.button.secondary:disabled{background:var(--white-900,#fff);color:var(--neutral-200,#dfdfdf)}.button.tertiary{background:var(--neutral-900,#060606);color:var(--white-900,#fff);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.tertiary:hover{background-color:var(--neutral-700,#3f3f3f)}.button.tertiary:active:not([disabled]){background:var(--neutral-900,#060606);box-shadow:var(--focus-primary)}.button.tertiary:disabled{background:var(--neutral-200,#dfdfdf)}.button.error{background:var(--error-500,#e33b32);color:var(--white-900,#fff);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.error:hover{background-color:var(--error-600,#cf362e)}.button.error:active:not([disabled]){background:var(--error-500,#e33b32);box-shadow:var(--focus-error)}.button.error:disabled{background:var(--error-200,#f2a5a1)}.button.warning{background:var(--warning-500,#eea23f);color:var(--white-900,#fff);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.warning:hover{background-color:var(--warning-600,#d99339)}.button.warning:active:not([disabled]){background:var(--warning-500,#eea23f);box-shadow:var(--focus-warning)}.button.warning:disabled{background:var(--warning-200,#f7d4a7)}.button.success{background:var(--success-500,#2ebf43);color:var(--white-900,#fff);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.success:hover{background-color:var(--success-600,#2aae3d)}.button.success:active:not([disabled]){background:var(--success-500,#2ebf43);box-shadow:var(--focus-success)}.button.success:disabled{background:var(--success-200,#9fe2a9)}.button.clear{background:var(--white-900,#fff);color:var(--black-900,#060606);transition:background-color var(--transition-duration-2) ease,color var(--transition-duration-2) ease,box-shadow var(--transition-duration-1) ease}.button.clear:hover{background-color:var(--neutral-100,#f5f5f5)}.button.clear:active:not([disabled]){background:var(--white-900,#fff);box-shadow:var(--focus-primary)}.button.clear:disabled{background:var(--white-900,#fff);color:var(--neutral-200,#dfdfdf)}.footer-container{background:var(--white-900);border-top:.5px solid var(--neutral-200);flex-direction:column;gap:24px;justify-content:center;padding:64px 32px}.footer,.footer-container{align-items:center;display:flex}.footer{justify-content:space-between;width:100%}body{background-color:var(--white-900);margin:0}.text-gradient-2-animation{-webkit-text-fill-color:transparent;animation:rotation 5s linear infinite;background:linear-gradient(var(--gradient-angle),var(--primary-500),var(--primary-100));background-clip:text;-webkit-background-clip:text}@property --gradient-angle{syntax:"<angle>";initial-value:0deg;inherits:false}@keyframes rotation{0%{--gradient-angle:0deg}to{--gradient-angle:360deg}}:root{--primary-default:#2e90fb;--primary-hover:#2982e2;--primary-active:#2573c9;--typography-primary:#252627;--typography-secondary:rgba(37,38,39,.8);--typography-tertiary:rgba(37,38,39,.7);--typography-light:#fdfdfd;--typography-link:#2e90fb;--typography-link-hover:#2982e2;--typography-link-active:#2573c9;--typography-info:#2573c9;--typography-error:#db1436;--typography-code:#e2445e;--border-default:#ddd;--border-hover:#bcbcbc;--border-active:#2e90fb;--border-disabled:#f0f0f0;--border-info:#7dbbff;--background-1:#fdfdfd;--background-2:hsla(0,0%,99%,.3);--background-3:#fafafa;--background-4:#eee;--background-info:#e0eefe;--white-900:#fff;--white-alpha-10:hsla(0,0%,100%,.1);--white-alpha-20:hsla(0,0%,100%,.2);--white-alpha-30:hsla(0,0%,100%,.3);--white-alpha-40:hsla(0,0%,100%,.4);--white-alpha-50:hsla(0,0%,100%,.5);--white-alpha-60:hsla(0,0%,100%,.6);--white-alpha-70:hsla(0,0%,100%,.7);--white-alpha-80:hsla(0,0%,100%,.8);--white-alpha-90:hsla(0,0%,100%,.9);--black-900:#060606;--black-alpha-10:rgba(6,6,6,.1);--black-alpha-20:rgba(6,6,6,.2);--black-alpha-30:rgba(6,6,6,.3);--black-alpha-40:rgba(6,6,6,.4);--black-alpha-50:rgba(6,6,6,.5);--black-alpha-60:rgba(6,6,6,.6);--black-alpha-70:rgba(6,6,6,.7);--black-alpha-80:rgba(6,6,6,.8);--black-alpha-90:rgba(6,6,6,.9);--neutral-100:#f5f5f5;--neutral-200:#dfdfdf;--neutral-300:#b2b2b2;--neutral-400:#969696;--neutral-50:#fafafa;--neutral-500:#797979;--neutral-600:#5b5b5b;--neutral-700:#3f3f3f;--neutral-800:#212121;--neutral-900:#060606;--primary-100:#bbd5ff;--primary-200:#9ac0ff;--primary-300:#6ca4ff;--primary-400:#5092ff;--primary-50:#e9f1ff;--primary-500:#2477ff;--primary-600:#216ce8;--primary-700:#1a54b5;--primary-800:#14418c;--primary-900:#0f326b;--error-100:#f6c2bf;--error-200:#f2a5a1;--error-300:#ec7c76;--error-400:#e9625b;--error-50:#fcebeb;--error-500:#e33b32;--error-600:#cf362e;--error-700:#a12a24;--error-800:#7d201c;--error-900:#5f1915;--warning-100:#fae2c3;--warning-200:#f7d4a7;--warning-300:#f4c17e;--warning-400:#f1b565;--warning-50:#fdf6ec;--warning-500:#eea23f;--warning-600:#d99339;--warning-700:#a9732d;--warning-800:#835923;--warning-900:#64441a;--success-100:#beebc5;--success-200:#9fe2a9;--success-300:#73d481;--success-400:#58cc69;--success-50:#eaf9ec;--success-500:#2ebf43;--success-600:#2aae3d;--success-700:#218830;--success-800:#196925;--success-900:#13501c;--focus-primary:0px 0px 0px 3px rgba(36,119,255,.4);--focus-error:0px 0px 0px 3px rgba(227,59,50,.4);--focus-warning:0px 0px 0px 3px rgba(238,162,63,.4);--focus-success:0px 0px 0px 3px rgba(46,191,67,.4);--spacing-0:0px;--spacing-1:2px;--spacing-2:4px;--spacing-3:6px;--spacing-4:8px;--spacing-5:10px;--spacing-6:12px;--spacing-7:14px;--spacing-8:16px;--spacing-9:20px;--spacing-10:24px;--spacing-11:28px;--spacing-12:32px;--spacing-13:36px;--spacing-14:40px;--spacing-15:44px;--spacing-16:48px;--spacing-17:56px;--spacing-18:64px;--spacing-20:80px;--spacing-24:96px;--spacing-28:112px;--spacing-32:128px;--spacing-36:144px;--spacing-40:160px;--spacing-44:176px;--spacing-48:192px;--spacing-52:208px;--spacing-56:224px;--spacing-60:240px;--spacing-64:256px;--spacing-72:288px;--spacing-80:320px;--spacing-96:384px;--rounded:4px;--rounded-md:6px;--rounded-lg:8px;--rounded-xl:12px;--rounded-2xl:16px;--rounded-3xl:24px;--rounded-full:9999px;--transition-duration-1:100ms;--transition-duration-2:200ms;--transition-duration-3:300ms;--transition-duration-4:400ms;--transition-duration-5:500ms}[data-theme=dark]{--primary-default:#2e90fb;--primary-hover:#2982e2;--primary-active:#2573c9;--typography-primary:#fdfdfd;--typography-secondary:hsla(0,0%,99%,.8);--typography-tertiary:hsla(0,0%,99%,.7);--typography-light:#252627;--typography-link:#2e90fb;--typography-link-hover:#2982e2;--typography-link-active:#2573c9;--typography-info:#2573c9;--typography-error:#db1436;--typography-code:#e2445e;--border-default:#3c3c3c;--border-hover:grey;--border-active:#2e90fb;--border-disabled:#2c2c2c;--border-info:#7dbbff;--background-1:#252627;--background-2:rgba(37,38,39,.3);--background-3:#2c2c2c;--background-4:#343536;--background-info:#e0eefe;--white-900:#060606;--white-alpha-10:rgba(6,6,6,.1);--white-alpha-20:rgba(6,6,6,.2);--white-alpha-30:rgba(6,6,6,.3);--white-alpha-40:rgba(6,6,6,.4);--white-alpha-50:rgba(6,6,6,.5);--white-alpha-60:rgba(6,6,6,.6);--white-alpha-70:rgba(6,6,6,.7);--white-alpha-80:rgba(6,6,6,.8);--white-alpha-90:rgba(6,6,6,.9);--black-900:#fff;--black-alpha-10:hsla(0,0%,100%,.1);--black-alpha-20:hsla(0,0%,100%,.2);--black-alpha-30:hsla(0,0%,100%,.3);--black-alpha-40:hsla(0,0%,100%,.4);--black-alpha-50:hsla(0,0%,100%,.5);--black-alpha-60:hsla(0,0%,100%,.6);--black-alpha-70:hsla(0,0%,100%,.7);--black-alpha-80:hsla(0,0%,100%,.8);--black-alpha-90:hsla(0,0%,100%,.9);--neutral-100:#212121;--neutral-200:#3f3f3f;--neutral-300:#5b5b5b;--neutral-400:#797979;--neutral-50:#060606;--neutral-500:#969696;--neutral-600:#b2b2b2;--neutral-700:#dfdfdf;--neutral-800:#f5f5f5;--neutral-900:#fafafa;--primary-100:#14418c;--primary-200:#1a54b5;--primary-300:#216ce8;--primary-400:#2477ff;--primary-50:#0f326b;--primary-500:#5092ff;--primary-600:#6ca4ff;--primary-700:#9ac0ff;--primary-800:#bbd5ff;--primary-900:#e9f1ff;--error-100:#7d201c;--error-200:#a12a24;--error-300:#cf362e;--error-400:#e33b32;--error-50:#5f1915;--error-500:#e9625b;--error-600:#ec7c76;--error-700:#f2a5a1;--error-800:#f6c2bf;--error-900:#fcebeb;--warning-100:#835923;--warning-200:#a9732d;--warning-300:#d99339;--warning-400:#eea23f;--warning-50:#64441a;--warning-500:#f1b565;--warning-600:#f4c17e;--warning-700:#f7d4a7;--warning-800:#fae2c3;--warning-900:#fdf6ec;--success-100:#196925;--success-200:#218830;--success-300:#2aae3d;--success-400:#2ebf43;--success-50:#13501c;--success-500:#58cc69;--success-600:#73d481;--success-700:#9fe2a9;--success-800:#beebc5;--success-900:#eaf9ec;--focus-primary:0px 0px 0px 3px rgba(80,146,255,.4);--focus-error:0px 0px 0px 3px rgba(233,98,91,.4);--focus-warning:0px 0px 0px 3px hsla(34,83%,67%,.4);--focus-success:0px 0px 0px 3px rgba(88,204,105,.4);--spacing-0:0px;--spacing-1:2px;--spacing-2:4px;--spacing-3:6px;--spacing-4:8px;--spacing-5:10px;--spacing-6:12px;--spacing-7:14px;--spacing-8:16px;--spacing-9:20px;--spacing-10:24px;--spacing-11:28px;--spacing-12:32px;--spacing-13:36px;--spacing-14:40px;--spacing-15:44px;--spacing-16:48px;--spacing-17:56px;--spacing-18:64px;--spacing-20:80px;--spacing-24:96px;--spacing-28:112px;--spacing-32:128px;--spacing-36:144px;--spacing-40:160px;--spacing-44:176px;--spacing-48:192px;--spacing-52:208px;--spacing-56:224px;--spacing-60:240px;--spacing-64:256px;--spacing-72:288px;--spacing-80:320px;--spacing-96:384px;--rounded:4px;--rounded-md:6px;--rounded-lg:8px;--rounded-xl:12px;--rounded-2xl:16px;--rounded-3xl:24px;--rounded-full:9999px;--transition-duration-1:100ms;--transition-duration-2:200ms;--transition-duration-3:300ms;--transition-duration-4:400ms;--transition-duration-5:500ms}body{font-family:Inter,sans-serif}.display-large{font-size:72px}.display-large,.display-medium{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:800;line-height:normal}.display-medium{font-size:52px}.display-small{font-size:44px}.display-small,.display-xsmall{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:800;line-height:normal}.display-xsmall{font-size:36px}h1,h2,h3,h4,h5,h6{margin:0}h1{font-size:40px}h1,h2{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:700;line-height:normal}h2{font-size:36px}h3{font-size:32px}h3,h4{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:700;line-height:normal}h4{font-size:28px}h5{font-size:24px}h5,h6{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:700;line-height:normal}h6{font-size:20px}.label-xlarge{font-size:24px}.label-large,.label-xlarge{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:500;line-height:normal}.label-large{font-size:20px}.label-medium{font-size:16px}.label-medium,.label-small{color:var(--black-900);font-family:Inter;font-style:normal;font-weight:500;line-height:normal}.label-small{font-size:14px}.label-xsmall{color:var(--black-900);font-family:Inter;font-size:12px;font-style:normal;font-weight:500;line-height:normal}.paragraph-xlarge{font-size:24px}.paragraph-large,.paragraph-xlarge{color:var(--typography-secondary);font-family:Inter;font-style:normal;font-weight:400;line-height:normal}.paragraph-large{font-size:18px}.paragraph-medium{font-size:16px}.paragraph-medium,.paragraph-small{color:var(--typography-secondary);font-family:Inter;font-style:normal;font-weight:400;line-height:normal}.paragraph-small{font-size:14px}.paragraph-xsmall{color:var(--typography-secondary,#6a6a6a);font-family:Inter;font-size:12px;font-style:normal;font-weight:400;line-height:normal}.badge{align-items:center;background:var(--background-info,#e0eefe);border:1px solid var(--border-info,#7dbbff);border-radius:39px;display:inline-flex;gap:10px;justify-content:center;margin:0 12px;padding:4px 14px;text-align:center}@media (max-width:768px){.display-large{font-size:62px}.display-medium{font-size:42px}.display-small{font-size:36px}.display-xsmall{font-size:28px}.label-large{font-size:18px}.label-small{font-size:12px}.paragraph-medium{font-size:14px}.paragraph-xlarge{font-size:20px}}@media (max-width:560px){.display-large{font-size:52px}.display-medium{font-size:32px}.label-large,.paragraph-xlarge{font-size:16px}}.page{gap:var(--spacing-24);padding:var(--spacing-20) var(--spacing-0)}.landing,.page{align-items:center;display:flex;flex-direction:column;justify-content:center;margin:auto;max-width:1240px}.landing{gap:var(--spacing-40);padding:var(--spacing-0) var(--spacing-0) var(--spacing-24)}@media (max-width:1240px){.page{padding:var(--spacing-20) var(--spacing-10)}.landing{padding:var(--spacing-0) var(--spacing-10) var(--spacing-24)}}@media (max-width:480px){.page{gap:var(--spacing-15);padding:var(--spacing-17) var(--spacing-8)}.landing{gap:var(--spacing-20);padding:var(--spacing-0) var(--spacing-8) var(--spacing-17)}}.blog-layout{align-items:start;display:flex;flex-direction:column;gap:42px;justify-content:center;margin:auto;max-width:680px;padding:72px 0}@media (max-width:1240px){.blog-layout{padding:72px 24px}}@media (max-width:480px){.blog-layout{gap:42px;padding:56px 16px}}.blog-content{align-items:start;display:flex;flex-direction:column;gap:24px;justify-content:center;width:100%}.blog-content h1{font-size:30px}.blog-content h1,.blog-content h2{color:var(--typography-primary);font-family:Inter;font-style:normal;font-weight:700;line-height:normal}.blog-content h2{font-size:24px}.blog-content h3{color:var(--typography-primary);font-size:20px;font-weight:700;line-height:normal}.blog-content h3,.blog-content p{font-family:Inter;font-style:normal}.blog-content p{color:var(--typography-secondary);font-size:18px;font-weight:400;line-height:27px;margin:0}.blog-content a{color:var(--typography-link);position:relative}.blog-content a:hover{color:var(--typography-link-hover);position:relative;text-decoration:underline}.blog-content a:active{color:var(--typography-link-active)}.blog-content strong{font-weight:600}.blog-content code{color:var(--neutral-600);font-family:Roboto Mono;font-size:16px;font-style:normal;font-weight:400;line-height:normal;padding:1px 6px;text-align:start}.blog-content code,.blog-content pre{background-color:var(--neutral-100);border-radius:4px}.blog-content pre{min-width:100%;padding:18px;white-space:pre-wrap}.blog-content ul{list-style-type:disc;margin:0;padding-left:30px}.blog-content ol{list-style-type:decimal;margin:0;padding-left:30px}.blog-content li{font-size:18px;line-height:27px}.blog-content figcaption,.blog-content li{color:var(--typography-secondary);font-family:Inter;font-style:normal;font-weight:400}.blog-content figcaption{font-size:14px;line-height:24px;margin-top:6px}.blog-content blockquote{all:unset;border-left:3px solid var(--typography-primary);padding:6px 12px}.blog-content blockquote p{color:var(--typography-primary);font-family:PT Serif;font-size:20px;font-style:normal;font-style:italic;font-weight:400;line-height:27px}@media (max-width:720px){.blog-content{gap:20px}.blog-content h1{font-size:24px}.blog-content h2{font-size:20px}.blog-content h3{font-size:18px}.blog-content p{font-size:16px;line-height:24px}.blog-content code{font-size:14px}.blog-content li{font-size:16px}.blog-content figcaption{font-size:12px;line-height:20px}.blog-content blockquote p{font-size:18px;line-height:22px}}.about-profile-title{align-items:center;display:flex;flex-direction:row;gap:24px;justify-content:start}.about-profile-pic{background-color:var(--background-info);border-radius:100px;height:100px;width:100px}.subtitle{background-color:var(--primary-100);border-radius:6px;color:var(--primary-700);font-family:Inter;font-size:18px;font-style:normal;font-weight:500;line-height:27px;padding:18px}@media (max-width:720px){.subtitle{font-size:16px;line-height:24px}}@media (max-width:450px){.about-profile-title{align-self:center;flex-direction:column;gap:12px}.about-profile-title h1{text-align:center}}.blog-card-container{align-items:flex-start;align-self:stretch;background:var(--white-900);border-radius:var(--rounded-2xl);cursor:pointer;display:flex;flex-direction:column;gap:var(--spacing-10);transition:all var(--transition-duration-5) ease;width:330px}.blog-card-container .featured-img-container{aspect-ratio:16/9;border-radius:var(--rounded-xl);overflow:hidden;position:relative;width:100%}.blog-card-container .featured-img{transform:scale(1);transition:all var(--transition-duration-5) ease;width:100%}.blog-card-container:hover .featured-img{transform:scale(1.2);transition:all var(--transition-duration-5) ease}.blog-card-container .details{display:flex;flex-direction:column;gap:var(--spacing-8);justify-content:start}.details-wrapper{-webkit-line-clamp:5;line-clamp:5;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}@media (max-width:768px){.blog-card-container{align-items:flex-start;align-self:stretch;background:var(--white-900);cursor:pointer;display:flex;flex-direction:column;gap:var(--spacing-8);width:100%}.blog-card-container .featured-img-container{aspect-ratio:30/10;border-radius:var(--rounded-lg)}.blog-card-container .details{gap:var(--spacing-5)}}@media (max-width:425px){.blog-card-container .featured-img-container{aspect-ratio:16/9;border-radius:var(--rounded-md)}}.project-highlights-container{align-items:center;display:flex;flex-wrap:wrap;gap:var(--spacing-11);justify-content:space-evenly;width:100%}@media (max-width:768px){.project-highlights-container{gap:var(--spacing-15)}}.featured{align-items:center;align-self:stretch;display:flex;flex-direction:column;gap:48px}.featured-card{display:grid;gap:var(--spacing-10);grid-template-columns:repeat(3,1fr)}.featured .image-container{align-items:center;align-self:center;aspect-ratio:3/4;display:flex;justify-content:center;overflow:hidden;position:relative;width:100%}.featured.image-container.image{height:100%;width:100%}@media (max-width:768px){.featured-card{display:grid;gap:var(--spacing-10);grid-template-columns:repeat(2,1fr)}}.indicator{transition:all var(--transition-duration-5) ease-in-out}.featured-container,.featured-container-0{opacity:0;transition:opacity var(--transition-duration-5) ease}.featured-container{bottom:0;position:absolute;top:0}.featured .active{opacity:1;transition-delay:var(--transition-duration-5)}.project-card .content-container{height:var(--spacing-60);position:relative;width:var(--spacing-72)}.project-card .description{opacity:0}.project-card .description,.project-card .title{position:absolute;transition:opacity var(--transition-duration-5) ease}.project-card:hover .title{opacity:0}.project-card:hover .description{opacity:1}.project-card .image{transform:scale(1)}.project-card .image,.project-card:hover .image{transition:transform var(--transition-duration-5) ease}.project-card:hover .image{transform:scale(1.1)}.project-card .image-overlay{background-color:var(--black-alpha-60);bottom:0;left:0;opacity:0;position:absolute;right:0;top:0;transition:opacity var(--transition-duration-5) ease;z-index:90}.project-card:hover .image-overlay{opacity:1;transition:opacity var(--transition-duration-5) ease}@media (max-width:768px){.project-card{width:100%}.project-card .content-container{flex-grow:1;height:auto;height:var(--spacing-40);position:relative;width:auto}}@media (max-width:375px){.project-card .description{-webkit-line-clamp:10;line-clamp:10;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}}.works-highlights-container{align-items:center;display:flex;flex-wrap:wrap;gap:var(--spacing-10);justify-content:space-evenly;width:100%}.hero-new{height:calc(100vh - 72px)}.blog-header{align-items:center;display:flex;flex-direction:row;gap:16px;justify-content:start;width:100%}.blog-header .profile-pic{background-color:var(--primary-500);border-radius:50px;height:50px;width:50px}.blog-header .info{align-self:stretch;display:flex;flex-direction:column;justify-content:space-evenly}.blog-header .info a{color:var(--black-900);position:relative}.blog-header .info a:hover{position:relative}.blog-header .info a:after{background-color:var(--black-900);bottom:0;content:"";height:1.5px;left:0;position:absolute;transform:scaleX(0);transform-origin:bottom right;transition:transform .25s ease-out;width:100%}.blog-header .info a:hover:after{transform:scaleX(1);transform-origin:bottom left}</style><title data-react-helmet="true">Nafis Azizi Riza</title><link rel="preconnect" href="https://www.googletagmanager.com"/><link rel="dns-prefetch" href="https://www.googletagmanager.com"/><link rel="icon" href="/favicon-32x32.png?v=de395f9cc434845c76ac61cd5e725b7a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=de395f9cc434845c76ac61cd5e725b7a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=de395f9cc434845c76ac61cd5e725b7a"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="relative flex h-[72px] px-12 py-8 z-[99] justify-between items-center bg-white-900 border-b border-neutral-200"><a class="nav-item workspace default active" href="/"><span class="icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.67406 12C3.07461 12 3.39932 11.6753 3.39932 11.2747V8.29427C3.39932 7.58914 4.30376 7.29873 4.71426 7.87206L7.45197 11.6957C7.58815 11.8859 7.80772 11.9987 8.04165 11.9987H10.5802C11.1703 11.9987 11.5134 11.3315 11.17 10.8515L3.69616 0.403924C3.51481 0.150415 3.22227 0 2.91057 0H1.88182L1.07045 1.75477e-07H0.725256C0.324708 1.75477e-07 0 0.324708 0 0.725256V11.2747C0 11.6753 0.324709 12 0.725257 12H2.67406Z" fill="currentColor"></path><path d="M7.58709 0.919395C7.30968 0.536196 7.58346 0 8.05654 0H11.2747C11.6753 0 12 0.324707 12 0.725255V5.2262C12 5.78812 11.2805 6.02122 10.951 5.56605L7.58709 0.919395Z" fill="currentColor"></path></svg></span></a><div class="hidden gap-8 sm:flex"><a class="nav-item item default" href="/"><span class="content">Home</span></a><a class="nav-item item default" href="/projects/"><span class="content">Projects</span></a><a class="nav-item item default active" href="/blogs/"><span class="content">Blogs</span></a><a class="nav-item item default" href="/about/"><span class="content">About</span></a></div><div class="flex gap-6"><button class="button flex sm secondary default icon-only"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21.7519 15.0021C20.597 15.484 19.3296 15.7501 18 15.7501C12.6152 15.7501 8.25 11.3849 8.25 6.00011C8.25 4.67052 8.51614 3.40308 8.99806 2.24817C5.47566 3.71798 3 7.19493 3 11.2501C3 16.6349 7.36522 21.0001 12.75 21.0001C16.8052 21.0001 20.2821 18.5245 21.7519 15.0021Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button><div class="flex sm:hidden"><button class="button flex sm secondary default icon-only"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></button></div></div></div><div class="absolute left-0 top-[-100%] flex flex-col px-12 py-8 gap-2 w-full z-50 justify-center bg-white-900 border-b border-neutral-200 transition-all ease-in-out duration-500"><a class="nav-item item default" href="/"><span class="content">Home</span></a><a class="nav-item item default" href="/projects/"><span class="content">Projects</span></a><a class="nav-item item default active" href="/blogs/"><span class="content">Blogs</span></a><a class="nav-item item default" href="/about/"><span class="content">About</span></a></div><div class="blog-layout"><h1>A Dive into Static Analysis with SonarQube</h1><div class="blog-header"><div class="profile-pic"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;border-radius:50px"><div aria-hidden="true" style="width:100%;padding-bottom:100%"></div><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECBAP/xAAXAQEBAQEAAAAAAAAAAAAAAAADBAEC/9oADAMBAAIQAxAAAAHZXpkFdSXOzUrnAE//xAAbEAEAAgIDAAAAAAAAAAAAAAABAgMAMRASE//aAAgBAQABBQItjkbxfUyQdad8mv/EABcRAQADAAAAAAAAAAAAAAAAAAEAECH/2gAIAQMBAT8BGbf/xAAXEQEBAQEAAAAAAAAAAAAAAAABABAR/9oACAECAQE/AULhjf/EABkQAAIDAQAAAAAAAAAAAAAAAAERABAgcf/aAAgBAQAGPwKJEds5/8QAHBAAAgICAwAAAAAAAAAAAAAAAAERIRAxUYGR/9oACAEBAAE/IbF6PHEicUhSXQjbOMSQlosjP//aAAwDAQACAAMAAAAQGAeA/8QAGBEBAQADAAAAAAAAAAAAAAAAAAERIWH/2gAIAQMBAT8QozwiXT//xAAaEQEAAQUAAAAAAAAAAAAAAAABABARIVGR/9oACAECAQE/EFC2hpe0GWf/xAAeEAEAAgEEAwAAAAAAAAAAAAABABExIUFxkVGBsf/aAAgBAQABPxBSahvcPEU2BhpDyRty9RStIUdk0E0arV+z0dSzeuIlaVxErLaXP//Z" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/9e066ccef68ae7b13f4dd843f0774773/f836f/profile.jpg 200w,
+/static/9e066ccef68ae7b13f4dd843f0774773/2244e/profile.jpg 400w,
+/static/9e066ccef68ae7b13f4dd843f0774773/14b42/profile.jpg 800w,
+/static/9e066ccef68ae7b13f4dd843f0774773/47498/profile.jpg 1200w,
+/static/9e066ccef68ae7b13f4dd843f0774773/0e329/profile.jpg 1600w,
+/static/9e066ccef68ae7b13f4dd843f0774773/28849/profile.jpg 2027w" sizes="(max-width: 800px) 100vw, 800px" /><img loading="lazy" sizes="(max-width: 800px) 100vw, 800px" srcset="/static/9e066ccef68ae7b13f4dd843f0774773/f836f/profile.jpg 200w,
+/static/9e066ccef68ae7b13f4dd843f0774773/2244e/profile.jpg 400w,
+/static/9e066ccef68ae7b13f4dd843f0774773/14b42/profile.jpg 800w,
+/static/9e066ccef68ae7b13f4dd843f0774773/47498/profile.jpg 1200w,
+/static/9e066ccef68ae7b13f4dd843f0774773/0e329/profile.jpg 1600w,
+/static/9e066ccef68ae7b13f4dd843f0774773/28849/profile.jpg 2027w" src="/static/9e066ccef68ae7b13f4dd843f0774773/14b42/profile.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div class="info"><a href="/about/"><div class="label-medium">Nafis Azizi Riza</div></a><div class="paragraph-small">October 2, 2023</div></div></div><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;width:100%"><div aria-hidden="true" style="width:100%;padding-bottom:66.5%"></div><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgABA//EABYBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAABwdBjAjL/AP/EABsQAAEEAwAAAAAAAAAAAAAAAAABAhAREhNB/9oACAEBAAEFAubLLMRyI2P/xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIRQf/aAAgBAwEBPwFSwo//xAAWEQEBAQAAAAAAAAAAAAAAAAAAETH/2gAIAQIBAT8B1H//xAAYEAACAwAAAAAAAAAAAAAAAAAAERIgYf/aAAgBAQAGPwLRRr//xAAaEAADAQEBAQAAAAAAAAAAAAAAAREhQVEx/9oACAEBAAE/IZ9N44yeR+j0acpgSv1kP//aAAwDAQACAAMAAAAQHM//xAAXEQADAQAAAAAAAAAAAAAAAAABEBEx/9oACAEDAQE/EJAxq//EABcRAQEBAQAAAAAAAAAAAAAAAAEAETH/2gAIAQIBAT8QE6sX/8QAGRABAQEBAQEAAAAAAAAAAAAAAREAITGB/9oACAEBAAE/EGEOlWimqGjeeKTFjGvTFnc9BT5ZN3//2Q==" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/906e54f7cfba6b4d4ad3df542bda2eca/f836f/c7UobFTOrkN80dS5YXVXSg.jpg 200w,
+/static/906e54f7cfba6b4d4ad3df542bda2eca/2244e/c7UobFTOrkN80dS5YXVXSg.jpg 400w,
+/static/906e54f7cfba6b4d4ad3df542bda2eca/9a128/c7UobFTOrkN80dS5YXVXSg.jpg 700w" sizes="(max-width: 700px) 100vw, 700px" /><img loading="lazy" sizes="(max-width: 700px) 100vw, 700px" srcset="/static/906e54f7cfba6b4d4ad3df542bda2eca/f836f/c7UobFTOrkN80dS5YXVXSg.jpg 200w,
+/static/906e54f7cfba6b4d4ad3df542bda2eca/2244e/c7UobFTOrkN80dS5YXVXSg.jpg 400w,
+/static/906e54f7cfba6b4d4ad3df542bda2eca/9a128/c7UobFTOrkN80dS5YXVXSg.jpg 700w" src="/static/906e54f7cfba6b4d4ad3df542bda2eca/9a128/c7UobFTOrkN80dS5YXVXSg.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><div class="blog-content"><p>Hey there, fellow developers! Today, we’re delving into the fascinating realm of static code analysis, exploring how it can elevate your software engineering project to new heights. We’ll also explore SonarQube, a powerful tool that can be your best buddy in ensuring your codebase is robust and error-free.</p>
+<h1><strong>Understanding Static Code Analysis</strong></h1>
+<p>First things first, what’s static code analysis? Imagine it as a digital detective, scanning through your code without executing it. It could sniffs out potential bugs, security vulnerabilities, and areas where your code might not adhere to best practices. In a nutshell, without running the code, it identifies weaknesses and inefficiencies, ensuring your project stands on a solid foundation.</p>
+<h1><strong>What is SonarQube</strong></h1>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/27ce5e48831b11583fe81deec5b6fb36/8c557/7tAnFjrt2rQ_f4AB.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.21472392638037%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABXklEQVR42q1TMU/CQBTunzNhNWEyYTD8AUMMi0wGw2gYDGihYRBZtEEmkQGmGtmgpZjG4tJiUotBS4yFtp93R4qEGKPiJe/e9y7vfXn3vjsO/7y4dYqDAPDJ5gdz/GdC3/dXiIPPDmlAE6h5nrfAyzHNCfPCYo9g/WmCrvmC3qMDy3F/3mFISJfruhjog/k5saEzRVOzIT08423qgdPvdfDHPKpiFcVCEbmjHEpCCeK5iHwuD6EgoHZZQ6vZQvu2DUVWkD3MQpJuSM4F7hQFrzMw0hkZJqeqKqKbUSR2Eohvx5lP7iYR24ohshFBej+N+lUd5dMyMgcZVM4q4E94CEUBqb0Uul2ZdSuTq7ueD248HkPtqaCd9tU+bNuGYRjodDosHo1GsCwLjesGZFJsGiY0TcPQHDLsOA4jnLzPmOLcb+b3tbLB4gktVA7VpD5Uk+LleNVWVV/rHX73Uz4Akik639g7gl8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="source: aviator.co"
+        title="source: aviator.co"
+        src="/static/27ce5e48831b11583fe81deec5b6fb36/a6d36/7tAnFjrt2rQ_f4AB.png"
+        srcset="/static/27ce5e48831b11583fe81deec5b6fb36/222b7/7tAnFjrt2rQ_f4AB.png 163w,
+/static/27ce5e48831b11583fe81deec5b6fb36/ff46a/7tAnFjrt2rQ_f4AB.png 325w,
+/static/27ce5e48831b11583fe81deec5b6fb36/a6d36/7tAnFjrt2rQ_f4AB.png 650w,
+/static/27ce5e48831b11583fe81deec5b6fb36/8c557/7tAnFjrt2rQ_f4AB.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">source: aviator.co</figcaption>
+  </figure></p>
+<p>Meet SonarQube — the superhero of static code analysis tools. This open-source platform not only identifies issues but also provides comprehensive insights into the overall health of your code. It’s like having a personal mentor who guides you towards writing cleaner, more efficient code.</p>
+<h2><strong>Dashboard</strong></h2>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ff1831b3d4db60986d4a01430ff0937b/8c557/cA7mMdYHdK_isJZAqvDc_g.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.21472392638037%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABlklEQVR42o2Sy0pkMRCGA/oCXsCF4FbwFWTm3RQU3epK17NwITIMuPIBXCgoiO7sxns70+25JDmV2zm/lTTdON3eCmqRVPLlrz8lds93sHq8gvWzNWxebGD7aguXrUt0HjsopcTD3y56hYRUCpLXX6X4ebSMud8zmNybgPglML0/jdP2CZ7unlDIEhURQqhRVRXKsvwQpJSG5hQ/GDh7MIWFP/MMnsXS4SJaeRvBNnDeYRAhhI/TB2hSyHQGcdu7Qat7Pcx2twWyBmRsOtw0Db6Kpm6gGJhTDkGKYLQZZlxb67hVXnO73wHGiMCe7kGU7NN/WRawziWFlPwLw0t1XcNxbfQR73wCFlRAjBnMxhvbBzpufRTovR9TF/e01cgoGwfGn4wqFDnkbIHjw0kRp+PfJrZioHKgNAL7Hn4CdL6GNg7+jcLA5htjUotvI3ZBtoI08r2WJYwzyKoMd88ZClWh5gvW2tRyjMzkuP/3wjVKeyXPn+NHIvh9IKsgS9CaeKApweJeVB4vVbHGg96vuTT0sR7PvQLz7j9BB7I6KgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sonarqube Snapshot"
+        title="Sonarqube Snapshot"
+        src="/static/ff1831b3d4db60986d4a01430ff0937b/a6d36/cA7mMdYHdK_isJZAqvDc_g.png"
+        srcset="/static/ff1831b3d4db60986d4a01430ff0937b/222b7/cA7mMdYHdK_isJZAqvDc_g.png 163w,
+/static/ff1831b3d4db60986d4a01430ff0937b/ff46a/cA7mMdYHdK_isJZAqvDc_g.png 325w,
+/static/ff1831b3d4db60986d4a01430ff0937b/a6d36/cA7mMdYHdK_isJZAqvDc_g.png 650w,
+/static/ff1831b3d4db60986d4a01430ff0937b/8c557/cA7mMdYHdK_isJZAqvDc_g.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Sonarqube Snapshot</figcaption>
+  </figure></p>
+<p>The SonarQube dashboard is the project’s nerve center, displaying a wealth of information at a glance. Here, you get a holistic view of your project’s health, from the number of issues found, bugs, security vulnerabilities, coverage, duplications, code smells, and quality gate status. It provides a bird’s eye perspective, allowing you to make informed decisions. Above is SIASISTEN backend SonarQube dashboard. It tells that the codebas is passed all conditions, as we see the score of the bugs, vulnerabilities, security, code smells, coverage and duplications are green/A.</p>
+<h2><strong>Code Smells Detection</strong></h2>
+<p>Code smells are those subtle hints indicating potential problems within the codebase. SonarQube excels at detecting these issues. Whether it’s duplicated code, overly complex functions, or inconsistent naming conventions, SonarQube sniffs out these code smells. By identifying and highlighting these problematic areas, it empowers you to refactor your code, ensuring it’s not just functional but elegant and maintainable.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0a9bd19afb69bbc0596d0ee2f030f1d7/8c557/XOItS8Y0U0OMF2dDsK80qQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 36.19631901840491%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABYUlEQVR42i2R2ZajMAxE+f+PS9gTs3kHs8N0Z/qxpqDn4Z6SZUsuy5GRFq80R12+URflrxLdSKi6ga7bO/adRK8tRhcwkT1M2IYRwQ1wxsMri3lcEFnl0IoGlgW6ZXFn4Jgzl3YKtlVwvHRi0WR7zD5gIZf2VyPtYaS7a8IwIxqtR5MX0EJAvl63DkohKI0gL/1lIrN1WOlsDyM+y3JzOZ37EYvr8b3tiJa6hnqm8EVOMtishEkz6CSDiWPYJIXLS8xvga2qsHMMR9NgrWr0LwHP8diCZAVWmohGPlM8Yyg2kM8EsqDL8oJzzDJ4NvJ89qoMPr3HX/LxVPLDeNcGpupgRY3ND4jmMHPYBoOxCNZinxec64ZjWXEwvjgZf+8HvsjnOPFz/vnPyfWBczt4fsMXc5GtGhSPGFWconokeCc5HWcoHyk1geCeiOlUtHB1h9BKHHS7kUtHuvfMy1Lcn/cPWIz+JpK5A5AAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sonarqube Snapshot"
+        title="Sonarqube Snapshot"
+        src="/static/0a9bd19afb69bbc0596d0ee2f030f1d7/a6d36/XOItS8Y0U0OMF2dDsK80qQ.png"
+        srcset="/static/0a9bd19afb69bbc0596d0ee2f030f1d7/222b7/XOItS8Y0U0OMF2dDsK80qQ.png 163w,
+/static/0a9bd19afb69bbc0596d0ee2f030f1d7/ff46a/XOItS8Y0U0OMF2dDsK80qQ.png 325w,
+/static/0a9bd19afb69bbc0596d0ee2f030f1d7/a6d36/XOItS8Y0U0OMF2dDsK80qQ.png 650w,
+/static/0a9bd19afb69bbc0596d0ee2f030f1d7/8c557/XOItS8Y0U0OMF2dDsK80qQ.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Sonarqube Snapshot</figcaption>
+  </figure></p>
+<p>For instance, above is the example of SIASISTEN code smells. It tells on which file and lines that code smells are appear, the priority/critical info, and we can assign each issues to particular dev team.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4b6b8c55344fe8553184d5368ba30494/8c557/ekz_6FV103d50ALKEVAt3A.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 11.65644171779141%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAfElEQVR42j3G3Q5DMABAYe//WIs1flolbVGCYLgwy97gDBe7+HJO0DWKuVKMLmaqJIMv2PqC92w5Tvtkz3e34+qr+vtunmOp7/9cXUsCET7IIoWNU/IwwkiNjiT5ST4TchGjQ0EmEmyqGcuG3noG59nbjsW3tKbGKEvtHD/um40NHFo+eQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sonarqube Snapshot"
+        title="Sonarqube Snapshot"
+        src="/static/4b6b8c55344fe8553184d5368ba30494/a6d36/ekz_6FV103d50ALKEVAt3A.png"
+        srcset="/static/4b6b8c55344fe8553184d5368ba30494/222b7/ekz_6FV103d50ALKEVAt3A.png 163w,
+/static/4b6b8c55344fe8553184d5368ba30494/ff46a/ekz_6FV103d50ALKEVAt3A.png 325w,
+/static/4b6b8c55344fe8553184d5368ba30494/a6d36/ekz_6FV103d50ALKEVAt3A.png 650w,
+/static/4b6b8c55344fe8553184d5368ba30494/8c557/ekz_6FV103d50ALKEVAt3A.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Sonarqube Snapshot</figcaption>
+  </figure></p>
+<p>In this example, it tells us that using wildcard * to import can raise code smells. And the best practice is to explicitly tells the needed class/methods in import statements.</p>
+<h2><strong>Security &#x26; Vulnerabilities</strong></h2>
+<p>Security is paramount. SonarQube acts as a vigilant guard, scanning your code for security &#x26; vulnerabilities. It identifies weak points, helping you to build the shields in the castle against potential threats. SonarQube’s security analysis ensures your software is a fortress, protecting both your data and your users from malicious attacks.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/be0f21502be096ac91830cf011c903bf/8c557/huam1Hn9ZsFukedB-CnS5Q.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 16.56441717791411%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdklEQVR42nWO0QrCMBAE+/+fpy+CglJsNMkZRWLTJJAxBiql6MBwL8vedmItzt14iOWpFNM48qGU8jXnTIyRlFK7s8vMbLfZHdjuTxz1nb7q/Ys1IYT61GGMwdYBIlJzvhUsaYWDutKfFcNFo8UxxcQv1kv+Zd5vYemm+bnmDwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sonarqube Snapshot"
+        title="Sonarqube Snapshot"
+        src="/static/be0f21502be096ac91830cf011c903bf/a6d36/huam1Hn9ZsFukedB-CnS5Q.png"
+        srcset="/static/be0f21502be096ac91830cf011c903bf/222b7/huam1Hn9ZsFukedB-CnS5Q.png 163w,
+/static/be0f21502be096ac91830cf011c903bf/ff46a/huam1Hn9ZsFukedB-CnS5Q.png 325w,
+/static/be0f21502be096ac91830cf011c903bf/a6d36/huam1Hn9ZsFukedB-CnS5Q.png 650w,
+/static/be0f21502be096ac91830cf011c903bf/8c557/huam1Hn9ZsFukedB-CnS5Q.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Sonarqube Snapshot</figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/601e26f300b87308342858be4bce0f1e/8c557/e7FXIUPPcbZDQvg21VMK0w.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.515337423312886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA50lEQVR42pWRTU7DMBCFfV5uxEm4AmLJpkIitSO3SZP6305sENJjbCkVUFWoi09jazxv3ozZpDTe+gEvO47xNEEpBeccSimIMSJTLDfIOSOGgOmsIMcZynow6zw0HfbDGcY6eO+RUmpYa5voZ1kpBoRwjTGm4Zxt4ixRQUoR65JarAIbC4kaavjaHaipu8rHVpsu1DvbEiH8fuip29dHxvNO4OHxCXyYUdalufor+hN2KxEq3kGe5rbfOlLd7ebkLsFapLWGEAK94Dj0HF33DinlZa93O6yfoGjZXA7YE/1xhCWH/438DVclFMJFEvhBAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sonarqube Snapshot"
+        title="Sonarqube Snapshot"
+        src="/static/601e26f300b87308342858be4bce0f1e/a6d36/e7FXIUPPcbZDQvg21VMK0w.png"
+        srcset="/static/601e26f300b87308342858be4bce0f1e/222b7/e7FXIUPPcbZDQvg21VMK0w.png 163w,
+/static/601e26f300b87308342858be4bce0f1e/ff46a/e7FXIUPPcbZDQvg21VMK0w.png 325w,
+/static/601e26f300b87308342858be4bce0f1e/a6d36/e7FXIUPPcbZDQvg21VMK0w.png 650w,
+/static/601e26f300b87308342858be4bce0f1e/8c557/e7FXIUPPcbZDQvg21VMK0w.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Sonarqube Snapshot</figcaption>
+  </figure></p>
+<p>In SIASISTEN SonarQube, it didn’t show any vulnerabilities and security hotspot. It is a good sign right? Definitely.</p>
+<h2><strong>Code Coverage</strong></h2>
+<p>Testing is essential, but it’s not just about quantity; it’s about quality too. SonarQube measures your code coverage, revealing how much of your codebase is tested. This insight is invaluable; it helps you identify untested or under-tested portions of your code.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1f3d6e74919deb8e631d64b11b809947/8c557/sYzq_gq-JGK66WwgXJQIkw.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 23.926380368098158%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAu0lEQVR42pWO2U7DQAxF8/9/SAuoalgyk3S2TGZrkoPDAy8IqVg6sn11feXOGIOxjlwa+7axPcC+Q8kBO11xtx4reNt/a91hWFcxiuk/ta0V77QwYo1i1G+kFOlKqZKcWYSYC0l22B/g+LJwb3dyktsYaa3RXYeR90FxGSZeB8tFWQY745eEi0l6JqTfzKnwqW/YEHHiDbJXCe/O08LLGDjrwEl76Z6T8jyL9qQObeZjrn/QfuY+VEJd+QJP3IL/NAvkbwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sonarqube Snapshot"
+        title="Sonarqube Snapshot"
+        src="/static/1f3d6e74919deb8e631d64b11b809947/a6d36/sYzq_gq-JGK66WwgXJQIkw.png"
+        srcset="/static/1f3d6e74919deb8e631d64b11b809947/222b7/sYzq_gq-JGK66WwgXJQIkw.png 163w,
+/static/1f3d6e74919deb8e631d64b11b809947/ff46a/sYzq_gq-JGK66WwgXJQIkw.png 325w,
+/static/1f3d6e74919deb8e631d64b11b809947/a6d36/sYzq_gq-JGK66WwgXJQIkw.png 650w,
+/static/1f3d6e74919deb8e631d64b11b809947/8c557/sYzq_gq-JGK66WwgXJQIkw.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Sonarqube Snapshot</figcaption>
+  </figure></p>
+<p>SonarQube will tell in which files are the uncovered code, and how many lines are there. It will give you the bird-eye view on how the test is being tested against the codebase.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0fb7119ae22789a4218d3a14e5a15496/8c557/DFrabb8e_O0aJ47erLTDDA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 64.41717791411043%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjUlEQVR42m2TWVfiQBCF8///yCweFVzCIpFtjqJP4wjChDUrgSwdSAJIcO7cBGde9OE71d1JV1fdvi3N7TlEKLBPxtiKLnZhF6+rHuMzYxdvcR9vyT8GefzDeIj6nyJtNluEgYvI/oHA6UBXq7DHNcynCiYvJSz1BkK7jcBqwTOajG34ZhO7oIM0fPyAFMUxwuUSEZMcwhZc85YJSwjNKoRZw2JahqdVsJyV4Ux4AOfx4hZ7v/kpUrLdQtg2xNM3HIIyNvMrVncFa1SA+fIFjnoCs/8VzvA7IrOInXOFg1tCupSRujLHR7L5nkgiDOEyYaBWsHXr2PL0nduAO6tg9lKEPbyG3r9g5EGja4RGFWvzBmurRilusCLC4tq8hthRIK2jCMF8jpVaxj5oYLdkO14DgVbGrHcOrV9k4gJblWGqF5wXuE7UIobjM3IKbVKEr5eQZAnjJEG4WCAaValhM0928BtYLxpwqFdWmTOrwhnLsFlhVuViIuPVq1OzBl5Jyj0p9Us5liImXHkeEqONw+oOaUBExj1Cq47R8wWGz5cY9y7zsfFbhja45oUprKpGmdr5//v3ffktr3wfiXnHhB1+oB1I7HVyqyxnyhGtDlfPtGUig2NNoW4tHESHnT3kpBwfW6Zt1uMb+qjFlpu87SZbaXNTBerPE6hPpxj+OsO4e44pdXWytimBr5chjAqEXsltltsm3mzgWRbC/iVPU2iFGixWMRqUYKsFmvsMRv8UkVUiMrZOBbFdysnW1iajTW+SPfdKG/pwMhhAUJdUNPkaFBgTvpIeddJk2kKhjbKbr/8nE/8jx29Swgr16RSRkWn4wOd3D8ekfrM6/GkNAfEmGQo9yI3i4VP27/EvMRWneC6+8V8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sonarqube Snapshot"
+        title="Sonarqube Snapshot"
+        src="/static/0fb7119ae22789a4218d3a14e5a15496/a6d36/DFrabb8e_O0aJ47erLTDDA.png"
+        srcset="/static/0fb7119ae22789a4218d3a14e5a15496/222b7/DFrabb8e_O0aJ47erLTDDA.png 163w,
+/static/0fb7119ae22789a4218d3a14e5a15496/ff46a/DFrabb8e_O0aJ47erLTDDA.png 325w,
+/static/0fb7119ae22789a4218d3a14e5a15496/a6d36/DFrabb8e_O0aJ47erLTDDA.png 650w,
+/static/0fb7119ae22789a4218d3a14e5a15496/8c557/DFrabb8e_O0aJ47erLTDDA.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Sonarqube Snapshot</figcaption>
+  </figure></p>
+<p>When we open each files, it’s also tells whether the lines of code is covered by the test or not. Green color on the left meaning that line of code already covered by test, while red color indicating that it is not covered by the test.</p>
+<h2><strong>Duplications</strong></h2>
+<p>Code duplications can be silent killers of productivity. They could lead to confusion, inconsistencies, and maintenance nightmares. SonarQube’s duplication detection feature identifying duplicated code fragments across the project. By pointing these duplications, it guides you in streamlining your codebase, eliminating redundancies, and enhancing your project’s readability and maintainability.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/00954db518309a40f882fc61086603d7/8c557/6FJw7gLMfPOxNv-ogjxorA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 17.791411042944784%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA0ElEQVR42g3G7W6CMBhAYe7/fvwhKlnmwKJRvtry9hNaSo3gwpZs7MeyZE2enJxomfHkb/N4mVz+cCiYx/zpz96kd5uF+V6qYA39qH8+ybo0we8X/VvbyPcEaMFwLgii9RGalJMT4LTn10EVgZVhbqMunSpdT62qO16Ohjw9RK+bONslaLt/i5PT/iWND1mcHLcHjK4UXQJREo2FoWIEtWgT3JnuiVAVjTqgVraeNUa2g2JWgpOgOVWAu7ZSpNCMGNE+eh7MVk5GvA9ytkIC/Qeg9cvslamdowAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sonarqube Snapshot"
+        title="Sonarqube Snapshot"
+        src="/static/00954db518309a40f882fc61086603d7/a6d36/6FJw7gLMfPOxNv-ogjxorA.png"
+        srcset="/static/00954db518309a40f882fc61086603d7/222b7/6FJw7gLMfPOxNv-ogjxorA.png 163w,
+/static/00954db518309a40f882fc61086603d7/ff46a/6FJw7gLMfPOxNv-ogjxorA.png 325w,
+/static/00954db518309a40f882fc61086603d7/a6d36/6FJw7gLMfPOxNv-ogjxorA.png 650w,
+/static/00954db518309a40f882fc61086603d7/8c557/6FJw7gLMfPOxNv-ogjxorA.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Sonarqube Snapshot</figcaption>
+  </figure></p>
+<p>Here’s one of my duplication that catched by SonarQube. It tells me that the patch is being used 3 times somewhere else, and it’s suggesting to define constant instead of duplicating it.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/afe0825d6ae222be11ab27e038a9c268/8c557/TDu0Jvh_hNFT-t6tqxhsAQ.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 41.717791411042946%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAABfklEQVR42k2Qi26jQAxF+f8fWm22aSkJDbQhPIZhZhjCO7whAyEkLWm1k612tdKRZVm277WFgYG+gYH/GiIxhhLFsofk0FU8LFNnnXhveaSViX4n3lUHvSv0Y6lfe+fjhAR21L8m0laAd6d72aOr2H/hBHs58l84BIuUPPt0RbEU+2qdbptMG2pzHpFwYvZ8QrczKeJX35VCT/Kw6BGR4qckkpt82xYaq42hMfrG4Grvg/PNXfnfcJW+YfvJNhfRfp1Fap4qyUHmDs8tmJg9He15xHzgf4RpoJf+vunSwy7f3aUqjZUma4yu2rFa50VulcfbiD8ncjvj298tAuuMpgAu2VCwDCyRwBWF6z2SiS1h65nnkaeUya6ItCzYZrHGDdaH7bkD1x4KbavNA6oKE5qPFD4C66djP2C4tK0Fcpb8clP/AcACwQfb+hV6mzxWi1j9frgwDngeyefkHksj8ZUsVpNgE/jrNFT62nof8MQczqVH14G/xuXNnI8//AZeG6HCtzT9WwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sonarqube Snapshot"
+        title="Sonarqube Snapshot"
+        src="/static/afe0825d6ae222be11ab27e038a9c268/a6d36/TDu0Jvh_hNFT-t6tqxhsAQ.png"
+        srcset="/static/afe0825d6ae222be11ab27e038a9c268/222b7/TDu0Jvh_hNFT-t6tqxhsAQ.png 163w,
+/static/afe0825d6ae222be11ab27e038a9c268/ff46a/TDu0Jvh_hNFT-t6tqxhsAQ.png 325w,
+/static/afe0825d6ae222be11ab27e038a9c268/a6d36/TDu0Jvh_hNFT-t6tqxhsAQ.png 650w,
+/static/afe0825d6ae222be11ab27e038a9c268/8c557/TDu0Jvh_hNFT-t6tqxhsAQ.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Sonarqube Snapshot</figcaption>
+  </figure></p>
+<p>Here we can see the duplicated patch that catched by SonarQube. Then, after knowing the issues, I refactored the code in order to solve them and push it. After you push the refactored code, if you’ve already solve the issues, it will gone.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ae2ccf0f2d26685dbe9a48143cb94264/8c557/FRLpi0_rD79JeIEUTSqdpg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 33.74233128834356%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABN0lEQVR42oWSa46jMBAGcxDAmHcwtsEPIJnc/1q1zUaTWa202h+lli2r2/XZNx8Ma7ZMZkRVFUpdKOq6/gvZk331H27t2NFNPe0wUOsG3bZSa4qyoCyEsqSQWhQVZaWo1Jt/NpwWz74ffH29CDHweD5JYSW6hdVZ3LKQVktyd/zcc+875qFFa2lQ/TSqqrfZzWwJlw/c/sRskfV8YeOOzyfr48W2nxyPkz1vxM1hzMIiQ6zQTXdma/HO4YS+77l1451xNtzl4CQMoj6Zma7TKNFVol5XJVqma1WjJc9GIvlT88pYa/2+4WgsMSXO85SaCSGQj+O39rZ6tmudIlniSMGTt5lpaD6P9d3ok+G8BkzMLKJtQmYOCSual/4Vh02H/IId47xEkYhxY5VBVlSNMXjvaZrmk+EvHpnNFOQ/LlgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sonarqube Snapshot"
+        title="Sonarqube Snapshot"
+        src="/static/ae2ccf0f2d26685dbe9a48143cb94264/a6d36/FRLpi0_rD79JeIEUTSqdpg.png"
+        srcset="/static/ae2ccf0f2d26685dbe9a48143cb94264/222b7/FRLpi0_rD79JeIEUTSqdpg.png 163w,
+/static/ae2ccf0f2d26685dbe9a48143cb94264/ff46a/FRLpi0_rD79JeIEUTSqdpg.png 325w,
+/static/ae2ccf0f2d26685dbe9a48143cb94264/a6d36/FRLpi0_rD79JeIEUTSqdpg.png 650w,
+/static/ae2ccf0f2d26685dbe9a48143cb94264/8c557/FRLpi0_rD79JeIEUTSqdpg.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Sonarqube Snapshot</figcaption>
+  </figure></p>
+<p>Here’s how I handle the duplications, I created the instance and set the return value of the patch in the setUp, that later can be used by other method in the class.</p>
+<h2><strong>Activities</strong></h2>
+<p>The Activities section is your timeline, displaying the changes, issues resolved, and improvements made over time. It’s like a development diary, allowing to reflect on your project’s evolution. By analyzing your past activities, you gain insights into your team’s efficiency, enabling continuous improvement and ensuring your project keeps moving forward.</p>
+<p><figure class="gatsby-resp-image-figure" style="margin: 0 auto; text-align: center; width:100%;">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b0bf9187695addb2675c59de56684b31/8c557/-F1z4oWP4oYS4j5lZsU3lg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 73.00613496932516%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZElEQVR42pWTW2/aQBCF/fv7Byr1pQ996UNVqX1KG5FgIASXBDC+29hgkwQIthPwBfDtdGySlqpJ2lg6mp316tOZ2R0GT3wFKdrs4Ps+giBAkuXwPB+u6yGKYrz0MXG4xNozkEZT5PGBNlNkB3kW/5n/pchGkYZgNtEcyX0fRSggXQvIntBz+78lIlsNUCQemKl7i+FYQHAnUZ0S8kBGSspeJaUCF4kPxl7M0ZQldHQZ1pWM7YrAoUQHJHJGMfgfEXQ93Du89pZoqwI4Q8aZKuPCkHAz3x8sCJy+FmgvZgQUwZHDUueaghaBh2MZvitX0Dz4l9sD4JW7d/jjAViqXLe1vTRHQnz/2N/nHB+WTMBzTULXUH4BOwTqPKxLt2V0bvawqr8vAcfzGV2KWEE4XSGwir6loUe6NCmaKi5GKrlVMbAULJfUhqhsBb2G9aMUpCsBeXnLnDbGm8/f8faIxbtvDbyvtfDh9Awfmx18anP4wnVx1OuhxvdRGw5wzA/QM3jq75BaMKzebxGQ1j1y6IJxlh5Y0UBLNsmphRNeR10c4ZRig2KpuqBX/8+UETm2qYoJBHuKhTel8bSxWl3j7t7BbkeTUs5fluyQZ2k1xXm6rWYyT3eUFtV+nia0LJBs93O828Qo8hzbJEMYb5HT8Kd5dRyMOrbwtV7DcbtJYnHaaaDeYdHqNtDusuAuWFz2m+j3WUhiC5LQgCw2oclNjOQGTLWFkUK5UIN764C59e/A6yZ6sgqRyrmUdQgjC4JhgtcMqGMbvKJCnVBUdaiWBWNiQTd1LBZTOI6B+czG7GaCMFzjJ90PTv8Kkne8AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sonarqube Snapshot"
+        title="Sonarqube Snapshot"
+        src="/static/b0bf9187695addb2675c59de56684b31/a6d36/-F1z4oWP4oYS4j5lZsU3lg.png"
+        srcset="/static/b0bf9187695addb2675c59de56684b31/222b7/-F1z4oWP4oYS4j5lZsU3lg.png 163w,
+/static/b0bf9187695addb2675c59de56684b31/ff46a/-F1z4oWP4oYS4j5lZsU3lg.png 325w,
+/static/b0bf9187695addb2675c59de56684b31/a6d36/-F1z4oWP4oYS4j5lZsU3lg.png 650w,
+/static/b0bf9187695addb2675c59de56684b31/8c557/-F1z4oWP4oYS4j5lZsU3lg.png 700w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Sonarqube Snapshot</figcaption>
+  </figure></p>
+<p>Above is the duplications activity of SIASISTEN. We can see it that the duplications are decreased over the time, meaning that the dev team solved the duplications issues, ensure that the codebase is clean.</p>
+<h1><strong>Experiences &#x26; Challenges I Ran Into</strong></h1>
+<p>SonarQube has been a great tool for me, and dev team during the development of SIASISTEN. It helps us to detect any issues that might not easy to catch bare eyes. Dev team reminds each other to always comply with the best practice and always try to solve issues raised in SonarQube. However, I faced some challenges as well during the use of SonarQube of static code analysis.</p>
+<p>In the current SonarQube server, SonarQube CS is using the Community Edition that won’t able to scan multiple branches for one project. I think it’s quite important to be able to scan in multiple branches since we, dev team, want to make sure that the code goes to dev/staging/production is all well written, issues-free. Then, the way I managed it is to set the scan only in dev branch. By this regulations, everytime dev team merged the MR into dev, the sonarqube will can scan the codebase and display the results. Dev team can refactor their code and create another MR after the issue being fixed.</p>
+<p>This solutions is not ideal since every time we try to solve an issues, we don’t know exactly does it already solve the issue, is it raise another issue or not until it merged into dev branch.</p></div></div><div class="footer-container"><div class="footer"><a class="nav-item workspace default active" href="/"><span class="icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.67406 12C3.07461 12 3.39932 11.6753 3.39932 11.2747V8.29427C3.39932 7.58914 4.30376 7.29873 4.71426 7.87206L7.45197 11.6957C7.58815 11.8859 7.80772 11.9987 8.04165 11.9987H10.5802C11.1703 11.9987 11.5134 11.3315 11.17 10.8515L3.69616 0.403924C3.51481 0.150415 3.22227 0 2.91057 0H1.88182L1.07045 1.75477e-07H0.725256C0.324708 1.75477e-07 0 0.324708 0 0.725256V11.2747C0 11.6753 0.324709 12 0.725257 12H2.67406Z" fill="currentColor"></path><path d="M7.58709 0.919395C7.30968 0.536196 7.58346 0 8.05654 0H11.2747C11.6753 0 12 0.324707 12 0.725255V5.2262C12 5.78812 11.2805 6.02122 10.951 5.56605L7.58709 0.919395Z" fill="currentColor"></path></svg></span></a><div style="display:flex;flex-direction:row;gap:12px;align-items:center"><button class="button flex sm secondary default icon-only"><span class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M20 1.47059V18.5294C20 18.9194 19.8451 19.2935 19.5693 19.5693C19.2935 19.8451 18.9194 20 18.5294 20H1.47059C1.08056 20 0.706514 19.8451 0.430725 19.5693C0.154937 19.2935 0 18.9194 0 18.5294L0 1.47059C0 1.08056 0.154937 0.706514 0.430725 0.430725C0.706514 0.154937 1.08056 0 1.47059 0L18.5294 0C18.9194 0 19.2935 0.154937 19.5693 0.430725C19.8451 0.706514 20 1.08056 20 1.47059V1.47059ZM5.88235 7.64706H2.94118V17.0588H5.88235V7.64706ZM6.14706 4.41176C6.14861 4.18929 6.10632 3.96869 6.02262 3.76255C5.93891 3.55642 5.81542 3.36879 5.65919 3.21039C5.50297 3.05198 5.31708 2.92589 5.11213 2.83933C4.90718 2.75277 4.68718 2.70742 4.46471 2.70588H4.41176C3.95934 2.70588 3.52544 2.88561 3.20552 3.20552C2.88561 3.52544 2.70588 3.95934 2.70588 4.41176C2.70588 4.86419 2.88561 5.29809 3.20552 5.61801C3.52544 5.93792 3.95934 6.11765 4.41176 6.11765V6.11765C4.63426 6.12312 4.85565 6.0847 5.06328 6.00458C5.27092 5.92447 5.46074 5.80422 5.62189 5.65072C5.78304 5.49722 5.91237 5.31346 6.00248 5.10996C6.09259 4.90646 6.14172 4.6872 6.14706 4.46471V4.41176ZM17.0588 11.3412C17.0588 8.51177 15.2588 7.41177 13.4706 7.41177C12.8851 7.38245 12.3021 7.50715 11.7799 7.77345C11.2576 8.03974 10.8143 8.43832 10.4941 8.92941H10.4118V7.64706H7.64706V17.0588H10.5882V12.0529C10.5457 11.5403 10.7072 11.0315 11.0376 10.6372C11.3681 10.2429 11.8407 9.99488 12.3529 9.94706H12.4647C13.4 9.94706 14.0941 10.5353 14.0941 12.0176V17.0588H17.0353L17.0588 11.3412Z" fill="currentColor"></path></svg></span></button><button class="button flex sm secondary default icon-only"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C18.2072 22.5808 20.2773 21.0498 21.7438 19.0074C23.2103 16.9651 23.9994 14.5143 24 12C24 5.37 18.63 0 12 0Z" fill="currentColor"></path></svg></span></button><button class="button flex sm secondary default icon-only"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M1.5 8.6691V17.25C1.5 18.9069 2.84315 20.25 4.5 20.25H19.5C21.1569 20.25 22.5 18.9069 22.5 17.25V8.6691L13.5723 14.1631C12.6081 14.7564 11.3919 14.7564 10.4277 14.1631L1.5 8.6691Z" fill="currentColor"></path><path d="M22.5 6.90783V6.75C22.5 5.09315 21.1569 3.75 19.5 3.75H4.5C2.84315 3.75 1.5 5.09315 1.5 6.75V6.90783L11.2139 12.8856C11.696 13.1823 12.304 13.1823 12.7861 12.8856L22.5 6.90783Z" fill="currentColor"></path></svg></span></button></div></div><div class="paragraph-small">© 2024 Nafis Azizi Riza.</div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3XPVG4V8N2"></script><script>
+      
+      
+      if(true) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3XPVG4V8N2', {"send_page_view":false});
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blogs/a-dive-into-static-analysis-with-sonarqube/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-5d391b6083140b646413.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-0574e57f987b8755f13d.js\"],\"component---src-pages-about-tsx\":[\"/component---src-pages-about-tsx-fe663a056b78bc054328.js\"],\"component---src-pages-blogs-tsx\":[\"/component---src-pages-blogs-tsx-52faee8c240573598264.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-69f22363816e6c27073a.js\"],\"component---src-pages-projects-tsx\":[\"/component---src-pages-projects-tsx-2b09cf73b1183316ec8e.js\"],\"component---src-templates-blog-details-tsx\":[\"/component---src-templates-blog-details-tsx-a0cc1378bb9e0409a968.js\"],\"component---src-templates-project-details-tsx\":[\"/component---src-templates-project-details-tsx-210c2c433bb32b7a651b.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="f5f6d41d4a7f9b2838a5";</script><script src="/webpack-runtime-66b7119fe3dbb97651b7.js" async></script><script src="/framework-13d409f0bad5fa6bd11b.js" async></script><script src="/app-5d391b6083140b646413.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
